@@ -1,0 +1,414 @@
+{%extends 'base.html'%}
+{%import 'partials/img.html' as img%}
+
+
+{%block custom_meta%}
+<meta content="cowboys,dallas cowboys,tony romo,dak prescott,ezekiel elliott,dez bryant,washington,redskins,washington redskins,kirk cousins,josh norman,interactives,dallas,dallas fort worth,dallas news,dallas sports,dallas fort worth sports,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper" name="keywords" />
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<meta content="Can the Cowboys bounce back from a season-opening loss? Our experts are split on the matter." name="description" />
+<title>Cowboys Gameday: Week 2 at Washington</title>
+<meta property="og:url" content="http://interactives.dallasnews.com/2016/cowboys-gameday/week2.html" />
+<meta property="og:title" content="Cowboys Gameday: What the Cowboys need to do to get their first win."/>
+<meta property="og:description" content="Can the Cowboys bounce back from a season-opening loss? Our experts are split on the matter." name="description"/>
+<meta property="og:image" content="http://interactives.dallasnews.com/2016/cowboys-gameday/images/_share_week2.jpg"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:type" content="article" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@SportsDayDFW" />
+<meta name="twitter:creator" content="@SportsDayDFW" />
+
+<meta name="liveFyreID" content="33958706662" />
+
+<meta name="parsely-page" id='parsely-page' content='{"title": "Cowboys Gameday: What the Cowboys need to do to get their first win.", "link": "http://interactives.dallasnews.com/2016/cowboys-gameday/week2.html", "image_url": "http://interactives.dallasnews.com/2016/cowboys-gameday/images/_share_week2.jpg", "type": "post", "post_id": "33958706662", "pub_date": "2016-09-16T10-00-00Z", "section": "sportsday", "author": ["sportsdaydfw"], "tags": ["cowboys","dallas cowboys","tony romo","dak prescott","ezekiel elliott","dez bryant","washington","redskins","washington redskins","kirk cousins","josh norman","interactives","dallas","dallas fort worth","dallas news","dallas sports","dallas fort worth sports","dfw news","dallas newspaper","dallas morning news","dallas morning news newspaper"]}' />
+
+<meta property="og:keywords" content="cowboys,dallas cowboys,tony romo,dak prescott,ezekiel elliott,dez bryant,washington,redskins,washington redskins,kirk cousins,josh norman,interactives,dallas,dallas fort worth,dallas news,dallas sports,dallas fort worth sports,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper"/>
+
+<meta name="news_keywords" content="cowboys,dallas cowboys,tony romo,dak,prescott,ezekiel elliott,dez bryant,washington,redskins,washington redskins,kirk cousins,josh norman,interactives,dallas,dallas fort worth,dallas news,dallas sports,dallas fort worth sports,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper"/>
+{%endblock%}
+
+
+{%block custom_head%}
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
+
+{%endblock%}
+
+
+{%block ad%}
+<script type="text/javascript" src="http://www.googletagservices.com/tag/js/gpt.js"></script>
+<script type="text/javascript">
+DFP_networkId = "11222444";
+var DFPSlotSizes = [];
+if (jQuery(window).width() < 768)
+{
+var DFP_sitepage = "m.DMN/interactives";
+DFPSlotSizes = [320,50]
+var adSlot0 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionTop");
+adSlot0.setTargeting("position", "x01");
+adSlot0.addService(googletag.pubads());
+
+var adSlot1 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionMiddle");
+adSlot1.setTargeting("position", "x02");
+adSlot1.addService(googletag.pubads());
+
+var adSlot2 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionBottom");
+adSlot2.setTargeting("position", "x03");
+adSlot2.addService(googletag.pubads());
+
+}
+else
+{
+var DFP_sitepage = "DMN/interactives";
+ DFPSlotSizes = [728,90]
+var adSlot0 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionTop");
+adSlot0.setTargeting("position", "Top");
+adSlot0.addService(googletag.pubads());
+
+var adSlot1 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionMiddle");
+adSlot1.setTargeting("position", "Top");
+adSlot1.addService(googletag.pubads());
+
+var adSlot2 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionBottom");
+adSlot2.setTargeting("position", "Top");
+adSlot2.addService(googletag.pubads());
+
+ }
+</script>
+<script type="text/javascript">
+googletag.pubads().enableSingleRequest();
+googletag.pubads().enableSyncRendering();
+googletag.enableServices();
+</script>
+{%endblock%}
+
+
+{%block content%}
+
+<script>
+		window.fbAsyncInit = function () {
+			FB.init({
+				appId: '258290334265148',
+				xfbml: true,
+				version: 'v2.3'
+			});
+		};
+
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {
+				return;
+			}
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+
+<section id="contentHeader">
+
+    <!-- the lede image should be cropped to 3000 x 1750 -->
+    {{img.jpg("cowlede_week2", "Dak Prescott looks to throw during the Cowboys’ week 1 loss to the Giants", 'ledeImg')}}
+
+
+    <!-- don't forget to update the opponent the opponent team logo image path -->
+    <!-- h1 tag should be "visigint mascot at home mascot" -->
+
+    <div class="gameHead clearFix">
+        <div class="logoBlock">
+            <img class="teamLogo" src="images/_cowSig.png" alt="Cowboys" />
+            <img class="teamLogo" src="images/_redskinsSig.png" alt="Redskins" />
+        </div>
+        <h2 id="label">Cowboys Gameday: <span id="seasonWeek">Week 2</span></h2>
+        <h1>Cowboys at Redskins</h1>
+        <p>Noon, Sunday <strong>TV: </strong>Ch. 4</p>
+        <p><strong>Radio: </strong> KRLD-FM (105.3), KMVK-FM (107.5, Spanish)</p>
+        <p><strong>Line: </strong>Redskins by 3</p>
+
+        <!-- end bylineBlock -->
+
+        <div class="shareComments shareCommentsTop">
+            <ul id="share-bar1" class="width-auto-hack"></ul>
+        </div>
+    </div>
+
+</section>
+<!-- end contentHeader -->
+
+<section id="winLoss" class="clearFix cowSection">
+
+    <div id="win">
+        <p class="subhead">A win would mean ...</p>
+        <p>The Cowboys avoid an 0-2 start to NFC East play and the season and get their first win behind rookie quarterback Dak Prescott, showing they can make it work while Tony Romo is hurt.</p>
+    </div>
+    <!-- end win -->
+
+    <div id="loss">
+        <p class="subhead">A loss would mean ... </p>
+        <p>The Cowboys fall to the Redskins in consecutive meetings for the first time since Washington swept Dallas during the 2012 season. Some hard questions could follow.</p>
+    </div>
+    <!-- end loss -->
+
+</section>
+<!-- end winLoss -->
+
+{%include "adblock1.html" %}
+
+
+    <section class="contentWell clearFix">
+
+    <div class="wideBlock imageBlock">
+
+        <h4 class="sectionLabel">SportsDay’s Picks</h4>
+        {{img.jpg("elliott_week2", "Cowboys running back Ezekiel Elliott struggles for yardage against the Giants in the Cowboys’ week 1 loss.")}}
+        <p class="cutline">Ezekiel Elliott struggled in his first game as a Cowboys, carrying the ball 20 times for only 51 yards and his first career touchdown. (Louis DeLuca/Staff Photographer)</p>
+    </div>
+    <!-- end wide image -->
+
+    <section id="fourKeys" class="clearFix cowSection">
+        <div class="row clearFix">
+            <div class="staff clearFix">
+                <img src="images/_george.jpg" alt="Brandon George" />
+                <p><strong>Brandon George: </strong>Dak Prescott didn’t turn over the ball in his first NFL start last Sunday against the Giants, and the Cowboys still lost at home. This week brings a much different test for Prescott: He’ll make his first NFL road start, against the rival Redskins. Sure, Prescott has played in front of louder crowds in the SEC than what he’ll see Sunday at Washington. But this is the NFL, which comes at you much faster. The Cowboys believe Prescott is their future. They’ll have a much better feel for that after Sunday. Winning your first road start as a quarterback is a tall task. Prescott will keep it close but falter late. <strong class="score">Redskins, 30-27</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_hairopoulos.jpg" alt="Kate Hairopoulos" />
+                <p><strong>Kate Hairopoulos: </strong>As Jason Garrett helpfully reminded us last week, running the ball in the NFL is hard. But it’s not as hard against Washington as it is against other teams. This will be the week rookie running back Ezekiel Elliott has some fun and finds some room to run behind a prideful offensive line that didn’t look as powerful as expected in run blocking last week against the New York Giants. Backup RB Alfred Morris will get his chances, too, against the team that drafted him and then let him go to its rival in free agency. As always, the run helps set up the rest of the offense. <strong class="score">Cowboys, 27-21</strong></p>
+            </div>
+
+            <div class="staff clearFix">
+                <img src="images/_machota.jpg" alt="Jon Machota" />
+                <p><strong>Jon Machota: </strong>All eyes will be on the matchup between Dez Bryant and Josh Norman. Things got heated between the two star players last Thanksgiving. Norman won that battle, holding Bryant to one catch for 6 yards on five targets. But the two-time Pro Bowl receiver wasn’t close to 100 percent, dealing with foot, ankle and knee injuries. Both players are healthy heading into Sunday’s game. Most believe Norman will shadow Bryant throughout, but there’s no guarantee. In Washington’s season opener, Norman was rarely on All-Pro receiver Antonio Brown. Against the Redskins, the Cowboys make a point to get Bryant more involved than they did last week, and he finishes with five catches for 75 yards and a touchdown. <strong class="score">Cowboys, 24-23</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_moore.jpg" alt="David Moore" />
+                <p><strong>David Moore: </strong>One team returns a key player who was down with pneumonia for a few days. The other team’s most vocal player decided to release all of his medical records on Dr. Oz. Oh wait, wrong contest. This is supposed to be about that other game that will be played outside of our nation’s capitol this weekend. The Dallas- Washington rivalry doesn’t generate the same hatred and intensity it once did. But both teams find themselves in a precarious spot this early in the season. A Cowboys loss would give them two division losses in two weeks and blunt the excitement Dak Prescott sparked during the preseason. A Washington loss would give the Redskins two home losses by mid-September. <strong class="score">Cowboys, 23-17</strong></p>
+            </div>
+        </div>
+
+        <div class="row clearFix">
+            <div class="staff clearFix">
+                <img src="images/_cowlishaw.jpg" alt="Tim Cowlishaw" />
+                <p><strong>Tim Cowlishaw: </strong>A week later than expected, Cowboys running game gets untracked and Dan Bailey comes up big again to break into win column. <strong class="score">Cowboys, 23-16</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_gosselin.jpg" alt="Rick Gosselin" />
+                <p><strong>Rick Gosselin: </strong>Neither team plays much defense, and the defending NFC East champs can’t afford to lose back-to-back home games to start the season. <strong class="score">Redskins, 30-27</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_horn.jpg" alt="Barry Horn" />
+                <p><strong>Barry Horn: </strong>Ezekiel Elliott has his first 100-yard game, and Dez Bryant quadruples his receptions and holds on to a fade for touchdown. But the defense wilts on a late fourth-quarter drive. <strong class="score">Redskins, 24-23</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_sherrington.jpg" alt="Kevin Sherrington" />
+                <p><strong>Kevin Sherrington: </strong>Cowboys still figuring out who they are. <strong class="score">Redskins, 27-20</strong></p>
+            </div>
+
+        </div>
+
+
+        <div id="userPick">
+            <h5>You make the call</h5>
+            <p>We want to know who you who think will win this week’s Cowboys game. Enter your score below, and see which team other readers think will take home the “W.” Scores plotted on the lower-right of the chart indicate a predicted Cowboys victory, upper-left indicate a predicted opponent victory. (Note: Only scores below 60 will be shown.)</p>
+
+            <div id="userSubmission">
+
+                <div id="userForm" class="clearFix">
+
+                    <p class="chatter">Who do you think will win? Enter the scores for each team, then click the "submit" button.</p>
+                    <div class="scoreBlock">
+                        <input id="cowScore" type="text" pattern="[0-9]*" placeholder="0" />
+                        <span>Cowboys</span>
+                    </div>
+
+                    <div class="scoreBlock">
+                        <input id="oppScore"  type="text" pattern="[0-9]*" placeholder="0" />
+                        <span id="opponent"></span>
+                    </div>
+
+                    <button id="submit">Submit</button>
+                </div>
+
+                <div id="response" class="noShow clearFix">
+                    <h6>Thank you for your submission</h6>
+                    <p>You picked the <span class="userTeam"></span> to <span class="userResult">win</span>, <span class="userScore"></span>. Share your prediction on social media:</p>
+                    <button id="faceShare">Facebook</button>
+                    <button id="twitterShare">Twitter</button>
+                </div>
+
+                <p class="readout"><span class="predictPercentage"></span> of readers are picking the <span class="predictTeam"></span> to win this week by an average of <span class="predictPoints"></span> points.</p>
+
+
+            </div>
+
+            <div id="chartBlock">
+
+                <div id="tooltip" class="noShow">
+					<p><strong>Cowboys: </strong> <span class="cowTipScore"></span></p>
+					<p><strong><span class="oppTipName"></span>:</strong> <span class="oppTipScore"></span></p>
+                    <p><strong>Times predicted: </strong> <span class="tipPredict"></span></p>
+				</div>
+
+                <div id="chart"></div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- end picks -->
+
+
+
+    {%include "adblock2.html" %}
+
+    <section id="matchup" class="clearFix cowSection">
+
+    <h4 class="sectionLabel">Bob Sturm’s scouting report</h4>
+
+        <div id="matchupContent" class="clearFix">
+
+            <div class="matchupBlock">
+
+            <p class="key"><span class="question">Situation</span><span class="edge">Edge</span><span class="know">In the know</span></p>
+
+                <div id="cowboysRun" class="matchup clearFix">
+                    <p class="question">When the Cowboys run the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_cowSig.png" alt="Cowboys" />
+                    <p class="know">After being shown some real resistance against the Giants, the Cowboys have been challenged to get back in sync. Ezekiel Elliott appeared a bit overeager and needs to show his normal patience in allowing things to develop. Washington certainly did not limit the Steelers on the ground, allowing 5.5 yards a carry to DeAngelo Williams.</p>
+                </div>
+                <!-- end cowboysRun -->
+
+                <div id="cowboysPass" class="matchup clearFix">
+                    <p class="question">When the Cowboys pass the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_redskinsSig.png" alt="Redskins" />
+                    <p class="know">Here is where Dallas needs to respond with a big performance and a deliberate attempt to get the ball into the hands of Dez Bryant. Dak Prescott was careful with his throws, avoiding the middle of the field and coverage. But to win on the road, there must be times to challenge the defense. Look for defensive coordinator Joe Barry to try to bait the rookie QB with disguises in the pass rush and the seven-man coverages behind it. Ryan Kerrigan and Preston Smith bring plenty of heat.</p>
+                </div>
+                <!-- end cowboysPass -->
+
+                <div id="oppRun" class="matchup clearFix">
+                    <p class="question">When the Redskins run the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_skinsSplitSig.png" alt="Even" />
+                    <p class="know">Bill Callahan’s zone running scheme started well last year, but by the end of the season the production was 30th in the league in yards per rush. Then the Redskins allowed Alfred Morris to leave for low money. And that has left them with almost nobody noteworthy to carry the ball. The good news for Washington is that Dallas was run over by the Giants and will surely be challenged again.</p>
+                </div>
+                <!-- end oppRun -->
+
+                <div id="oppPass" class="matchup clearFix">
+                    <p class="question">When the Redskins pass the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_cowSig.png" alt="Cowboys" />
+                    <p class="know">On paper, the Redskins seem to have an impressive group of receivers, including their first-round pick, TCU’s Josh Doctson. But until they demonstrate any sort of change, their passing attack still appears to be forcing the ball to TE Jordan Reed and throwing horizontal passes to small receivers on the edge, with the occasional shot to DeSean Jackson over the top. Kirk Cousins generally won’t beat you with remarkable throws.</p>
+                </div>
+                <!-- end oppPass -->
+
+                <div id="specialTeams" class="matchup clearFix">
+                    <p class="question">Special teams</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_cowSig.png" alt="Cowboys" />
+                    <p class="know">Jamison Crowder is a dynamic and shifty return man on punts who also is a real threat in the slot on offense. Washington is not considered strong on special teams, but it improved in 2015 across the board. For the Cowboys, Dan Bailey was fantastic last week in his normal fashion and kicked the game-winner in Washington last December.</p>
+                </div>
+                <!-- end specialTeams -->
+
+                <div id="intangibles" class="matchup clearFix">
+                    <p class="question">Intangibles</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_redskinsSig.png" alt="Redskins" />
+                    <p class="know">Both teams are coming off losses in Week 1 at home. This season, Washington faces a first-place schedule that includes a trip to Arizona and a visit from Carolina. whereas the Cowboys host Tampa Bay and travel to San Francisco. Neither team can afford to start 0-2, but the panic in the capital city will be immense if the Redskins drop another home game right off the bat.</p>
+                </div>
+                <!-- end intagibles -->
+
+            </div>
+        </div>
+
+        </section>
+     </section>
+
+        <section id="spotlight" class="clearFix cowSection">
+
+
+            <!-- this image should be squarely cropped to provide enough depth for the content -->
+            <!-- this subject should be on the left or right side. if right side, change leftSide class to rightSide -->
+
+            <div class="spotContainer">
+                {{img.jpg("norman", "Washington Redskins cornerback Josh Norman")}}
+                <div class="spotlightContent">
+
+                    <h4 class="sectionLabel whiteTheme">Bob Sturm’s spotlight</h4>
+                    <p>The object of great intrigue during the Redskins’ offseason was their acquisition of cornerback <strong>JOSH NORMAN</strong> after an unexpected series of events allowed them to sign him quickly to a five-year, $75 million contract. The contract is the largest at his position in history, with a virtual guarantee of $50 million that is normally reserved for only the best quarterbacks in the business.</p>
+                    <p>Norman is a fantastic story — a player who was marginalized in the draft process before being developed into a force in the Carolina secondary. The oddity is that because the Panthers play almost exclusively zone coverages, they do not wish to spend large sums on defensive backs. In other words, they feel that given the strength of their pass rush and zone scheme, their corners are replaceable.</p>
+                    <p>The Redskins actually did well in coverage last year, which has many wondering about this record investment in something that did not appear terribly broken (perhaps similar to the Cowboys’ RB philosophy last spring). Further, on Monday night, they did not ask Norman to “travel” from side to side with Pittsburgh’s Antonio Brown, but rather stay on the defensive left side. He clearly has confidence against Dez Bryant, going back to last Thanksgiving’s matchup, but now all eyes are watching to see if he is asked to follow Bryant.</p>
+                    <p><strong>Sturm’s prediction: </strong>The road team has won the last five in this series, and the teams seem like an even match. That said, the Redskins must bounce back on short rest, and Dallas has a QB making his first road start. Redskins, 23-21</p>
+                    <p class="credit">Larry French/Getty Images</p>
+                </div>
+
+            </div>
+
+    </section>
+
+    {%include "adblock3.html" %}
+
+    <section class="credits clearfix">
+        <p><strong>Top photo:</strong> <a href="mailto:ledluca@dallasnews.com">Louis DeLuca</a></p>
+    </section>
+    <!-- end credits -->
+
+
+	<section class="more clearFix">
+		<h5>Read more from The Dallas Morning News</h5>
+		<a class="clearFix" href="http://interactives.dallasnews.com/2016/jerry-jones-office/">
+			<img src="images/_jonesShare.jpg" alt="Jerry Jones" />
+			<h6>Trappings of legend</h6>
+			<p>While Jerry Jones doesn’t live in the past, an exclusive look inside the Cowboys owner’s office is a journey through the franchise’s history.</p>
+		</a>
+		<a class="clearFix" href="http://interactives.dallasnews.com/2016/the-moment/No4.html">
+			<img src="images/_kindredShare.jpg" alt="Derrick Kindred" />
+			<h6>Answering the call</h6>
+			<p>There are only so many things Derrick Kindred can do while hoping for a phone call from the NFL that will change his life.</p>
+		</a>
+		<a class="clearFix" href="http://interactives.dallasnews.com/2015/darren-woodson/">
+			<img src="images/_woodsonShare.jpg" alt="Darren Woodson" />
+			<h6>Ringing endorsement</h6>
+			<p>For 12 seasons with the Dallas Cowboys, Darren Woodson would routinely wreak havoc on Sundays, then onnect with his best friend on Tuesdays.</p>
+		</a>
+	</section>
+	<!-- end more -->
+
+		<div class="shareComments">
+		<ul id="share-bar2" class="width-auto-hack"></ul>
+        <div id="comments"></div>
+	</div>
+	<!-- end shareComments -->
+
+</section>
+<!-- end contentWell -->
+{%endblock%}
+
+
+
+
+{%block custom_foot%}
+	<script type="text/javascript"></script>
+{%endblock%}
+
+
+
+
+
+{%block custom_social_meta%}
+<script type="text/javascript">
+  var storyTitle = "Cowboys-Redskins Gameday: See who the experts are picking and make your own call.", // headline in tweet card
+	storyURL = "http://interactives.dallasnews.com/2016/cowboys-gameday/week2.html",
+	leadText = "Can the Cowboys bounce back from a season-opening loss? Our experts are split on the matter.", //description in tweet card
+	storyIMG = "http://interactives.dallasnews.com/2016/cowboys-gameday/images/_share_week2.jpg",
+	storyAuthor = "SportsDayDFW",
+	twitterTag = "SportsDayDFW",
+	comments = true,
+	share = true;
+	OAS_sitepage = 'www.dallasnews.com/sportsday/dallas-cowboys/';
+</script>
+{%endblock%}

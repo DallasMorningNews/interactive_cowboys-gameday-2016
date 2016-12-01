@@ -1,0 +1,419 @@
+{%extends 'base.html'%}
+{%import 'partials/img.html' as img%}
+
+
+{%block custom_meta%}
+<meta content="cowboys,dallas cowboys,tony romo,dak prescott,ezekiel elliott,jason garrett,aaron rodgers,eddie lacy,green bay,green bay packers, packers,interactives,dallas,dallas fort worth,dallas news,dallas sports,dallas fort worth sports,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper" name="keywords" />
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<meta content="Cowboys-Packers: What you need to know; experts’ predictions; submit your pick" name="description" />
+<title>Cowboys-Packers: What you need to know; experts’ predictions; submit your pick</title>
+<meta property="og:url" content="http://interactives.dallasnews.com/2016/cowboys-gameday/week6.html" />
+<meta property="og:title" content="Cowboys-Packers: What you need to know; experts’ predictions; submit your pick"/>
+<meta property="og:description" content="Find out how much of a chance our experts give Dak and the Cowboys against Green Bay" name="description"/>
+<meta property="og:image" content="http://interactives.dallasnews.com/2016/cowboys-gameday/images/_week6_share.jpg" />
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:type" content="article" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@SportsDayDFW" />
+<meta name="twitter:creator" content="SportsDayDFW" />
+
+<meta name="liveFyreID" content="92798242847" />
+
+<meta name="parsely-page" id='parsely-page' content='{"title": "Cowboys-Packers: What you need to know; experts’ predictions; submit your pick", "link": "http://interactives.dallasnews.com/2016/cowboys-gameday/week6.html", "image_url": "http://interactives.dallasnews.com/2016/cowboys-gameday/images/_week6_share.jpg", "type": "post", "post_id": "92798242847", "pub_date": "2016-10-14T09-30-00Z", "section": "sportsday", "author": ["sportsdaydfw"], "tags": ["cowboys","dallas cowboys","tony romo","dak prescott","ezekiel elliott","jason garrett","aaron rodgers","eddie lacy","green bay","green bay packers","packers","interactives","dallas","dallas fort worth","dallas news","dallas sports","dallas fort worth sports","dfw news","dallas newspaper","dallas morning news","dallas morning news newspaper"]}' />
+
+<meta property="og:keywords" content="cowboys,dallas cowboys,tony romo,dak prescott,ezekiel elliott,jason garrett,aaron rodgers,eddie lacy,green bay,green bay packers,packers,interactives,dallas,dallas fort worth,dallas news,dallas sports,dallas fort worth sports,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper"/>
+
+<meta name="news_keywords" content="cowboys,dallas cowboys,tony romo,dak prescott,ezekiel elliott,jason garrett,aaron rodgers,eddie lacy,green bay,green bay packers,packers,interactives,dallas,dallas fort worth,dallas news,dallas sports,dallas fort worth sports,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper"/>
+{%endblock%}
+
+
+{%block custom_head%}
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
+
+{%endblock%}
+
+
+{%block ad%}
+<script type="text/javascript" src="http://www.googletagservices.com/tag/js/gpt.js"></script>
+<script type="text/javascript">
+DFP_networkId = "11222444";
+var DFPSlotSizes = [];
+if (jQuery(window).width() < 768)
+{
+var DFP_sitepage = "m.DMN/interactives";
+DFPSlotSizes = [320,50]
+var adSlot0 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionTop");
+adSlot0.setTargeting("position", "x01");
+adSlot0.addService(googletag.pubads());
+
+var adSlot1 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionMiddle");
+adSlot1.setTargeting("position", "x02");
+adSlot1.addService(googletag.pubads());
+
+var adSlot2 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionBottom");
+adSlot2.setTargeting("position", "x03");
+adSlot2.addService(googletag.pubads());
+
+}
+else
+{
+var DFP_sitepage = "DMN/interactives";
+ DFPSlotSizes = [728,90]
+var adSlot0 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionTop");
+adSlot0.setTargeting("position", "Top");
+adSlot0.addService(googletag.pubads());
+
+var adSlot1 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionMiddle");
+adSlot1.setTargeting("position", "Top");
+adSlot1.addService(googletag.pubads());
+
+var adSlot2 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionBottom");
+adSlot2.setTargeting("position", "Top");
+adSlot2.addService(googletag.pubads());
+
+ }
+</script>
+<script type="text/javascript">
+googletag.pubads().enableSingleRequest();
+googletag.pubads().enableSyncRendering();
+googletag.enableServices();
+</script>
+{%endblock%}
+
+
+{%block content%}
+
+<script>
+		window.fbAsyncInit = function () {
+			FB.init({
+				appId: '258290334265148',
+				xfbml: true,
+				version: 'v2.3'
+			});
+		};
+
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {
+				return;
+			}
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+
+<section id="contentHeader">
+
+    <!-- the lede image should be cropped to 3000 x 1750 -->
+    {{img.jpg("cowlede_week6", "Dallas Cowboys cornerback Morris Claiborne (left) and running back Ezekiel Elliott celebrate the Cowboys’ win over the Bengals.", 'ledeImg')}}
+
+
+    <!-- don't forget to update the opponent the opponent team logo image path -->
+    <!-- h1 tag should be "visigint mascot at home mascot" -->
+
+    <div class="gameHead clearFix">
+        <div class="logoBlock">
+            <img class="teamLogo" src="images/_cowSig.png" alt="Cowboys" />
+            <img class="teamLogo" src="images/_packersSig.png" alt="Packers" />
+        </div>
+        <h2 id="label">Cowboys Gameday: <span id="seasonWeek">Week 6</span></h2>
+        <h1>Cowboys at Packers</h1>
+        <p>3:25 p.m. Sunday <strong>TV: </strong>Ch. 4</p>
+        <p><strong>Radio: </strong> KRLD-FM (105.3), KMVK-FM (107.5, Spanish)</p>
+        <p><strong>Line: </strong>Packers by 4</p>
+
+        <!-- end bylineBlock -->
+
+        <div class="shareComments shareCommentsTop">
+            <ul id="share-bar1" class="width-auto-hack"></ul>
+        </div>
+    </div>
+
+</section>
+<!-- end contentHeader -->
+
+<section id="winLoss" class="clearFix cowSection">
+
+    <div id="win">
+        <p class="subhead">A win would mean ...</p>
+        <p>The Cowboys winning their fifth straight heading into the bye week against a respected team and franchise on the road at Lambeau Field will do nothing but inflame the Dak (Prescott) or Tony (Romo) talk. The overall series evens out at 17-17.</p>
+    </div>
+    <!-- end win -->
+
+    <div id="loss">
+        <p class="subhead">A loss would mean ... </p>
+        <p>The Cowboys drop their sixth straight to the Packers. A loss to a good Green Bay team doesn’t wipe out any dreams, but could slow Dak and Dallas’ roll a bit.</p>
+    </div>
+    <!-- end loss -->
+
+</section>
+<!-- end winLoss -->
+
+{%include "adblock1.html" %}
+
+
+    <section class="contentWell clearFix">
+
+    <div class="wideBlock imageBlock">
+
+        <h4 class="sectionLabel">SportsDay’s Picks</h4>
+        {{img.jpg("dak_week6", "Cowboys quarterback Dak Prescott scrambles against the Cincinnati Bengals")}}
+        <p class="cutline">Dak Prescott has been phenomenal by any standard in leading the Cowboys to a 4-1 record to start the season. But the rookie quarterback faces his toughest test thus far in the Green Bay Packers at Lambeau Field. (Vernon Bryant/Staff Photographer)</p>
+    </div>
+    <!-- end wide image -->
+
+    <section id="fourKeys" class="clearFix cowSection">
+        <div class="row clearFix">
+            <div class="staff clearFix">
+                <img src="images/_george.jpg" alt="Brandon George" />
+                <p><strong>Brandon George: </strong>In a lot of ways, Sunday’s game at Green Bay is just like the Cowboys’ sixth game in 2014. Two years ago, the Cowboys were 4-1 after four consecutive wins over mediocre teams and headed to Seattle for a big test. The Cowboys surprised many by upsetting the Seahawks 30-23 en route to a 12-4 season. Winning at Lambeau Field has proved difficult for the Cowboys. It’s hard to see them getting over the hump in Green Bay with two rookies leading the offense. The Cowboys haven’t faced a quarterback as talented as Aaron Rodgers all season. He should expose the Cowboys’ defense. which has been fortunate thus far, and put the young Dallas offense in the uncomfortable position of having to play from behind on the road. <strong class="score">Packers, 30-24</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_hairopoulos.jpg" alt="Kate Hairopoulos" />
+                <p><strong>Kate Hairopoulos: </strong>Dallas ends its five-game losing streak to Green Bay by winning its fifth straight this season. Sure, the Packers allow the fewest rushing yards per game and per carry in the NFL, but they haven’t faced a running back or an offensive line like they will Sunday in the Cowboys’ Ezekiel Elliott, left tackle Tyron Smith and the other big boys. If this is starting to sound repetitive in this space, so be it. It’s the formula that makes the difference for Dallas, which leads the NFL with 11 rushing touchdowns and a 50 percent third-down conversion rate. Stats like that help you win, even in iconic places such as Lambeau Field and even when the Cowboys are 4-11 all time on the road against Green Bay.  <strong class="score">Cowboys, 28-24</strong></p>
+            </div>
+
+            <div class="staff clearFix">
+                <img src="images/_machota.jpg" alt="Jon Machota" />
+                <p><strong>Jon Machota: </strong>If Aaron Rodgers has all day to throw, the Cowboys are in trouble. Rodgers hasn’t been performing up to his MVP-caliber standards this season, but he’s been very good against the Cowboys. Combining last year’s 28-7 win and the 26-21 playoff victory the year before, Rodgers has thrown for 534 yards, five touchdowns and no interceptions in his last two games against Dallas. The Cowboys’ defensive line is coming off its best performance of the season, sacking Cincinnati quarterback Andy Dalton four times last Sunday. But can it get to Rodgers four times? Probably not. Close game, but Rodgers gets the last laugh with a game-winning touchdown pass in the final minutes. <strong class="score">Packers, 27-24</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_moore.jpg" alt="David Moore" />
+                <p><strong>David Moore: </strong>The legend of Dak Prescott continues to grow. And why not? Those who say he’s been phenomenal for a rookie quarterback miss the point. He’s been phenomenal for any quarterback. He’s passed every test. But will he pass this one? Prescott has outplayed Kirk Cousins, Brian Hoyer, Blaine Gabbert and Andy Dalton in leading the Cowboys to four consecutive victories. None of those quarterbacks is as highly regarded as Green Bay’s Aaron Rodgers. Yes, Prescott has a superior quarterback rating to Rodgers through five games. But anyone who believes Rodgers isn’t still capable of lifting the team on his shoulder pads and winning a game is fooling themselves. <strong class="score">Packers, 23-20</strong></p>
+            </div>
+        </div>
+
+        <div class="row clearFix">
+            <div class="staff clearFix">
+                <img src="images/_cowlishaw.jpg" alt="Tim Cowlishaw" />
+                <p><strong>Tim Cowlishaw: </strong>Dak Prescott Show rolls along, but Aaron Rodgers Show steps up in the clutch to end Dallas’ win streak. <strong class="score">Packers, 27-24</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_gosselin.jpg" alt="Rick Gosselin" />
+                <p><strong>Rick Gosselin: </strong>If Dak Prescott doesn’t play giveaway — and there’s no reason to think he’ll start now — the Cowboys will be in position to control the clock and the Packers. <strong class="score">Cowboys, 27-24</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_horn.jpg" alt="Barry Horn" />
+                <p><strong>Barry Horn: </strong>Most readers laughed when I picked the Cowboys over the Bengals last week. They’ll be laughing again as I pick Prescott-Beasely-Elliott to beat Rodgers-Nelson-Lacy. <strong class="score">Cowboys, 28-24</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_sherrington.jpg" alt="Kevin Sherrington" />
+                <p><strong>Kevin Sherrington: </strong>Surely this is too much to ask of a rookie QB isn’t it? If not, we’re just about out of caveats for Dak. <strong class="score">Packers, 27-21</strong></p>
+            </div>
+
+        </div>
+
+
+        <div id="userPick">
+            <h5>You make the call</h5>
+            <p>We want to know who you who think will win this week’s Cowboys game. Enter your score below, and see which team other readers think will take home the “W.” Scores plotted on the lower-right of the chart indicate a predicted Cowboys victory, upper-left indicate a predicted opponent victory. (Note: Only scores below 60 will be shown.)</p>
+
+            <div id="userSubmission">
+
+                <div id="userForm" class="clearFix">
+
+                    <p class="chatter">Who do you think will win? Enter the scores for each team, then click the "submit" button.</p>
+                    <div class="scoreBlock">
+                        <input id="cowScore" type="text" pattern="[0-9]*" placeholder="0" />
+                        <span>Cowboys</span>
+                    </div>
+
+                    <div class="scoreBlock">
+                        <input id="oppScore"  type="text" pattern="[0-9]*" placeholder="0" />
+                        <span id="opponent"></span>
+                    </div>
+
+                    <button id="submit">Submit</button>
+                </div>
+
+                <div id="response" class="noShow clearFix">
+                    <h6>Thank you for your submission</h6>
+                    <p>You picked the <span class="userTeam"></span> to <span class="userResult">win</span>, <span class="userScore"></span>. Share your prediction on social media:</p>
+                    <button id="faceShare">Facebook</button>
+                    <button id="twitterShare">Twitter</button>
+                </div>
+
+                <p class="readout"><span class="predictPercentage"></span> of readers are picking the <span class="predictTeam"></span> to win this week by an average of <span class="predictPoints"></span> points.</p>
+
+
+            </div>
+
+            <div id="chartBlock">
+
+                <div id="tooltip" class="noShow">
+					<p><strong>Cowboys: </strong> <span class="cowTipScore"></span></p>
+					<p><strong><span class="oppTipName"></span>:</strong> <span class="oppTipScore"></span></p>
+                    <p><strong>Times predicted: </strong> <span class="tipPredict"></span></p>
+				</div>
+
+                <div id="chart"></div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- end picks -->
+
+
+
+    {%include "adblock2.html" %}
+
+    <section id="matchup" class="clearFix cowSection">
+
+    <h4 class="sectionLabel">Bob Sturm’s scouting report</h4>
+
+        <div id="matchupContent" class="clearFix">
+
+            <div class="matchupBlock">
+
+            <p class="key"><span class="question">Situation</span><span class="edge">Edge</span><span class="know">In the know</span></p>
+
+                <div id="cowboysRun" class="matchup clearFix">
+                    <p class="question">When the Cowboys run the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_cowSig.png" alt="Cowboys" />
+                    <p class="know">There is no question that Green Bay feels it is much improved at stopping the run as this was a clear initiative in its draft and offseason. But Jacksonville, Detroit, and the Giants do not provide any sort of rushing test that will prepare them for the Cowboys. The Cowboys must feel that their ground game will travel anywhere against anyone. Should be a fine matchup, but Dallas will be fine.</p>
+                </div>
+                <!-- end cowboysRun -->
+
+                <div id="cowboysPass" class="matchup clearFix">
+                    <p class="question">When the Cowboys pass the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_packersSig.png" alt="Packers" />
+                    <p class="know">This is very difficult to gauge when you consider that Dez Bryant and Sam Shields are unlikely to play. Green Bay has been without its best corner since the opener because of a concussion. The Packers will blitz early and often to try to rattle the cage of a rookie QB. Green Bay loves to cause chaos, especially at home</p>
+                </div>
+                <!-- end cowboysPass -->
+
+                <div id="oppRun" class="matchup clearFix">
+                    <p class="question">When the Packers run the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_packersSplitSig.png" alt="Even" />
+                    <p class="know">With Eddie Lacy, the Packers have really run the ball pretty well this season behind an anonymous but effective offensive line. The issue is whether he can play with an ankle injury. Aaron Rodgers keeps plays alive on third down with his ability to get down field on his feet. When the teams met last December, the ground game of the Packers was the real weapon.</p>
+                </div>
+                <!-- end oppRun -->
+
+                <div id="oppPass" class="matchup clearFix">
+                    <p class="question">When the Packers pass the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_packersSig.png" alt="Packers" />
+                    <p class="know">The Packers have one of the most gifted quarterbacks in the league, but the Green Bay passing attack looks out of sorts. Production is way down and the swagger is gone with it. Oddly, pass protection has been very good, but Rodgers still has a hard time getting to 250 yards a game, let alone 300. Meanwhile, the Cowboys pass rush is coming off a four-sack performance last week.</p>
+                </div>
+                <!-- end oppPass -->
+
+                <div id="specialTeams" class="matchup clearFix">
+                    <p class="question">Special teams</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_cowSig.png" alt="Cowboys" />
+                    <p class="know">There is issue here if Dan Bailey has returned to health. Mason Crosby (2007) is the second-longest tenured Packer behind Rodgers. However, Green Bay is ranked dead last in kickoff coverage and punt returns.</p>
+                </div>
+                <!-- end specialTeams -->
+
+                <div id="intangibles" class="matchup clearFix">
+                    <p class="question">Intangibles</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_packersSig.png" alt="Packers" />
+                    <p class="know">It’s a matchup of teams that seem to be among the contenders in a wide-open NFC where predicted powers Carolina and Arizona look a bit vulnerable. Unfortunately, both of these teams have so many injury concerns that we will miss out on some great matchups. Green Bay feels needs this game as it chases Minnesota. The Cowboys must be thrilled to already have four wins without Romo touching the field. A win at Lambeau might cause Cowboys fever to break out in October.</p>
+                </div>
+                <!-- end intagibles -->
+
+            </div>
+        </div>
+
+        </section>
+     </section>
+
+        <section id="spotlight" class="clearFix cowSection">
+
+
+            <!-- this image should be squarely cropped to provide enough depth for the content -->
+            <!-- this subject should be on the left or right side. if right side, remove leftSide class  -->
+
+            <div class="spotContainer">
+                {{img.jpg("nelson", "Packers wide receiver Jordy Nelson")}}
+                <div class="spotlightContent">
+
+                    <h4 class="sectionLabel whiteTheme">Bob Sturm’s spotlight</h4>
+                    <p>Nelson was drafted by the Packers in 2008 and is one of the few players in NFL history to have his breakout game come in the Super Bowl.</p>
+                    <p>In 2011 in Arlington, he caught nine passes for 140 yards and a touchdown against Pittsburgh, which helped elevate him from depth player into one of the elite players in the league with three 1,200-yard seasons and 43 touchdowns in four years.</p>
+                    <p>Nelson provided the vertical stretch in the Packers offense until he blew out his ACL in a preseason game in 2015 against those same Steelers, causing him to miss the entire season. With his absence, the Green Bay vertical game left, too.</p>
+                    <p>Now, despite his return and with it his mastery of the red zone game (five touchdowns already), there is still the question of whether, at 31 and coming off a knee injury, he still possesses the speed to take the top off of defenses.</p>
+                    <p>Four games into the season, the same things are being said about the Packers receivers that were said in 2015 about how they can’t get open down field.</p>
+                    <p>Green Bay’s ultimate destination this season may depend upon it because for now, Nelson doesn’t look like the same player. Last Sunday against the Giants, he was targeted 13 times by Aaron Rodgers but caught just four passes for 38 yards and a touchdown.</p>
+                    <p><strong>Sturm’s prediction: </strong>Last week, I took the Bengals because I clearly underestimated just how good the Cowboys can be without Tony Romo and Dez Bryant. Now, they are going to a place where they have a very difficult time winning, and I suppose I will risk underestimating them again. This feels like a real back-and-forth game, but I assume the pressure packages from Dom Capers might ultimately force a turnover late from Dak Prescott. <strong>Packers, 24-20</strong></p>
+                    <p class="credit">Mike Roemer/The Associated Press</p>
+                </div>
+
+            </div>
+
+    </section>
+
+
+
+
+    {%include "adblock3.html" %}
+
+    <section class="credits clearfix">
+        <p><strong>Top photo:</strong> <a href="mailto:tshen@dallasnews.com">Ting Shen</a></p>
+    </section>
+    <!-- end credits -->
+
+	<section class="more clearFix">
+		<h5>Read more from The Dallas Morning News</h5>
+		<a class="clearFix" href="http://interactives.dallasnews.com/2016/jerry-jones-office/">
+			<img src="images/_jonesShare.jpg" alt="Jerry Jones" />
+			<h6>Trappings of legend</h6>
+			<p>While Jerry Jones doesn’t live in the past, an exclusive look inside the Cowboys owner’s office is a journey through the franchise’s history.</p>
+		</a>
+		<a class="clearFix" href="http://interactives.dallasnews.com/2016/the-moment/No4.html">
+			<img src="images/_kindredShare.jpg" alt="Derrick Kindred" />
+			<h6>Answering the call</h6>
+			<p>There are only so many things Derrick Kindred can do while hoping for a phone call from the NFL that will change his life.</p>
+		</a>
+		<a class="clearFix" href="http://interactives.dallasnews.com/2015/darren-woodson/">
+			<img src="images/_woodsonShare.jpg" alt="Darren Woodson" />
+			<h6>Ringing endorsement</h6>
+			<p>For 12 seasons with the Dallas Cowboys, Darren Woodson would routinely wreak havoc on Sundays, then onnect with his best friend on Tuesdays.</p>
+		</a>
+	</section>
+	<!-- end more -->
+
+		<div class="shareComments">
+		<ul id="share-bar2" class="width-auto-hack"></ul>
+        <div id="comments"></div>
+	</div>
+	<!-- end shareComments -->
+
+</section>
+<!-- end contentWell -->
+{%endblock%}
+
+
+
+
+{%block custom_foot%}
+	<script type="text/javascript"></script>
+{%endblock%}
+
+
+
+
+
+{%block custom_social_meta%}
+<script type="text/javascript">
+  var storyTitle = "Can Zeke and the offensive line overcome a stout Packers defense? Cowboys Gameday", // headline in tweet card
+	storyURL = "http://interactives.dallasnews.com/2016/cowboys-gameday/week6.html",
+	leadText = "Find out how much of a chance our experts give Dak and the Cowboys against Green Bay", //description in tweet card
+	storyIMG = "http://interactives.dallasnews.com/2016/cowboys-gameday/images/_week6_share.jpg",
+	storyAuthor = "sportsdaydfw",
+	twitterTag = "@SportsDayDFW",
+	comments = true,
+	share = true;
+	OAS_sitepage = 'www.sportsdaydfw.com/dallas-cowboys/';
+</script>
+{%endblock%}

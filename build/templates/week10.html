@@ -1,0 +1,417 @@
+{%extends 'base.html'%}
+{%import 'partials/img.html' as img%}
+
+
+{%block custom_meta%}
+<meta content="cowboys,dallas cowboys,tony romo,dak prescott,dez bryant,ezekiell elliott,steelers,pittsburgh steelers,ben roethlisberger,leÆveon bell,antonio brown,interactives,dallas,dallas fort worth,dallas news,dallas sports,dallas fort worth sports,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper" name="keywords" />
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<meta content="Cowboys-Steelers: What you need to know; experts’ predictions; submit your pick" name="description" />
+<title>Cowboys-Steelers: What you need to know; experts’ predictions; submit your pick</title>
+<meta property="og:url" content="http://interactives.dallasnews.com/2016/cowboys-gameday/week10.html" />
+<meta property="og:title" content="Cowboys-Steelers: What you need to know; experts’ predictions; submit your pick"/>
+<meta property="og:description" content="Our experts are split on whether Cowboys can keep win streak alive against Steelers." name="description"/>
+<meta property="og:image" content="http://interactives.dallasnews.com/2016/cowboys-gameday/images/_week10_share.jpg"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:type" content="article" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@SportsDayDFW" />
+<meta name="twitter:creator" content="SportsDayDFW" />
+
+<meta name="liveFyreID" content="72933033968" />
+
+<meta name="parsely-page" id='parsely-page' content='{"title": "Cowboys-Steelers: What you need to know; experts’ predictions; submit your pick", "link": "http://interactives.dallasnews.com/2016/cowboys-gameday/_week10.html", "image_url": "http://interactives.dallasnews.com/2016/cowboys-gameday/images/week10_share.jpg", "type": "post", "post_id": "72933033968", "pub_date": "2016-11-11T10-00-00Z", "section": "sportsday", "author": ["sportsdaydfw"], "tags": ["cowboys","dallas cowboys","tony romo","dak prescott","dez bryant","ezekiell elliott","steelers","pittsburgh steelers","ben roethlisberger","le’veon bell","antonio brown","interactives","dallas","dallas fort worth","dallas news","dallas sports","dallas fort worth sports","dfw news","dallas newspaper","dallas morning news","dallas morning news newspaper"]}' />
+
+<meta property="og:keywords" content="cowboys,dallas cowboys,tony romo,dak prescott,dez bryant,ezekiell elliott,steelers,pittsburgh steelers,ben roethlisberger,le’veon bell,antonio brown,interactives,dallas,dallas fort worth,dallas news,dallas sports,dallas fort worth sports,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper"/>
+
+<meta name="news_keywords" content="cowboys,dallas cowboys,tony romo,dak prescott,dez bryant,ezekiell elliott,steelers,pittsburgh steelers,ben roethlisberger,le’veon bell,antonio brown,interactives,dallas,dallas fort worth,dallas news,dallas sports,dallas fort worth sports,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper"/>
+{%endblock%}
+
+
+{%block custom_head%}
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
+
+{%endblock%}
+
+
+{%block ad%}
+<script type="text/javascript" src="http://www.googletagservices.com/tag/js/gpt.js"></script>
+<script type="text/javascript">
+DFP_networkId = "11222444";
+var DFPSlotSizes = [];
+if (jQuery(window).width() < 768)
+{
+var DFP_sitepage = "m.DMN/interactives";
+DFPSlotSizes = [320,50]
+var adSlot0 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionTop");
+adSlot0.setTargeting("position", "x01");
+adSlot0.addService(googletag.pubads());
+
+var adSlot1 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionMiddle");
+adSlot1.setTargeting("position", "x02");
+adSlot1.addService(googletag.pubads());
+
+var adSlot2 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionBottom");
+adSlot2.setTargeting("position", "x03");
+adSlot2.addService(googletag.pubads());
+
+}
+else
+{
+var DFP_sitepage = "DMN/interactives";
+ DFPSlotSizes = [728,90]
+var adSlot0 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionTop");
+adSlot0.setTargeting("position", "Top");
+adSlot0.addService(googletag.pubads());
+
+var adSlot1 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionMiddle");
+adSlot1.setTargeting("position", "Top");
+adSlot1.addService(googletag.pubads());
+
+var adSlot2 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionBottom");
+adSlot2.setTargeting("position", "Top");
+adSlot2.addService(googletag.pubads());
+
+ }
+</script>
+<script type="text/javascript">
+googletag.pubads().enableSingleRequest();
+googletag.pubads().enableSyncRendering();
+googletag.enableServices();
+</script>
+{%endblock%}
+
+
+{%block content%}
+
+<script>
+		window.fbAsyncInit = function () {
+			FB.init({
+				appId: '258290334265148',
+				xfbml: true,
+				version: 'v2.3'
+			});
+		};
+
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {
+				return;
+			}
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+
+<section id="contentHeader">
+
+    <!-- the lede image should be cropped to 3000 x 1750 -->
+    {{img.jpg("cowlede_week10", "Dallas Cowboys quarterback Dak Prescott celebrates with fans after the Cowboys won 35-10 in Week 9.", 'ledeImg')}}
+
+
+    <!-- don't forget to update the opponent the opponent team logo image path -->
+    <!-- h1 tag should be "visigint mascot at home mascot" -->
+
+    <div class="gameHead clearFix">
+        <div class="logoBlock">
+            <img class="teamLogo" src="images/_cowSig.png" alt="Cowboys" />
+            <img class="teamLogo" src="images/_steelersSig.png" alt="Steelers" />
+        </div>
+        <h2 id="label">Cowboys Gameday: <span id="seasonWeek">Week 10</span></h2>
+        <h1>Cowboys at Steelers</h1>
+        <p>3:25 p.m. Sunday <strong>TV: </strong>Ch. 4</p>
+        <p><strong>Radio: </strong> KRLD-FM (105.3), KMVK-FM (107.5, Spanish)</p>
+        <p><strong>Line: </strong>Steelers by 2&frac12;</p>
+
+        <!-- end bylineBlock -->
+
+        <div class="shareComments shareCommentsTop">
+            <ul id="share-bar1" class="width-auto-hack"></ul>
+        </div>
+    </div>
+
+</section>
+<!-- end contentHeader -->
+
+<section id="winLoss" class="clearFix cowSection">
+
+    <div id="win">
+        <p class="subhead">A win would mean ...</p>
+        <p>The Cowboys win eight in a row, tying the 1977 team for the longest win streak in franchise history. Speaking of streaks, Dallas would also improve its current run against the AFC North to 6-0 and win its sixth of the last eight meetings against the pedigree Steelers.</p>
+    </div>
+    <!-- end win -->
+
+    <div id="loss">
+        <p class="subhead">A loss would mean ... </p>
+        <p>Quarterback Dak Prescott and Dallas have to deal with a defeat for the first time since way back in the Sept. 11 season opener, more than two months ago. The Steelers would tie the series at 16-16 in the Cowboys’ first road defeat of the season.</p>
+    </div>
+    <!-- end loss -->
+
+</section>
+<!-- end winLoss -->
+
+{%include "adblock1.html" %}
+
+
+    <section class="contentWell clearFix">
+
+    <div class="wideBlock imageBlock">
+
+        <h4 class="sectionLabel">SportsDay’s Picks</h4>
+        {{img.jpg("bigben", "Steelers quarterback Ben Roethlisberger passes the ball against the Baltimore Ravens on November 6, 2016.")}}
+        <p class="cutline">Steelers quarterback Ben Roethlisberger struggled last week against the Ravens in his return from knee surgery. This week, he returns home to Heinz Field, where he has thrown 12 touchdowns and only two interceptions this season. (Patrick Smith/Getty Images)</p>
+    </div>
+    <!-- end wide image -->
+
+    <section id="fourKeys" class="clearFix cowSection">
+        <div class="row clearFix">
+            <div class="staff clearFix">
+                <img src="images/_george.jpg" alt="Brandon George" />
+                <p><strong>Brandon George: </strong>Sure, Pittsburgh presents a daunting road challenge for the Cowboys. The Steelers are one of the league’s top home teams. But this Cowboys team is on a roll and is no slouch on the road. The Cowboys have won 15 of their last 20 regular-season road games. They have already won at Lambeau Field this year against the Packers. They will conquer Heinz Field on Sunday to win their eighth consecutive game and improve to 5-0 on the road. The Steelers just got back quarterback Ben Roethlisberger and have been sputtering, losing their last three games. They won’t turn it around against a Cowboys offense that has dominated time of possession. <strong class="score">Cowboys, 27-24</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_hairopoulos.jpg" alt="Kate Hairopoulos" />
+                <p><strong>Kate Hairopoulos: </strong>The Steelers are 3-1 this season at Heinz Field — a tricky place for Dallas to match the franchise’s longest winning streak at eight games. But that could make pulling it off all the sweeter. If the Cowboys are to do it, they’ll need rookie QB Dak Prescott to take care of the ball. That’s been a known quality of his for the most part, considering he didn’t commit a single turnover in his first four games. But before the Cowboys destroyed the lowly Cleveland Browns last week, Prescott had committed four turnovers (two interceptions, two fumbles) in three games, including three in the red zone. The Steelers have four interceptions and five fumble recoveries this season. <strong class="score">Cowboys, 28-24</strong></p>
+            </div>
+
+            <div class="staff clearFix">
+                <img src="images/_machota.jpg" alt="Jon Machota" />
+                <p><strong>Jon Machota: </strong>The Steelers have been great at home for a long time. They’ve won 19 of their last 25 at Heinz Field. This will be the Cowboys’ toughest challenge since facing Aaron Rodgers at Lambeau Field. They won 30-16, making Rodgers look average. Will they do the same to future Hall of Famer Ben Roethlisberger? Big Ben had left knee surgery a month ago and struggled in his first game back last week. But he’ll be better at home. In his three home starts this season, Roethlisberger has thrown 12 TDs to only two INTs. For his career, Roethlisberger is 68-21 at home. Give me the two-time Super Bowl champ to pull it out in the fourth quarter. <strong class="score">Steelers, 27-24</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_moore.jpg" alt="David Moore" />
+                <p><strong>David Moore: </strong>The Cowboys are the only team that hasn’t allowed a 100-yard rusher or receiver this season. That will change Sunday. Pittsburgh’s Antonio Brown is in the conversation when it comes to the NFL’s top receiver. Le’Veon Bell is a threat at running back. He rushed for 144 yards on only 18 carries against Kansas City in October. One or the other — and worst-case scenario, both — should end the Cowboys’ 100-yard shutout streak. Brown is the most likely candidate. But don’t discount Bell. It’s surprising no team has pounded away at this defense on the ground as a way to counter the Cowboys’ dominance in time of possession. Bell could be the first. <strong class="score">Steelers, 27-24</strong></p>
+            </div>
+        </div>
+
+        <div class="row clearFix">
+            <div class="staff clearFix">
+                <img src="images/_cowlishaw.jpg" alt="Tim Cowlishaw" />
+                <p><strong>Tim Cowlishaw: </strong>Dallas surrenders highest point total of the season, but offense refuses to slow its roll and the club matches its longest single-season win streak ever. <strong class="score">Cowboys, 27-26</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_gosselin.jpg" alt="Rick Gosselin" />
+                <p><strong>Rick Gosselin: </strong>You can get by without half your starting secondary against Cleveland but not against Ben Roethlisberger, Antonio Brown and the Steelers. <strong class="score">Steelers, 31-27</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_horn.jpg" alt="Barry Horn" />
+                <p><strong>Barry Horn: </strong>You can't win 'em all. A Cowboys tight end drops what looked to be a sure TD pass in the end zone. Roger Staubach shakes his head. <strong class="score">Steelers, 27-24</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_sherrington.jpg" alt="Kevin Sherrington" />
+                <p><strong>Kevin Sherrington: </strong>Garrett tells Romo if he asks to go in one more time, he's not taking him on the next road trip. <strong class="score">Cowboys, 27-21</strong></p>
+            </div>
+
+        </div>
+
+
+        <div id="userPick">
+            <h5>You make the call</h5>
+            <p>We want to know who you who think will win this week’s Cowboys game. Enter your score below, and see which team other readers think will take home the “W.” Scores plotted on the lower-right of the chart indicate a predicted Cowboys victory, upper-left indicate a predicted opponent victory. (Note: Only scores below 60 will be shown.)</p>
+
+            <div id="userSubmission">
+
+                <div id="userForm" class="clearFix">
+
+                    <p class="chatter">Who do you think will win? Enter the scores for each team, then click the "submit" button.</p>
+                    <div class="scoreBlock">
+                        <input id="cowScore" type="text" pattern="[0-9]*" placeholder="0" />
+                        <span>Cowboys</span>
+                    </div>
+
+                    <div class="scoreBlock">
+                        <input id="oppScore"  type="text" pattern="[0-9]*" placeholder="0" />
+                        <span id="opponent"></span>
+                    </div>
+
+                    <button id="submit">Submit</button>
+                </div>
+
+                <div id="response" class="noShow clearFix">
+                    <h6>Thank you for your submission</h6>
+                    <p>You picked the <span class="userTeam"></span> to <span class="userResult">win</span>, <span class="userScore"></span>. Share your prediction on social media:</p>
+                    <button id="faceShare">Facebook</button>
+                    <button id="twitterShare">Twitter</button>
+                </div>
+
+                <p class="readout"><span class="predictPercentage"></span> of readers are picking the <span class="predictTeam"></span> to win this week by an average of <span class="predictPoints"></span> points.</p>
+
+
+            </div>
+
+            <div id="chartBlock">
+
+                <div id="tooltip" class="noShow">
+					<p><strong>Cowboys: </strong> <span class="cowTipScore"></span></p>
+					<p><strong><span class="oppTipName"></span>:</strong> <span class="oppTipScore"></span></p>
+                    <p><strong>Times predicted: </strong> <span class="tipPredict"></span></p>
+				</div>
+
+                <div id="chart"></div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- end picks -->
+
+
+
+    {%include "adblock2.html" %}
+
+    <section id="matchup" class="clearFix cowSection">
+
+    <h4 class="sectionLabel">Bob Sturm’s scouting report</h4>
+
+        <div id="matchupContent" class="clearFix">
+
+            <div class="matchupBlock">
+
+            <p class="key"><span class="question">Situation</span><span class="edge">Edge</span><span class="know">In the know</span></p>
+
+                <div id="cowboysRun" class="matchup clearFix">
+                    <p class="question">When the Cowboys run the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_cowSig.png" alt="Cowboys" />
+                    <p class="know">At the risk of being repetitious, the Cowboys are going to receive the advantage in this category every week until someone shows the ability to <a href="http://interactives.dallasnews.com/2016/ezekiel-elliott-rushing-tracker">slow Ezekiel Elliott down</a>. Pittsburgh is formidable against the run, but the Cowboys are used to wearing down their opponent with stubbornness in play-calling. The Cowboys know that while they have been slowed on the ground, nobody has stopped them.</p>
+                </div>
+                <!-- end cowboysRun -->
+
+                <div id="cowboysPass" class="matchup clearFix">
+                    <p class="question">When the Cowboys pass the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_cowSig.png" alt="Cowboys" />
+                    <p class="know">The most unlikely statistic that exists in the NFL these days has the Steelers tied for last in the league in sacks. “Blitzburgh” is trying to figure out how to rattle quarterbacks without exposing their very young secondary and are having a hard time getting consistent results. This could be a real challenge for <a href="http://sportsday.dallasnews.com/dallas-cowboys/cowboys/2016/11/10/former-nfl-scout-tony-romo-dak-prescott-made-dez-bryant-70-million-man?f=r">Dak Prescott and Dez Bryant</a>, but look for plenty of Cole Beasley underneath and Elliott on swing passes.</p>
+                </div>
+                <!-- end cowboysPass -->
+
+                <div id="oppRun" class="matchup clearFix">
+                    <p class="question">When the Steelers run the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_steelersSig.png" alt="Steelers" />
+                    <p class="know">Production from the Steelers’ running game has been down, and while Le’Veon Bell is a real threat, it hasn’t materialized much. Their standout center Maurkice Pouncey is banged up, but if he can go, he joins David DeCastro as two real stout pieces up front. The Cowboys will have to be ready for a significant challenge on the ground.</p>
+                </div>
+                <!-- end oppRun -->
+
+                <div id="oppPass" class="matchup clearFix">
+                    <p class="question">When the Steelers pass the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_steelersSig.png" alt="Steelers" />
+                    <p class="know">When Ben Roethlisberger (knee) is right, there are few QBs in the league who are more difficult to defend and bring down. He can use his legs to stay alive on plays and can throw the ball as well as any player in the business. It will be a significant challenge for Byron Jones and JJ Wilcox as the Steelers love to focus on Antonio Brown underneath long enough to spring a speedster deep.</p>
+                </div>
+                <!-- end oppPass -->
+
+                <div id="specialTeams" class="matchup clearFix">
+                    <p class="question">Special teams</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_cowSig.png" alt="Cowboys" />
+                    <p class="know">Dan Bailey gives the Cowboys a big advantage in the kicking game as the Steelers are rolling with Chris Boswell, who is having a very difficult season. Further, the Steelers had a punt blocked for a touchdown in Baltimore last week.</p>
+                </div>
+                <!-- end specialTeams -->
+
+                <div id="intangibles" class="matchup clearFix">
+                    <p class="question">Intangibles</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_steelersSig.png" alt="Steelers" />
+                    <p class="know">One would imagine that Pittsburgh feels its season is on the line following three consecutive losses that have put everyone on edge in that proud city. The Cowboys roll in with a swagger and a spot on top of the NFC. They would love to keep the good vibes going.</p>
+                </div>
+                <!-- end intagibles -->
+
+            </div>
+        </div>
+
+        </section>
+     </section>
+
+        <section id="spotlight" class="clearFix cowSection">
+
+
+            <!-- this image should be squarely cropped to provide enough depth for the content -->
+            <!-- this subject should be on the left or right side. if right side, remove leftSide class  -->
+
+            <div class="spotContainer">
+                {{img.jpg("antonio-brown", "Antonio Brown")}}
+                <div class="spotlightContent leftSide">
+
+                    <h4 class="sectionLabel whiteTheme">Bob Sturm’s spotlight</h4>
+                    <p>For years, the best receiver in the NFL was Calvin Johnson, the amazing receiver from Detroit who was known simply as &ldquo;Megatron.&rdquo; He was given that name as a tribute to his absurd physical advantages that started with a frame of 6-5, 240 pounds. He used that along with speed and leaping ability to accumulate production that was off the charts.</p>
+                    <p>The Steelers&rsquo; <strong>Antonio Brown</strong> has put up dazzling numbers as well and has been the most productive receiver in the NFL since 2013. What may be surprising is that Brown does it at 5-10, 181 pounds. In 56 games, he has 430 receptions for 5,708 yards and 37 touchdowns, 700 more yards than Atlanta&rsquo;s Julio Jones.</p>
+                    <p>Brown was taken with the 195th pick of the sixth round in the 2010 draft out of Central Michigan. He uses great speed, quickness and is a real technician to dominate on the perimeter. He wears No. 84 to show that &ldquo;eight times four equals 32&rdquo; for each team that passed on him in the draft.</p>
+                    <p>Not only is he unstoppable, but he is drastically underpaid at about $8 million a year in a league where elite WRs receive about twice that. There is no question that he will be a focus of the Cowboys&rsquo; banged-up secondary as he tries to become the first 100-yard receiver against Dallas this season.</p>
+                    <p><strong>Sturm’s prediction: </strong>The Cowboys have the best road record in the NFL since 2014 at 15-5. It’s even more impressive when you consider that they are 14-0 on the road (regular season) in games started with either Tony Romo or Dak Prescott. In other words, their game travels well and the normal trappings of a road challenge don’t bother a team with this dominant offensive line. Can Prescott pass yet another difficult test? I think so, but it won’t be easy or decided before the fourth quarter. <strong>Cowboys, 30-28</strong></p>
+                    <p class="credit">Joe Sargent/Getty Images</p>
+                </div>
+
+            </div>
+
+    </section>
+
+
+
+
+    {%include "adblock3.html" %}
+
+    <section class="credits clearfix">
+        <p><strong>Top photo:</strong> <a href="mailto:alandis@dallasnews.com">Ashley Landis/Staff Photographer</a></p>
+    </section>
+    <!-- end credits -->
+
+	<section class="more clearFix">
+		<h5>Read more from The Dallas Morning News</h5>
+        <a class="clearFix" href="http://interactives.dallasnews.com/2016/ezekiel-elliott-rushing-tracker">
+            <img src="images/_trackerShare.jpg" alt="Ezekiel Elliott" />
+            <h6>Chasing 1,808</h6>
+            <p>Track Ezekiel Elliott’s progress throughout the season as he makes a run at Eric Dickerson’s NFL rookie rushing record.</p>
+        </a>
+		<a class="clearFix" href="http://interactives.dallasnews.com/2016/jerry-jones-office/">
+			<img src="images/_jonesShare.jpg" alt="Jerry Jones" />
+			<h6>Trappings of legend</h6>
+			<p>While Jerry Jones doesn’t live in the past, an exclusive look inside the Cowboys owner’s office is a journey through the franchise’s history.</p>
+		</a>
+		<a class="clearFix" href="http://interactives.dallasnews.com/2015/darren-woodson/">
+			<img src="images/_woodsonShare.jpg" alt="Darren Woodson" />
+			<h6>Ringing endorsement</h6>
+			<p>For 12 seasons with the Dallas Cowboys, Darren Woodson would routinely wreak havoc on Sundays, then onnect with his best friend on Tuesdays.</p>
+		</a>
+	</section>
+	<!-- end more -->
+
+		<div class="shareComments">
+		<ul id="share-bar2" class="width-auto-hack"></ul>
+        <div id="comments"></div>
+	</div>
+	<!-- end shareComments -->
+
+</section>
+<!-- end contentWell -->
+{%endblock%}
+
+
+
+
+{%block custom_foot%}
+	<script type="text/javascript"></script>
+{%endblock%}
+
+
+
+
+
+{%block custom_social_meta%}
+<script type="text/javascript">
+  var storyTitle = "Our experts are split on whether Cowboys can keep win streak alive against Steelers.", // headline in tweet card
+	storyURL = "http://interactives.dallasnews.com/2016/cowboys-gameday/week10.html",
+	leadText = "Cowboys-Steelers: What you need to know; experts’ predictions; submit your pick", //description in tweet card
+	storyIMG = "http://interactives.dallasnews.com/2016/cowboys-gameday/images/_week10_share.jpg",
+	storyAuthor = "sportsdaydfw",
+	twitterTag = "@SportsDayDFW",
+	comments = true,
+	share = true;
+	OAS_sitepage = 'www.sportsdaydfw.com/dallas-cowboys/';
+</script>
+{%endblock%}

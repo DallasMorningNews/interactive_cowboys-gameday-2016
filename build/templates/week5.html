@@ -1,0 +1,417 @@
+{%extends 'base.html'%}
+{%import 'partials/img.html' as img%}
+
+
+{%block custom_meta%}
+<meta content="cowboys,dallas cowboys,bengals,cincinnati bengals,tony romo,dak prescott,ezekiel elliott,andy dalton,jeremy hill,a.j. green,interactives,dallas,dallas fort worth,dallas news,dallas sports,dallas fort worth sports,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper" name="keywords" />
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<meta content="Cowboys-Bengals: What you need to know; experts’ predictions; submit your pick" name="description" />
+<title>Cowboys-Bengals: What you need to know; experts’ predictions; submit your pick</title>
+<meta property="og:url" content="http://interactives.dallasnews.com/2016/cowboys-gameday/week5.html" />
+<meta property="og:title" content="Cowboys-Bengals: What you need to know; experts’ predictions; submit your pick"/>
+<meta property="og:description" content="Find out what Dak, Zeke and the Cowboys need to do to overcome the Bengals’ defense" name="description"/>
+<meta property="og:image" content="http://interactives.dallasnews.com/2016/cowboys-gameday/images/_share_week5.jpg"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:type" content="article" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@SportsDayDFW" />
+<meta name="twitter:creator" content="SportsDayDFW" />
+
+<meta name="liveFyreID" content="88623190667" />
+
+<meta name="parsely-page" id='parsely-page' content='{"title": "Cowboys-Bengals: What you need to know; experts’ predictions; submit your pick", "link": "http://interactives.dallasnews.com/2016/cowboys-gameday/week5.html", "image_url": "http://interactives.dallasnews.com/2016/cowboys-gameday/images/_share_week5.jpg", "type": "post", "post_id": "88623190667", "pub_date": "2016-10-07T10-00-00Z", "section": "sportsday", "author": ["sportsdaydfw"], "tags": ["cowboys","dallas cowboys","bengals",,"cincinnati", "bengals",,"tony romo",,"dak prescott",,"ezekiel elliott",,"andy dalton",,"jeremy hill",,"a.j. green","interactives","dallas","dallas fort worth","dallas news","dallas sports","dallas fort worth sports","dfw news","dallas newspaper","dallas morning news","dallas morning news newspaper"]}' />
+
+<meta property="og:keywords" content="cowboys,dallas cowboys,bengals,cincinnati bengals,tony romo,dak prescott,ezekiel elliott,andy dalton,jeremy hill,a.j. green,interactives,dallas,dallas fort worth,dallas news,dallas sports,dallas fort worth sports,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper"/>
+
+<meta name="news_keywords" content="cowboys,dallas cowboys,bengals,cincinnati bengals,tony romo,dak prescott,ezekiel elliott,andy dalton,jeremy hill,a.j. green,interactives,dallas,dallas fort worth,dallas news,dallas sports,dallas fort worth sports,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper"/>
+{%endblock%}
+
+
+{%block custom_head%}
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
+
+{%endblock%}
+
+
+{%block ad%}
+<script type="text/javascript" src="http://www.googletagservices.com/tag/js/gpt.js"></script>
+<script type="text/javascript">
+DFP_networkId = "11222444";
+var DFPSlotSizes = [];
+if (jQuery(window).width() < 768)
+{
+var DFP_sitepage = "m.DMN/interactives";
+DFPSlotSizes = [320,50]
+var adSlot0 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionTop");
+adSlot0.setTargeting("position", "x01");
+adSlot0.addService(googletag.pubads());
+
+var adSlot1 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionMiddle");
+adSlot1.setTargeting("position", "x02");
+adSlot1.addService(googletag.pubads());
+
+var adSlot2 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionBottom");
+adSlot2.setTargeting("position", "x03");
+adSlot2.addService(googletag.pubads());
+
+}
+else
+{
+var DFP_sitepage = "DMN/interactives";
+ DFPSlotSizes = [728,90]
+var adSlot0 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionTop");
+adSlot0.setTargeting("position", "Top");
+adSlot0.addService(googletag.pubads());
+
+var adSlot1 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionMiddle");
+adSlot1.setTargeting("position", "Top");
+adSlot1.addService(googletag.pubads());
+
+var adSlot2 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionBottom");
+adSlot2.setTargeting("position", "Top");
+adSlot2.addService(googletag.pubads());
+
+ }
+</script>
+<script type="text/javascript">
+googletag.pubads().enableSingleRequest();
+googletag.pubads().enableSyncRendering();
+googletag.enableServices();
+</script>
+{%endblock%}
+
+
+{%block content%}
+
+<script>
+		window.fbAsyncInit = function () {
+			FB.init({
+				appId: '258290334265148',
+				xfbml: true,
+				version: 'v2.3'
+			});
+		};
+
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {
+				return;
+			}
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+
+<section id="contentHeader">
+
+    <!-- the lede image should be cropped to 3000 x 1750 -->
+    {{img.jpg("cowlede_week5", "Terrance Williams scores a touchdown against the San Francisco 49ers", 'ledeImg')}}
+
+
+    <!-- don't forget to update the opponent the opponent team logo image path -->
+    <!-- h1 tag should be "visigint mascot at home mascot" -->
+
+    <div class="gameHead clearFix">
+        <div class="logoBlock">
+            <img class="teamLogo" src="images/_bengalsSig.png" alt="Bengals" />
+            <img class="teamLogo" src="images/_cowSig.png" alt="Cowboys" />
+        </div>
+        <h2 id="label">Cowboys Gameday: <span id="seasonWeek">Week 5</span></h2>
+        <h1>Bengals at Cowboys</h1>
+        <p>3:25 p.m. Weekday <strong>TV: </strong>Ch. 11</p>
+        <p><strong>Radio: </strong> KRLD-FM (105.3), KMVK-FM (107.5, Spanish)</p>
+        <p><strong>Line: </strong>Bengals by 1</p>
+
+        <!-- end bylineBlock -->
+
+        <div class="shareComments shareCommentsTop">
+            <ul id="share-bar1" class="width-auto-hack"></ul>
+        </div>
+    </div>
+
+</section>
+<!-- end contentHeader -->
+
+<section id="winLoss" class="clearFix cowSection">
+
+    <div id="win">
+        <p class="subhead">A win would mean ...</p>
+        <p>The Cowboys would match their victory total (four) from 2015, and give them some street cred, too, considering the Bengals’ recent success in the AFC North. </p>
+    </div>
+    <!-- end win -->
+
+    <div id="loss">
+        <p class="subhead">A loss would mean ... </p>
+        <p>A bit of a coming back to earth after a three-game winning streak under rookie quarterback Dak Prescott. But it wouldn’t be the end of the world for the Cowboys coming against the Bengals’ respected defense and QB Andy Dalton, a Highland Park resident.</p>
+    </div>
+    <!-- end loss -->
+
+</section>
+<!-- end winLoss -->
+
+{%include "adblock1.html" %}
+
+
+    <section class="contentWell clearFix">
+
+    <div class="wideBlock imageBlock">
+
+        <h4 class="sectionLabel">SportsDay’s Picks</h4>
+        {{img.jpg("dak_week5", "Dak Prescott rushes with the ball against the San Francisco 49ers.")}}
+        <p class="cutline">Cowboys quarterback Dak Prescott has continued his hot start. The rookie has led the team to a 3-1 record and has yet to throw an interception in 131 pass attempts to start his career.  (Vernon Bryant/Staff Photographer)</p>
+    </div>
+    <!-- end wide image -->
+
+    <section id="fourKeys" class="clearFix cowSection">
+        <div class="row clearFix">
+            <div class="staff clearFix">
+                <img src="images/_george.jpg" alt="Brandon George" />
+                <p><strong>Brandon George: </strong>This Cowboys defense does have a takeaway in each of its first four games, a nice change of pace after the club tied an NFL record last season for fewest takeaways in a season with 11. But don’t be distracted by that or the 3-1 start, the Cowboys’ defense hasn’t been very good. The Cowboys have only five sacks, four fewer than the Bengals’ defensive line. And what’s been even more glaring: Through four games, the Cowboys have allowed 19 plays of 20 yards or more. A year ago, that number was only 11 given up at this point. Sunday’s game against the Bengals will be about big plays. Cincinnati will have more than Dallas. <strong class="score">Bengals 27-24.</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_hairopoulos.jpg" alt="Kate Hairopoulos" />
+                <p><strong>Kate Hairopoulos: </strong>Cowboys quarterback Dak Prescott will be challenged to win a second straight week without receiver Dez Bryant, and this time against a Bengals defense that is pumped by the return of linebacker Vontaze Burfict after a three-game suspension. But it’s hard to imagine the Bengals coming out of AT&T Stadium with their streak of giving up zero rushing touchdowns this season intact. Ezekiel Elliott and the Dallas offensive line have been too good. The Cowboys defense will squeeze by against receiver A.J. Green and a Bengals’ offense that’s been shaky in the red zone. <strong class="score">Cowboys 24-21</strong></p>
+            </div>
+
+            <div class="staff clearFix">
+                <img src="images/_machota.jpg" alt="Jon Machota" />
+                <p><strong>Jon Machota: </strong>If the Cowboys can’t establish their running game they’ll be in trouble. The Bengals haven’t allowed a 100-yard rusher in their last 15 games. They haven’t allowed a rushing touchdown since December. Cincinnati has one of the best defensive units the Cowboys will face all year. Although Ezekiel Elliott and the offensive line have steadily improved each week, this will be their toughest test to date. The Cowboys don’t consistently win at AT&T Stadium, so I’m giving the edge to a Bengals team that has won 11 of its last 15 on the road and reached the playoffs the last five seasons. <strong class="score">Bengals 24-20</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_moore.jpg" alt="David Moore" />
+                <p><strong>David Moore: </strong>Are the Cowboys a team that has overcome early adversity to establish themselves a playoff contender? Does this surprising start portend more or is it destined to dissipate as the schedule becomes tougher? This game begins a stretch that should supply the answer. Cincinnati has made the playoffs five consecutive seasons. Dallas has failed to make the playoffs in five of the last six seasons. Beat a good team at AT&T Stadium, something the Cowboys have had trouble doing in recent years, and it will signal the Cowboys are on the rise. Lose and it will be hard to argue that this team is any different at this stage. <strong class="score">Bengals 24-21</strong></p>
+            </div>
+        </div>
+
+        <div class="row clearFix">
+            <div class="staff clearFix">
+                <img src="images/_cowlishaw.jpg" alt="Tim Cowlishaw" />
+                <p><strong>Tim Cowlishaw: </strong>Homecoming for Andy Dalton, who is dangerous when not getting sacked, and Cowboys still lack the pressure to turn this game around. <strong class="score">Bengals 26-21</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_gosselin.jpg" alt="Rick Gosselin" />
+                <p><strong>Rick Gosselin: </strong>The Bengals roll into AT&T Stadium with the best defense the Cowboys have seen this season. Life will get tougher for rookie standouts Dak Prescott and Ezekiel Elliott. And the Cowboys don’t have anyone who can cover A.J. Green. Few NFL defenses do. <strong class="score">Bengals 34-17</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_horn.jpg" alt="Barry Horn" />
+                <p><strong>Barry Horn: </strong>Bengals’ two wins against AFC East 1-3 slouches — Jets and Dolphins. Naysayers will have to wait another week for Dak Prescott to falter. Mo Claiborne “holds" A.J. Green to 100 yards and two touchdowns. <strong class="score">Cowboys 28-21</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_sherrington.jpg" alt="Kevin Sherrington" />
+                <p><strong>Kevin Sherrington: </strong>Dak will have to play catch-up this week, meaning more margin for error for a QB who hasn't made any. <strong class="score">Bengals 31-21</strong></p>
+            </div>
+
+        </div>
+
+
+        <div id="userPick">
+            <h5>You make the call</h5>
+            <p>We want to know who you who think will win this week’s Cowboys game. Enter your score below, and see which team other readers think will take home the “W.” Scores plotted on the lower-right of the chart indicate a predicted Cowboys victory, upper-left indicate a predicted opponent victory. (Note: Only scores below 60 will be shown.)</p>
+
+            <div id="userSubmission">
+
+                <div id="userForm" class="clearFix">
+
+                    <p class="chatter">Who do you think will win? Enter the scores for each team, then click the "submit" button.</p>
+                    <div class="scoreBlock">
+                        <input id="cowScore" type="text" pattern="[0-9]*" placeholder="0" />
+                        <span>Cowboys</span>
+                    </div>
+
+                    <div class="scoreBlock">
+                        <input id="oppScore"  type="text" pattern="[0-9]*" placeholder="0" />
+                        <span id="opponent"></span>
+                    </div>
+
+                    <button id="submit">Submit</button>
+                </div>
+
+                <div id="response" class="noShow clearFix">
+                    <h6>Thank you for your submission</h6>
+                    <p>You picked the <span class="userTeam"></span> to <span class="userResult">win</span>, <span class="userScore"></span>. Share your prediction on social media:</p>
+                    <button id="faceShare">Facebook</button>
+                    <button id="twitterShare">Twitter</button>
+                </div>
+
+                <p class="readout"><span class="predictPercentage"></span> of readers are picking the <span class="predictTeam"></span> to win this week by an average of <span class="predictPoints"></span> points.</p>
+
+
+            </div>
+
+            <div id="chartBlock">
+
+                <div id="tooltip" class="noShow">
+					<p><strong>Cowboys: </strong> <span class="cowTipScore"></span></p>
+					<p><strong><span class="oppTipName"></span>:</strong> <span class="oppTipScore"></span></p>
+                    <p><strong>Times predicted: </strong> <span class="tipPredict"></span></p>
+				</div>
+
+                <div id="chart"></div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- end picks -->
+
+
+
+    {%include "adblock2.html" %}
+
+    <section id="matchup" class="clearFix cowSection">
+
+    <h4 class="sectionLabel">Bob Sturm’s scouting report</h4>
+
+        <div id="matchupContent" class="clearFix">
+
+            <div class="matchupBlock">
+
+            <p class="key"><span class="question">Situation</span><span class="edge">Edge</span><span class="know">In the know</span></p>
+
+                <div id="cowboysRun" class="matchup clearFix">
+                    <p class="question">When the Cowboys run the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_cowSig.png" alt="Cowboys" />
+                    <p class="know">Everything about the Bengals’ defense is solid. They are good up front and will make running difficult for the Cowboys as they allow only 3.8 yards a carry. Geno Atkins and Domata Peko lead a stout line that can get penetration. But after their domination inside against San Francisco, Zack Martin, Travis Frederick and Ron Leary are going to like their chances against anyone. Ezekiel Elliott won’t believe how much space he is getting.</p>
+                </div>
+                <!-- end cowboysRun -->
+
+                <div id="cowboysPass" class="matchup clearFix">
+                    <p class="question">When the Cowboys pass the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_cowSig.png" alt="Cowboys" />
+                    <p class="know">So much depends on the ability for Dez Bryant to play at an effective level. If he goes, he will still need to prove he can do special things against a defense that plays lots of zone and almost never blitzes with a heavily populated secondary. The Cowboys must get the ball out quick and prepare for physicality after the catch.</p>
+                </div>
+                <!-- end cowboysPass -->
+
+                <div id="oppRun" class="matchup clearFix">
+                    <p class="question">When the Bengals run the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_bengalsSig.png" alt="Bengals" />
+                    <p class="know">Cincinnati is struggling to get its running game going this year, but Andrew Whitworth is the left tackle who sets the tone for this offense in a division (AFC North) where finesse has no chance to compete. Dallas is allowing 4.5 yards per carry. That isn’t worst in the league, but it’s getting closer.</p>
+                </div>
+                <!-- end oppRun -->
+
+                <div id="oppPass" class="matchup clearFix">
+                    <p class="question">When the Bengals pass the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_bengalsSig.png" alt="Bengals" />
+                    <p class="know">In four games, Andy Dalton has been sacked 13 times. With defensive end DeMarcus Lawrence back, the Cowboys will hope to capitalize on a Bengals offense that’s 31st in the NFL on converting third downs. A.J. Green is the only proven weapon in the passing game but that might be plenty if he gets loose as he often does.</p>
+                </div>
+                <!-- end oppPass -->
+
+                <div id="specialTeams" class="matchup clearFix">
+                    <p class="question">Special teams</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_bengalsSplitSig.png" alt="Even" />
+                    <p class="know">Dan Bailey is dealing with a back situation that has caused him to miss field goal attempts in back-to-back games. The Cowboys could use some juice from returner Lucky Whitehead. For the Bengals, Adam Jones is back in Texas (played nine games here in 2008) to offer a small-level threat to the Bengals’ return game. Mike Nugent has actually outkicked Bailey this season, and Kevin Huber is a strong punter.</p>
+                </div>
+                <!-- end specialTeams -->
+
+                <div id="intangibles" class="matchup clearFix">
+                    <p class="question">Intangibles</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_bengalsSplitSig.png" alt="Even" />
+                    <p class="know">The Cowboys are confident after winning three straight but now hit a stretch of perennial playoff contendes. The Bengals are a physical bunch prepared for a street fight, and Dallas must answer the bell against a team that will force the offense to take their gains in small amounts. Within the next eight days into the bye week, the Cowboys are going to learn plenty about themselves.</p>
+                </div>
+                <!-- end intagibles -->
+
+            </div>
+        </div>
+
+        </section>
+     </section>
+
+        <section id="spotlight" class="clearFix cowSection">
+
+
+            <!-- this image should be squarely cropped to provide enough depth for the content -->
+            <!-- this subject should be on the left or right side. if right side, remove leftSide class  -->
+
+            <div class="spotContainer">
+                {{img.jpg("atkins", "Bengals defensive lineman Geno Atkins.")}}
+                <div class="spotlightContent">
+
+                    <h4 class="sectionLabel whiteTheme">Bob Sturm’s spotlight</h4>
+                    <p>One of the reasons the Bengals are so impressive is they have two difference makers on their defensive line. Carlos Dunlap (second round) and <strong>Geno Atkins</strong> (fourth round) were selected in the 2010 draft. While Dunlap took a few years to figure things out, Atkins has been at the top of his position for most of his career.</p>
+                    <p>That hit an obstacle in 2013 when Atkins tore his ACL, but last season he returned to elite status and his play in September verifies his excellence yet again.</p>
+                    <p>Atkins is so quick that he often lines up in the 3-technique (outside shoulder of a guard), and the opposing guard can barely get out of his stance before Atkins is in the backfield. He is the rare combination of power and quickness that allows him to be equally devastating against the run and pass.</p>
+                    <p> The combination of Dunlap and Atkins has made the Bengals the least likely team to blitz, and yet this defensive line can get consistent and dominating pressure all on its own. Cowboys guard Ron Leary is going to be tested heavily Sunday.</p>
+                    <p><strong>Sturm’s prediction: Bengals 27-21. </strong>The Bengals are in the hardest part of their schedule, whereas the Cowboys are just getting started. This is another game that should require some fourth-quarter drama, but Dallas is 2-12 in Arlington as home underdogs. They have to prove they can handle heavyweights at home, and I am not sure they are healthy enough to do so.</p>
+                    <p class="credit">Thomas B. Shea/Getty Images</p>
+                </div>
+
+            </div>
+
+    </section>
+
+
+
+
+    {%include "adblock3.html" %}
+
+    <section class="credits clearfix">
+        <p><strong>Top photo:</strong> Vernon Bryant/Staff Photographer</a></p>
+    </section>
+    <!-- end credits -->
+
+	<section class="more clearFix">
+		<h5>Read more from The Dallas Morning News</h5>
+		<a class="clearFix" href="http://interactives.dallasnews.com/2016/jerry-jones-office/">
+			<img src="images/_jonesShare.jpg" alt="Jerry Jones" />
+			<h6>Trappings of legend</h6>
+			<p>While Jerry Jones doesn’t live in the past, an exclusive look inside the Cowboys owner’s office is a journey through the franchise’s history.</p>
+		</a>
+		<a class="clearFix" href="http://interactives.dallasnews.com/2016/the-moment/No4.html">
+			<img src="images/_kindredShare.jpg" alt="Derrick Kindred" />
+			<h6>Answering the call</h6>
+			<p>There are only so many things Derrick Kindred can do while hoping for a phone call from the NFL that will change his life.</p>
+		</a>
+		<a class="clearFix" href="http://interactives.dallasnews.com/2015/darren-woodson/">
+			<img src="images/_woodsonShare.jpg" alt="Darren Woodson" />
+			<h6>Ringing endorsement</h6>
+			<p>For 12 seasons with the Dallas Cowboys, Darren Woodson would routinely wreak havoc on Sundays, then onnect with his best friend on Tuesdays.</p>
+		</a>
+	</section>
+	<!-- end more -->
+
+		<div class="shareComments">
+		<ul id="share-bar2" class="width-auto-hack"></ul>
+        <div id="comments"></div>
+	</div>
+	<!-- end shareComments -->
+
+</section>
+<!-- end contentWell -->
+{%endblock%}
+
+
+
+
+{%block custom_foot%}
+	<script type="text/javascript"></script>
+{%endblock%}
+
+
+
+
+
+{%block custom_social_meta%}
+<script type="text/javascript">
+  var storyTitle = "Find out what Dak, Zeke and the Cowboys need to do to overcome the Bengals’ defense", // headline in tweet card
+	storyURL = "http://interactives.dallasnews.com/2016/cowboys-gameday/week5.html",
+	leadText = "Cowboys-Bengals: What you need to know; experts’ predictions; submit your pick", //description in tweet card
+	storyIMG = "http://interactives.dallasnews.com/2016/cowboys-gameday/images/_share_week5.jpg",
+	storyAuthor = "sportsdaydfw",
+	twitterTag = "@SportsDayDFW",
+	comments = true,
+	share = true;
+	OAS_sitepage = 'www.sportsdaydfw.com/dallas-cowboys/';
+</script>
+{%endblock%}

@@ -1,0 +1,415 @@
+{%extends 'base.html'%}
+{%import 'partials/img.html' as img%}
+
+
+{%block custom_meta%}
+<meta content="cowboys,dallas cowboys,tony romo,dak prescott,ezekiel elliott,dez bryant,cleveland browns,browns,interactives,dallas,dallas fort worth,dallas news,dallas sports,dallas fort worth sports,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper" name="keywords" />
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<meta content="Cowboys-Browns: What you need to know; experts’ predictions; submit your pick" name="description" />
+<title>Cowboys-Browns: What you need to know; experts’ predictions; submit your pick</title>
+<meta property="og:url" content="http://interactives.dallasnews.com/2016/cowboys-gameday/week9.html" />
+<meta property="og:title" content="Cowboys-Browns: What you need to know; experts’ predictions; submit your pick"/>
+<meta property="og:description" content="Ezekiel Elliott and the Cowboys look to feast against hapless Browns defense." name="description"/>
+<meta property="og:image" content="http://interactives.dallasnews.com/2016/cowboys-gameday/images/_week9_shareImage.jpg"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:type" content="article" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@SportsDayDFW" />
+<meta name="twitter:creator" content="SportsDayDFW" />
+
+<meta name="liveFyreID" content="7817380572" />
+
+<meta name="parsely-page" id='parsely-page' content='{"title": "Cowboys-Browns: What you need to know; experts’ predictions; submit your pick", "link": "http://interactives.dallasnews.com/2016/cowboys-gameday/week9.html", "image_url": "http://interactives.dallasnews.com/2016/cowboys-gameday/images/_week9_shareImage.jpg", "type": "post", "post_id": "7817380572", "pub_date": "2016-11-04T10-00-00Z", "section": "sportsday", "author": ["sportsdaydfw"], "tags": ["cowboys","dallas cowboys","tony romo","dak prescott","ezekiel elliott","dez bryant","cleveland browns","browns","interactives","dallas","dallas fort worth","dallas news","dallas sports","dallas fort worth sports","dfw news","dallas newspaper","dallas morning news","dallas morning news newspaper"]}' />
+
+<meta property="og:keywords" content="cowboys,dallas cowboys,tony romo,dak prescott,ezekiel elliott,dez bryant,cleveland browns,browns,interactives,dallas,dallas fort worth,dallas news,dallas sports,dallas fort worth sports,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper"/>
+
+<meta name="news_keywords" content="cowboys,dallas cowboys,tony romo,dak prescott,ezekiel elliott,dez bryant,cleveland browns,browns,interactives,dallas,dallas fort worth,dallas news,dallas sports,dallas fort worth sports,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper"/>
+{%endblock%}
+
+
+{%block custom_head%}
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
+{%endblock%}
+
+
+{%block ad%}
+<script type="text/javascript" src="http://www.googletagservices.com/tag/js/gpt.js"></script>
+<script type="text/javascript">
+DFP_networkId = "11222444";
+var DFPSlotSizes = [];
+if (jQuery(window).width() < 768)
+{
+var DFP_sitepage = "m.DMN/interactives";
+DFPSlotSizes = [320,50]
+var adSlot0 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionTop");
+adSlot0.setTargeting("position", "x01");
+adSlot0.addService(googletag.pubads());
+
+var adSlot1 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionMiddle");
+adSlot1.setTargeting("position", "x02");
+adSlot1.addService(googletag.pubads());
+
+var adSlot2 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionBottom");
+adSlot2.setTargeting("position", "x03");
+adSlot2.addService(googletag.pubads());
+
+}
+else
+{
+var DFP_sitepage = "DMN/interactives";
+ DFPSlotSizes = [728,90]
+var adSlot0 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionTop");
+adSlot0.setTargeting("position", "Top");
+adSlot0.addService(googletag.pubads());
+
+var adSlot1 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionMiddle");
+adSlot1.setTargeting("position", "Top");
+adSlot1.addService(googletag.pubads());
+
+var adSlot2 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionBottom");
+adSlot2.setTargeting("position", "Top");
+adSlot2.addService(googletag.pubads());
+
+ }
+</script>
+<script type="text/javascript">
+googletag.pubads().enableSingleRequest();
+googletag.pubads().enableSyncRendering();
+googletag.enableServices();
+</script>
+{%endblock%}
+
+
+{%block content%}
+
+<script>
+		window.fbAsyncInit = function () {
+			FB.init({
+				appId: '258290334265148',
+				xfbml: true,
+				version: 'v2.3'
+			});
+		};
+
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {
+				return;
+			}
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+
+<section id="contentHeader">
+
+    <!-- the lede image should be cropped to 3000 x 1750 -->
+    {{img.jpg("cowlede_week9", "Dez Bryant waves the Cowboys flag.", 'ledeImg')}}
+
+
+    <!-- don't forget to update the opponent the opponent team logo image path -->
+    <!-- h1 tag should be "visigint mascot at home mascot" -->
+
+    <div class="gameHead clearFix">
+        <div class="logoBlock">
+            <img class="teamLogo" src="images/_cowSig.png" alt="Cowboys" />
+            <img class="teamLogo" src="images/_brownsSig.png" alt="Browns" />
+        </div>
+        <h2 id="label">Cowboys Gameday: <span id="seasonWeek">Week 9</span></h2>
+        <h1>Cowboys at Browns</h1>
+        <p>Noon Sunday <strong>TV: </strong>Ch. 4</p>
+        <p><strong>Radio: </strong> KRLD-FM (105.3), KMVK-FM (107.5, Spanish)</p>
+        <p><strong>Line: </strong>Cowboys by 7</p>
+
+        <!-- end bylineBlock -->
+
+        <div class="shareComments shareCommentsTop">
+            <ul id="share-bar1" class="width-auto-hack"></ul>
+        </div>
+    </div>
+
+</section>
+<!-- end contentHeader -->
+
+<section id="winLoss" class="clearFix cowSection">
+
+    <div id="win">
+        <p class="subhead">A win would mean ...</p>
+        <p>The Cowboys remain undefeated on the road and have won seven straight overall, their longest winning streak since the 2007 season. It would be the first time they started the season 0-1 and went on to win the next seven games. </p>
+    </div>
+    <!-- end win -->
+
+    <div id="loss">
+        <p class="subhead">A loss would mean ... </p>
+        <p>Clevelanders get some solace after that World Series heartbreak. The lowly Browns, one of only four teams that hold a series advantage over the Cowboys, will have finally earned their first win of the season after starting 0-8. The Dawg Pound parties hard. </p>
+    </div>
+    <!-- end loss -->
+
+</section>
+<!-- end winLoss -->
+
+{%include "adblock1.html" %}
+
+    <section class="contentWell clearFix">
+
+    <div class="wideBlock imageBlock">
+
+        <h4 class="sectionLabel">SportsDay’s Picks</h4>
+        {{img.jpg("zeke-week9", "Dallas Cowboys running back Ezekiel Elliott hurdles Philadelphia safety Rodney McLeod during the Cowboys week 8 victory.")}}
+        <p class="cutline">Ezekiel Elliott, who was held under 100 yards rushing by the Eagles last week, faces the second-worst run defense in the league Sunday in the Cleveland Browns. (Smiley N. Pool/Staff Photographer)</p>
+    </div>
+    <!-- end wide image -->
+
+    <section id="fourKeys" class="clearFix cowSection">
+        <div class="row clearFix">
+            <div class="staff clearFix">
+                <img src="images/_george.jpg" alt="Brandon George" />
+                <p><strong>Brandon George: </strong>Forget about who plays quarterback for Cleveland, or for the Cowboys, for that matter. This game will be all about Cowboys rookie running back Ezekiel Elliott. The <a href="http://interactives.dallasnews.com/2016/ezekiel-elliott-rushing-tracker">league’s leading rusher</a> should have his way against a Browns team that has the second-worst rushing defense in the league (allowing 143.8 yards per game on the ground). Elliott didn’t quite get to 100 yards rushing a week ago in an overtime win over Philadelphia. He could make up for it this time around with his first 200-yard rushing game. The Cowboys take an early lead behind Elliott and never look back in running away with a seventh consecutive victory. <strong class="score">Cowboys, 27-17</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_hairopoulos.jpg" alt="Kate Hairopoulos" />
+                <p><strong>Kate Hairopoulos: </strong>Every once in a while, a mismatch is just as obvious as it appears. The winless Browns were handled by the New England Patriots, Philadelphia Eagles and Washington Redskins, a.k.a. the teams they've faced with winning records this season. While they've had some close losses along the way, including an overtime game and last week's 31-28 squeaker against the New York Jets, the almosts haven't come against opponents with winning records. The Browns allow almost 30 points a game, the worst average in the NFL. The Dallas offense is going to roll and will make sure to clean up the sloppiness shown in last week's overtime win over Philadelphia. <strong class="score">Cowboys, 34-21</strong></p>
+            </div>
+
+            <div class="staff clearFix">
+                <img src="images/_machota.jpg" alt="Jon Machota" />
+                <p><strong>Jon Machota: </strong>This is the one game on the Cowboys’ schedule in which it doesn’t matter who starts at quarterback. Dallas would defeat Cleveland with Dak Prescott, Tony Romo, Kellen Moore, Mark Sanchez, Matt Cassel or Brandon Weeden under center. The Cowboys have the talent to make a deep postseason run. The Browns are hoping not to become the second team in NFL history to finish 0-16. They are halfway there. It might not end up being the most entertaining game but there should be a <a href="http://sportsday.dallasnews.com/dallas-cowboys/cowboys/2016/11/03/dez-bryant-looking-forward-matchup-joe-haden-plans-trade-jersey-cleats-game?f=r">fun matchup to watch</a> between Dez Bryant and standout Browns corner Joe Haden. Bryant has caught at least one touchdown pass in his last 14 games against AFC opponents. <strong class="score">Cowboys, 31-17</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_moore.jpg" alt="David Moore" />
+                <p><strong>David Moore: </strong>It’s become popular to label this matchup as a trap game. This theory is based on the fear that the Cowboys can’t keep this six-game winning streak going much longer. It’s based on the belief that the more a team loses — Cleveland is 0-8 this season and is 11 months removed from its last victory — it must stumble across a victory at some point. While all this stirs conversation it has no basis in reality. What have the Cowboys done to make you think they shouldn’t win this game? Dallas is undefeated on the road and has beaten Aaron Rodgers at Lambeau Field. You don’t think the Cowboys can get the best of Josh McCown or Cody Kessler at FirstEnergy Stadium? <strong class="score">Cowboys, 30-21</strong></p>
+            </div>
+        </div>
+
+        <div class="row clearFix">
+		
+            <div class="staff clearFix">
+                <img src="images/_cowlishaw.jpg" alt="Tim Cowlishaw" />
+                <p><strong>Tim Cowlishaw: </strong>Cody Kessler is one of the few QBs with a lower interception rate than Dak Prescott, but that won't be enough to end the Cowboys' streak or Cleveland's. <strong class="score">Cowboys, 27-21</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_gosselin.jpg" alt="Rick Gosselin" />
+                <p><strong>Rick Gosselin: </strong>The Browns can throw the ball with Cody Kessler, Corey Coleman, Terrelle Pryor, Gary Barnidge and Duke Johnson. The Cowboys are two starting defensive backs down. <strong class="score">Cowboys, 31-27</strong></p>
+            </div>
+
+            <div class="staff clearFix">
+                <img src="images/_horn.jpg" alt="Barry Horn" />
+                <p><strong>Barry Horn: </strong>My heart says the Browns won’t continue to go winless while the Cowboys are due for a correction. My brain says the Browns have the 32nd ranked defense in the league and won’t be able to stop Ohio State’s Ezekiel Elliott and his buddies Dak Prescott and Dez Bryant. <strong class="score">Cowboys, 33-21</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_sherrington.jpg" alt="Kevin Sherrington" />
+                <p><strong>Kevin Sherrington: </strong>Hue Jackson comes over at halftime and asks if he can borrow one of the Cowboys' QBs. <strong class="score">Cowboys, 31-17</strong></p>
+            </div>
+
+        </div>
+
+
+        <div id="userPick">
+            <h5>You make the call</h5>
+            <p>We want to know who you who think will win this week’s Cowboys game. Enter your score below, and see which team other readers think will take home the “W.” Scores plotted on the lower-right of the chart indicate a predicted Cowboys victory, upper-left indicate a predicted opponent victory. (Note: Only scores below 60 will be shown.)</p>
+
+            <div id="userSubmission">
+
+                <div id="userForm" class="clearFix">
+
+                    <p class="chatter">Who do you think will win? Enter the scores for each team, then click the "submit" button.</p>
+                    <div class="scoreBlock">
+                        <input id="cowScore" type="text" pattern="[0-9]*" placeholder="0" />
+                        <span>Cowboys</span>
+                    </div>
+
+                    <div class="scoreBlock">
+                        <input id="oppScore"  type="text" pattern="[0-9]*" placeholder="0" />
+                        <span id="opponent"></span>
+                    </div>
+
+                    <button id="submit">Submit</button>
+                </div>
+
+                <div id="response" class="noShow clearFix">
+                    <h6>Thank you for your submission</h6>
+                    <p>You picked the <span class="userTeam"></span> to <span class="userResult">win</span>, <span class="userScore"></span>. Share your prediction on social media:</p>
+                    <button id="faceShare">Facebook</button>
+                    <button id="twitterShare">Twitter</button>
+                </div>
+
+                <p class="readout"><span class="predictPercentage"></span> of readers are picking the <span class="predictTeam"></span> to win this week by an average of <span class="predictPoints"></span> points.</p>
+
+
+            </div>
+
+            <div id="chartBlock">
+
+                <div id="tooltip" class="noShow">
+					<p><strong>Cowboys: </strong> <span class="cowTipScore"></span></p>
+					<p><strong><span class="oppTipName"></span>:</strong> <span class="oppTipScore"></span></p>
+                    <p><strong>Times predicted: </strong> <span class="tipPredict"></span></p>
+				</div>
+
+                <div id="chart"></div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- end picks -->
+
+
+
+    {%include "adblock2.html" %}
+
+    <section id="matchup" class="clearFix cowSection">
+
+    <h4 class="sectionLabel">Bob Sturm’s scouting report</h4>
+
+        <div id="matchupContent" class="clearFix">
+
+            <div class="matchupBlock">
+
+            <p class="key"><span class="question">Situation</span><span class="edge">Edge</span><span class="know">In the know</span></p>
+
+                <div id="cowboysRun" class="matchup clearFix">
+                    <p class="question">When the Cowboys run the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_cowSig.png" alt="Cowboys" />
+                    <p class="know">This is a matchup that suggests the mismatch of the week as the Cowboys continue to slice through even the toughest opponents on the ground and the Browns concede the second-most yards per game and the fourth-most yards per carry. The Buckeye State homecoming of Ezekiel Elliott will certainly include a load of feeding No. 21 the ball first and foremost.</p>
+                </div>
+                <!-- end cowboysRun -->
+
+                <div id="cowboysPass" class="matchup clearFix">
+                    <p class="question">When the Cowboys pass the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_cowSig.png" alt="Cowboys" />
+                    <p class="know">One must assume that future Cowboys opponents will be studying the Eagles’ methods closely. The trouble is, mimicking the Eagles’ plan requires their defensive talent. The Browns have some interesting defensive pieces, but they’re near the league basement in just about every defensive category.</p>
+                </div>
+                <!-- end cowboysPass -->
+
+                <div id="oppRun" class="matchup clearFix">
+                    <p class="question">When the Browns run the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_brownsSig.png" alt="Browns" />
+                    <p class="know">Given the Browns’ mess at QB, one of the more under-reported stories is how successful they have been on the ground. They have ground out almost 5 yards per carry. That puts them third in that category (Dallas is fourth). Dallas is coming off a game with plenty of tackles behind the line of scrimmage as Tyrone Crawford and Terrell McClain continue to impress.</p>
+                </div>
+                <!-- end oppRun -->
+
+                <div id="oppPass" class="matchup clearFix">
+                    <p class="question">When the Browns pass the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_cowSig.png" alt="Even" />
+                    <p class="know">You would be hard-pressed to find another team that has used five different quarterbacks, who each have thrown at least 24 passes, in its first eight games. Now, Cody Kessler re-emerges after having been knocked out of two games. With a talented TE in Gary Barnidge, WR Terrelle Pryor and the return of Baylor rookie WR Corey Coleman, the Browns will see what the USC quarterback (taken 42 picks before Prescott last April) can do against <a href="http://sportsday.dallasnews.com/dallas-cowboys/cowboys/2016/11/03/cowboys-d-believes-just-fine-without-claiborne-church?f=r">a Cowboys secondary that is banged up</a>.</p>
+                </div>
+                <!-- end oppPass -->
+
+                <div id="specialTeams" class="matchup clearFix">
+                    <p class="question">Special teams</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_brownsSplitSig.png" alt="Even" />
+                    <p class="know">Duke Johnson hasn’t necessarily set the world on fire as a running back, but his punt return ability is demonstrating his shifty abilities, and he certainly can get into the open field if you aren’t cautious. The Cowboys are coming off a trying special teams effort with constant flags bringing them back, but we won’t soon forget the Chris Jones fake punt that might have saved the evening.</p>
+                </div>
+                <!-- end specialTeams -->
+
+                <div id="intangibles" class="matchup clearFix">
+                    <p class="question">Intangibles</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_cowSig.png" alt="Cowboys" />
+                    <p class="know">Playing a road game against a winless team in November or December always gives the opposing coach indigestion because almost every team will sneak a win at some point. Trying to get your guys ready for a noon start against this opponent when you are red hot and the Browns seem to be very poor is a challenge. Given that the Cowboys have a young QB trying to hold off his competition, I imagine the offense will be ready to go.</p>
+                </div>
+                <!-- end intagibles -->
+
+            </div>
+        </div>
+
+        </section>
+     </section>
+
+        <section id="spotlight" class="clearFix cowSection">
+
+
+            <!-- this image should be squarely cropped to provide enough depth for the content -->
+            <!-- this subject should be on the left or right side. if right side, remove leftSide class  -->
+
+            <div class="spotContainer">
+                {{img.jpg("pryor", "Cleveland wide receiver Terrell Pryor")}}
+                <div class="spotlightContent">
+
+                    <h4 class="sectionLabel whiteTheme">Bob Sturm’s spotlight</h4>
+                    <p>There is not much good football news in Cleveland as the Browns play yet another season that seems geared to get the top pick in the draft. That said, they are beginning to assemble some special talents. Perhaps the one that sticks out most is <strong>Terrelle Pryor</strong>, who spent the first four seasons of his NFL career as a quarterback. He even set the NFL record for longest TD run by a QB when Oakland started him for 10 games after he was the final draft selection by former owner Al Davis (2011 supplemental draft).</p>
+                    <p>Last season, after he was being released for the fourth time, Pryor declared that he would like to take a shot at wide receiver. The Browns were interested, and now he appears to be a legitimate breakout star at age 27. With his 6-4, 223-pound frame, a wingspan that gives him a phenomenal catch radius and his electric speed, he is a real matchup nightmare.</p>
+                    <p>How much so? Last Sunday, he had Darrelle Revis visibly frustrated on another big day. He ranks 14th in catches and 18th in yards this year, despite complete QB chaos in Cleveland. He wins most of the aerial battles he fights, and he is an absolute handful.</p>
+                    <p><strong>Sturm’s prediction: </strong>Though I expect this will be competitive, the Cowboys are too strong up front to fall into the normal road traps, and with Elliott looking for chances to shine, I expect it will be a day for him to dominate. <strong>Cowboys, 31-17</strong></p>
+                    <p class="credit">David Richard/The Associated Press</p>
+                </div>
+
+            </div>
+
+    </section>
+
+
+
+
+    {%include "adblock3.html" %}
+
+    <section class="credits clearfix">
+        <p><strong>Top photo:</strong> <a href="mailto:spool@dallasnews.com">Smiley N. Pool/Staff Photographer</a></p>
+    </section>
+    <!-- end credits -->
+
+	<section class="more clearFix">
+		<h5>Read more from The Dallas Morning News</h5>
+        <a class="clearFix" href="http://interactives.dallasnews.com/2016/ezekiel-elliott-rushing-tracker">
+            <img src="images/_trackerShare.jpg" alt="Ezekiel Elliott" />
+            <h6>Chasing 1,808</h6>
+            <p>Track Ezekiel Elliott’s progress throughout the season as he makes a run at Eric Dickerson’s NFL rookie rushing record.</p>
+        </a>
+		<a class="clearFix" href="http://interactives.dallasnews.com/2016/jerry-jones-office/">
+			<img src="images/_jonesShare.jpg" alt="Jerry Jones" />
+			<h6>Trappings of legend</h6>
+			<p>While Jerry Jones doesn’t live in the past, an exclusive look inside the Cowboys owner’s office is a journey through the franchise’s history.</p>
+		</a>
+		<a class="clearFix" href="http://interactives.dallasnews.com/2015/darren-woodson/">
+			<img src="images/_woodsonShare.jpg" alt="Darren Woodson" />
+			<h6>Ringing endorsement</h6>
+			<p>For 12 seasons with the Dallas Cowboys, Darren Woodson would routinely wreak havoc on Sundays, then onnect with his best friend on Tuesdays.</p>
+		</a>
+	</section>
+	<!-- end more -->
+
+		<div class="shareComments">
+		<ul id="share-bar2" class="width-auto-hack"></ul>
+        <div id="comments"></div>
+	</div>
+	<!-- end shareComments -->
+
+</section>
+<!-- end contentWell -->
+{%endblock%}
+
+
+
+
+{%block custom_foot%}
+	<script type="text/javascript"></script>
+{%endblock%}
+
+
+
+
+
+{%block custom_social_meta%}
+<script type="text/javascript">
+  var storyTitle = "Ezekiel Elliott and the Cowboys look to feast against hapless Browns defense.", // headline in tweet card
+	storyURL = "http://interactives.dallasnews.com/2016/cowboys-gameday/week9.html",
+	leadText = "Cowboys-Browns: What you need to know; experts’ predictions; submit your pick", //description in tweet card
+	storyIMG = "http://interactives.dallasnews.com/2016/cowboys-gameday/images/_week9_shareImage.jpg",
+	storyAuthor = "sportsdaydfw",
+	twitterTag = "@SportsDayDFW",
+	comments = true,
+	share = true;
+	OAS_sitepage = 'www.sportsdaydfw.com/dallas-cowboys/';
+</script>
+{%endblock%}

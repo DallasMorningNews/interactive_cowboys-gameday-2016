@@ -1,0 +1,419 @@
+{%extends 'base.html'%}
+{%import 'partials/img.html' as img%}
+
+
+{%block custom_meta%}
+<meta content="cowboys,dallas cowboys,tony romo,interactives,dallas,dallas fort worth,dallas news,dallas sports,dallas fort worth sports,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper" name="keywords" />
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<meta content="Cowboys-Ravens: What you need to know; experts’ predictions; submit your pick" name="description" />
+<title>Cowboys-Ravens: What you need to know; experts’ predictions; submit your pick</title>
+<meta property="og:url" content="http://interactives.dallasnews.com/2016/cowboys-gameday/week11.html" />
+<meta property="og:title" content="Cowboys-Ravens: What you need to know; experts’ predictions; submit your pick"/>
+<meta property="og:description" content="Will the NFL’s best defense be able to stop the Cowboys?" name="description"/>
+<meta property="og:image" content="http://interactives.dallasnews.com/2016/cowboys-gameday/images/_week11_share.jpg"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:type" content="article" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@SportsDayDFW" />
+<meta name="twitter:creator" content="SportsDayDFW" />
+
+<meta name="liveFyreID" content="46765395964" />
+
+<meta name="parsely-page" id='parsely-page' content='{"title": "Cowboys-Ravens: What you need to know; experts’ predictions; submit your pick", "link": "http://interactives.dallasnews.com/2016/cowboys-gameday/week11.html", "image_url": "http://interactives.dallasnews.com/2016/cowboys-gameday/images/_week11_share.jpg", "type": "post", "post_id": "46765395964", "pub_date": "2016-11-11T10-00-00Z", "section": "sportsday", "author": ["sportsdaydfw"], "tags": ["cowboys","dallas cowboys","tony romo","interactives","dallas","dallas fort worth","dallas news","dallas sports","dallas fort worth sports","dfw news","dallas newspaper","dallas morning news","dallas morning news newspaper"]}' />
+
+<meta property="og:keywords" content="cowboys,dallas cowboys,tony romo,interactives,dallas,dallas fort worth,dallas news,dallas sports,dallas fort worth sports,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper"/>
+
+<meta name="news_keywords" content="cowboys,dallas cowboys,tony romo,interactives,dallas,dallas fort worth,dallas news,dallas sports,dallas fort worth sports,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper"/>
+{%endblock%}
+
+
+{%block custom_head%}
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
+
+{%endblock%}
+
+
+{%block ad%}
+<script type="text/javascript" src="http://www.googletagservices.com/tag/js/gpt.js"></script>
+<script type="text/javascript">
+DFP_networkId = "11222444";
+var DFPSlotSizes = [];
+if (jQuery(window).width() < 768)
+{
+var DFP_sitepage = "m.DMN/interactives";
+DFPSlotSizes = [320,50]
+var adSlot0 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionTop");
+adSlot0.setTargeting("position", "x01");
+adSlot0.addService(googletag.pubads());
+
+var adSlot1 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionMiddle");
+adSlot1.setTargeting("position", "x02");
+adSlot1.addService(googletag.pubads());
+
+var adSlot2 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionBottom");
+adSlot2.setTargeting("position", "x03");
+adSlot2.addService(googletag.pubads());
+
+}
+else
+{
+var DFP_sitepage = "DMN/interactives";
+ DFPSlotSizes = [728,90]
+var adSlot0 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionTop");
+adSlot0.setTargeting("position", "Top");
+adSlot0.addService(googletag.pubads());
+
+var adSlot1 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionMiddle");
+adSlot1.setTargeting("position", "Top");
+adSlot1.addService(googletag.pubads());
+
+var adSlot2 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionBottom");
+adSlot2.setTargeting("position", "Top");
+adSlot2.addService(googletag.pubads());
+
+ }
+</script>
+<script type="text/javascript">
+googletag.pubads().enableSingleRequest();
+googletag.pubads().enableSyncRendering();
+googletag.enableServices();
+</script>
+{%endblock%}
+
+
+{%block content%}
+
+<script>
+		window.fbAsyncInit = function () {
+			FB.init({
+				appId: '258290334265148',
+				xfbml: true,
+				version: 'v2.3'
+			});
+		};
+
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {
+				return;
+			}
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+
+<section id="contentHeader">
+
+    <!-- the lede image should be cropped to 3000 x 1750 -->
+    {{img.jpg("cowlede_week11", "Dallas Cowboys quarterback Dak Prescott celebrates with fans after the Cowboys won 35-10 in Week 9.", 'ledeImg')}}
+
+
+    <!-- don't forget to update the opponent the opponent team logo image path -->
+    <!-- h1 tag should be "visigint mascot at home mascot" -->
+
+    <div class="gameHead clearFix">
+        <div class="logoBlock">
+            <img class="teamLogo" src="images/_cowSig.png" alt="Cowboys" />
+            <img class="teamLogo" src="images/_ravensSig.png" alt="Ravens" />
+        </div>
+        <h2 id="label">Cowboys Gameday: <span id="seasonWeek">Week 11</span></h2>
+        <h1>Ravens at Cowboys</h1>
+        <p>Noon Sunday <strong>TV: </strong>Ch. 11</p>
+        <p><strong>Radio: </strong> KRLD-FM (105.3), KMVK-FM (107.5, Spanish)</p>
+        <p><strong>Line: </strong>Cowboys by 7</p>
+
+        <!-- end bylineBlock -->
+
+        <div class="shareComments shareCommentsTop">
+            <ul id="share-bar1" class="width-auto-hack"></ul>
+        </div>
+    </div>
+
+</section>
+<!-- end contentHeader -->
+
+<section id="winLoss" class="clearFix cowSection">
+
+    <div id="win">
+        <p class="subhead">A win would mean ...</p>
+        <p>For the first time in five meetings, the Cowboys claim a victory over the Ravens, the only team in the NFL that Dallas has never defeated. The Cowboys would set the franchise record for consecutive wins in a season with nine.</p>
+    </div>
+    <!-- end win -->
+
+    <div id="loss">
+        <p class="subhead">A loss would mean ... </p>
+        <p>A disappointing end to the winning streak that started Sept. 18 caps a week that observers spent obsessing about new Dallas backup quarterback Tony Romo. The Cowboys have a quick turnaround with the annual Thanksgiving game. </p>
+    </div>
+    <!-- end loss -->
+
+</section>
+<!-- end winLoss -->
+
+{%include "adblock1.html" %}
+
+
+    <section class="contentWell clearFix">
+
+    <div class="wideBlock imageBlock">
+
+        <h4 class="sectionLabel">SportsDay’s Picks</h4>
+        {{img.jpg("zeke_week11", "Ezekiell Elliott")}}
+        <p class="cutline">Cowboys running back Ezekiell Elliott is powering towards an NFL record. The Ravens top-rated defense will try to slow him down.  ( Justin K. Aller/Getty Images)</p>
+    </div>
+    <!-- end wide image -->
+
+    <section id="fourKeys" class="clearFix cowSection">
+        <div class="row clearFix">
+            <div class="staff clearFix">
+                <img src="images/_george.jpg" alt="Brandon George" />
+                <p><strong>Brandon George: </strong>Sure, the Ravens have the best defense in the NFL. But nothing has slowed this Cowboys offense to this point. The only concern here for the Cowboys is if they get in their own way. Do the Cowboys allow all the Tony Romo drama over the last week to become such a distraction that it spills into game day? This team is a tight-knit group, and all indications are that the Cowboys won’t be fazed. Certainly, rookie quarterback Dak Prescott hasn’t flinched yet, no matter the challenge. Prescott won’t be looking over his shoulder Sunday. It’ll be full steam ahead as the Cowboys set a franchise record with their ninth consecutive victory in a season. <strong class="score">Cowboys, 23-17</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_hairopoulos.jpg" alt="Kate Hairopoulos" />
+                <p><strong>Kate Hairopoulos: </strong>The Ravens rank No. 1 in overall defense and in third-down defense and are tied for the league lead in three-and-outs forced (31). Baltimore also rates highly in defensive time of possession, allowing opponents to hold the ball for 27:51 per game. All of those lofty stats will take a hit against the Cowboys, particularly in the second half as Dallas opens up the game. Dallas leads the NFL with a 33:14 average time of possession and is also tops in drives of five-or-more minutes (24). The Cowboys rank fourth in the league with a .473 third-down conversion percentage. <strong class="score">Cowboys, 31-20</strong></p>
+            </div>
+
+            <div class="staff clearFix">
+                <img src="images/_machota.jpg" alt="Jon Machota" />
+                <p><strong>Jon Machota: </strong>Baltimore has the NFL’s best rushing defense, holding teams to only 71.3 yards per game on the ground. The Cowboys have the league’s best rushing offense. Ezekiel Elliott and Co. are averaging 161 yards per game. Dallas faced a similar challenge in Week 6 at Green Bay. Elliott ended up going for 157 yards on 28 carries. Despite this being Elliott’s toughest test of the season, expect the MVP candidate to still go over the 100-yard mark. The Ravens wanted to draft Elliott. They tried to trade up to get him. The Cowboys are one of the teams they called. Cowboys fans should be thankful Jerry Jones declined. <strong class="score">Cowboys, 24-21</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_moore.jpg" alt="David Moore" />
+                <p><strong>David Moore: </strong>This game completes the Cowboys’ schedule against the AFC North. The outcome should fall in line with the previous three games against the division. Three of the Cowboys’ eight victories — which my calculator puts at 37.5 percent — have come against the AFC North. Dallas has averaged 32.7 points and won those games by an average of 14.6 points. The only game decided by less than two touchdowns came in Pittsburgh a few days ago. Baltimore is the first division leader the Cowboys have faced this season. But the Ravens are only 5-4 and play in a division that has offered minimal resistance against the Cowboys so far. Why would this game be any different? <strong class="score">Cowboys, 30-20</strong></p>
+            </div>
+        </div>
+
+        <div class="row clearFix">
+            <div class="staff clearFix">
+                <img src="images/_cowlishaw.jpg" alt="Tim Cowlishaw" />
+                <p><strong>Tim Cowlishaw: </strong>Quarterback controversies will have to wait as Dak outplays Flacco and Cowboys cruise to a record ninth straight victory. <strong class="score">Cowboys, 30-21</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_gosselin.jpg" alt="Rick Gosselin" />
+                <p><strong>Rick Gosselin: </strong>NFL’s best defense slows the Cowboys’ two young offensive stars but can’t keep Dallas from its ninth win in a row. <strong class="score">Cowboys, 20-17</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_horn.jpg" alt="Barry Horn" />
+                <p><strong>Barry Horn: </strong>Dak avoids fumbling. Zeke goes for 150. Dez and the defense are dominant. Ravens offense seems dazed. Lock of the year. <strong class="score">Cowboys, 29-18</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_sherrington.jpg" alt="Kevin Sherrington" />
+                <p><strong>Kevin Sherrington: </strong>Baltimore defense will give Dak fits, but it won't be enough to make Garrett rethink their QB order. <strong class="score">Cowboys, 24-21</strong></p>
+            </div>
+
+        </div>
+
+
+        <div id="userPick">
+            <h5>You make the call</h5>
+            <p>We want to know who you who think will win this week’s Cowboys game. Enter your score below, and see which team other readers think will take home the “W.” Scores plotted on the lower-right of the chart indicate a predicted Cowboys victory, upper-left indicate a predicted opponent victory. (Note: Only scores below 60 will be shown.)</p>
+
+            <div id="userSubmission">
+
+                <div id="userForm" class="clearFix">
+
+                    <p class="chatter">Who do you think will win? Enter the scores for each team, then click the "submit" button.</p>
+                    <div class="scoreBlock">
+                        <input id="cowScore" type="text" pattern="[0-9]*" placeholder="0" />
+                        <span>Cowboys</span>
+                    </div>
+
+                    <div class="scoreBlock">
+                        <input id="oppScore"  type="text" pattern="[0-9]*" placeholder="0" />
+                        <span id="opponent"></span>
+                    </div>
+
+                    <button id="submit">Submit</button>
+                </div>
+
+                <div id="response" class="noShow clearFix">
+                    <h6>Thank you for your submission</h6>
+                    <p>You picked the <span class="userTeam"></span> to <span class="userResult">win</span>, <span class="userScore"></span>. Share your prediction on social media:</p>
+                    <button id="faceShare">Facebook</button>
+                    <button id="twitterShare">Twitter</button>
+                </div>
+
+                <p class="readout"><span class="predictPercentage"></span> of readers are picking the <span class="predictTeam"></span> to win this week by an average of <span class="predictPoints"></span> points.</p>
+
+
+            </div>
+
+            <div id="chartBlock">
+
+                <div id="tooltip" class="noShow">
+					<p><strong>Cowboys: </strong> <span class="cowTipScore"></span></p>
+					<p><strong><span class="oppTipName"></span>:</strong> <span class="oppTipScore"></span></p>
+                    <p><strong>Times predicted: </strong> <span class="tipPredict"></span></p>
+				</div>
+
+                <div id="chart"></div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- end picks -->
+
+
+
+    {%include "adblock2.html" %}
+
+    <section id="matchup" class="clearFix cowSection">
+
+    <h4 class="sectionLabel">Bob Sturm’s scouting report</h4>
+
+        <div id="matchupContent" class="clearFix">
+
+            <div class="matchupBlock">
+
+            <p class="key"><span class="question">Situation</span><span class="edge">Edge</span><span class="know">In the know</span></p>
+
+                <div id="cowboysRun" class="matchup clearFix">
+                    <p class="question">When the Cowboys run the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_cowSig.png" alt="Cowboys" />
+                    <p class="know">Baltimore has not only the top-ranked rushing front in yards per game and yards per play, but also the top defense overall. The defense is built from the inside out with big Brandon Williams and Timmy Jernigan stuffing anything between the tackles. But in a matchup of strengths, the Cowboys’ offensive line is generally the winner.</p>
+                </div>
+                <!-- end cowboysRun -->
+
+                <div id="cowboysPass" class="matchup clearFix">
+                    <p class="question">When the Cowboys pass the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_ravensSig.png" alt="Cowboys" />
+                    <p class="know">It isn’t exactly the days of Ray Lewis and Ed Reed, but Baltimore continues to roll out top performers at linebacker and defensive back. Now, it is CJ Mosely and Eric Weddle who stand out on a defense that’s in the top five in passing yards allowed and No. 2 to the Chiefs in interceptions with 11. The Ravens consistently jump routes, so Dak Prescott must be mindful of the lurking safeties.</p>
+                </div>
+                <!-- end cowboysPass -->
+
+                <div id="oppRun" class="matchup clearFix">
+                    <p class="question">When the Ravens run the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_cowSig.png" alt="Steelers" />
+                    <p class="know">Only twice in nine games has Baltimore been able to attain 4 yards a carry. This Cowboys’ defense has looked more impressive on the ground since DeMarcus Lawrence returned to join top run defenders Terrell McClain and Sean Lee. Opponents’ yards per carry has dropped from 4.51 to 3.68.</p>
+                </div>
+                <!-- end oppRun -->
+
+                <div id="oppPass" class="matchup clearFix">
+                    <p class="question">When the Ravens pass the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_ravensSplitSig.png" alt="Steelers" />
+                    <p class="know">Joe Flacco has had his level of quality debated for years, and frankly 2016 has not been his finest. He ranks 29th in passer rating with a dead-even TD/INT ratio. The Ravens do still feature the ageless Steve Smith and the career deep threat Mike Wallace, and they saw how Pittsburgh went after the beaten-up Cowboys secondary. Dallas needs to quickly figure out how to avoid giving up explosive plays.</p>
+                </div>
+                <!-- end oppPass -->
+
+                <div id="specialTeams" class="matchup clearFix">
+                    <p class="question">Special teams</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_ravensSig.png" alt="Even" />
+                    <p class="know">No team has blocked more kicks and punts in the last few seasons than the Ravens. They have already blocked four this season and beat Pittsburgh on a blocked punt for a touchdown. Devin Hester makes their kickoff return team formidable (third in the NFL), and this is one of the rare weeks where the Cowboys’ Dan Bailey will not have a decided advantage over the opposing kicker. Justin Tucker (Texas) is one of the best in the business and hasn’t missed a single kick all year.</p>
+                </div>
+                <!-- end specialTeams -->
+
+                <div id="intangibles" class="matchup clearFix">
+                    <p class="question">Intangibles</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_cowSig.png" alt="Even" />
+                    <p class="know">The Cowboys seem to have every intangible advantage with their eight-game winning streak, but one does wonder if Dak Prescott will be able to calm his nerves with his new backup quarterback in uniform on the sideline. If Prescott continues to play at his normal level, Dallas should be able to start its Thanksgiving week off right. Baltimore needs this game but has a difficult time moving the ball on the road.</p>
+                </div>
+                <!-- end intagibles -->
+
+            </div>
+        </div>
+
+        </section>
+     </section>
+
+        <section id="spotlight" class="clearFix cowSection">
+
+
+            <!-- this image should be squarely cropped to provide enough depth for the content -->
+            <!-- this subject should be on the left or right side. if right side, remove leftSide class  -->
+
+            <div class="spotContainer">
+                {{img.jpg("suggs_week11", "Baltimore Ravens outside linebacker Terrell Suggs ")}}
+                <div class="spotlightContent leftSide">
+
+                    <h4 class="sectionLabel whiteTheme">Bob Sturm’s spotlight</h4>
+                    <p>In a sport in which we worry about how long elite players can remain elite, it seems only quarterbacks and kickers can outlast a great pass rusher. When you look at Julius Peppers, DeMarcus Ware, Dwight Freeney, Robert Mathis, James Harrison and <strong>Terrell Suggs</strong>, it is clear that the best pass rushers can get into their mid- to late-30s and still turn the corner and get the passer.</p>
+                    <p>Suggs, or “T-Sizzle,” as he is called, just turned 34 and is in his 14th season in Baltimore, where he has racked up 1121/2 sacks since being picked in the 2003 draft 10th overall out of Arizona State.</p>
+                    <p>A relentless competitor, Suggs is still is a handful for any left tackle with his work rate and his athleticism. This is remarkable, not only because of his age and miles on the odometer but also because he has torn both Achilles tendons in the last five years in separate injuries. Overcoming what is often considered a career-ending injury twice, he still continually jumps off the tape.</p>
+                    <p>Once again leading the Ravens in sacks, he is now playing with a torn biceps suffered a month ago yet still gets to the quarterback on a regular basis. There is no question that preparing for the Ravens requires a circle on the No. 55. He still can ruin a play by blindsiding a QB and often knocking the ball free in the process.</p>
+                    <p><strong>Sturm’s prediction: </strong>The way Ezekiel Elliott is playing, it is hard to think there will be too many occasions when the offense won’t get into the 28-point range. The attack eventually will cool off, but with so many weapons for Prescott to use and so many ways to let Zeke make a difference, I don’t think it will happen this week, even against a stingy Ravens defense.</p>
+                    <p><strong class="score">Cowboys, 28-20</strong></p></p>
+
+                    <p class="credit">Karl Merton Ferron/Baltimore Sun</p>
+                </div>
+
+            </div>
+
+    </section>
+
+
+
+
+    {%include "adblock3.html" %}
+
+    <section class="credits clearfix">
+        <p><strong>Top photo:</strong> <a href="mailto:alandis@dallasnews.com">Ashley Landis</a></p>
+    </section>
+    <!-- end credits -->
+
+	<section class="more clearFix">
+		<h5>Read more from The Dallas Morning News</h5>
+        <a class="clearFix" href="http://interactives.dallasnews.com/2016/ezekiel-elliott-rushing-tracker">
+            <img src="images/_trackerShare.jpg" alt="Ezekiel Elliott" />
+            <h6>Chasing 1,808</h6>
+            <p>Track Ezekiel Elliott’s progress throughout the season as he makes a run at Eric Dickerson’s NFL rookie rushing record.</p>
+        </a>
+		<a class="clearFix" href="http://interactives.dallasnews.com/2016/jerry-jones-office/">
+			<img src="images/_jonesShare.jpg" alt="Jerry Jones" />
+			<h6>Trappings of legend</h6>
+			<p>While Jerry Jones doesn’t live in the past, an exclusive look inside the Cowboys owner’s office is a journey through the franchise’s history.</p>
+		</a>
+		<a class="clearFix" href="http://interactives.dallasnews.com/2015/darren-woodson/">
+			<img src="images/_woodsonShare.jpg" alt="Darren Woodson" />
+			<h6>Ringing endorsement</h6>
+			<p>For 12 seasons with the Dallas Cowboys, Darren Woodson would routinely wreak havoc on Sundays, then onnect with his best friend on Tuesdays.</p>
+		</a>
+	</section>
+	<!-- end more -->
+
+		<div class="shareComments">
+		<ul id="share-bar2" class="width-auto-hack"></ul>
+        <div id="comments"></div>
+	</div>
+	<!-- end shareComments -->
+
+</section>
+<!-- end contentWell -->
+{%endblock%}
+
+
+
+
+{%block custom_foot%}
+	<script type="text/javascript"></script>
+{%endblock%}
+
+
+
+
+
+{%block custom_social_meta%}
+<script type="text/javascript">
+  var storyTitle = "Will the NFL’s best defense be able to stop the Cowboys?", // headline in tweet card
+	storyURL = "http://interactives.dallasnews.com/2016/cowboys-gameday/week11.html",
+	leadText = "Cowboys-Ravens: What you need to know; experts’ predictions; submit your pick", //description in tweet card
+	storyIMG = "http://interactives.dallasnews.com/2016/cowboys-gameday/images/_week11_share.jpg",
+	storyAuthor = "sportsdaydfw",
+	twitterTag = "@SportsDayDFW",
+	comments = true,
+	share = true;
+	OAS_sitepage = 'www.sportsdaydfw.com/dallas-cowboys/';
+</script>
+{%endblock%}

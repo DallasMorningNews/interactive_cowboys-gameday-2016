@@ -1,0 +1,416 @@
+{%extends 'base.html'%}
+{%import 'partials/img.html' as img%}
+
+
+{%block custom_meta%}
+<meta content="cowboys,dallas cowboys,dak prescott,ezekiel elliott,dez bryant,kirk cousins,jordan reed,washington redskins,redskins,tony romo,interactives,dallas,dallas fort worth,dallas news,dallas sports,dallas fort worth sports,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper" name="keywords" />
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<meta content="Cowboys-Redskins: What you need to know; experts’ predictions; submit your pick" name="description" />
+<title>Cowboys-Redskins: What you need to know; experts’ predictions; submit your pick</title>
+<meta property="og:url" content="http://interactives.dallasnews.com/2016/cowboys-gameday/week12.html" />
+<meta property="og:title" content="Cowboys-Redskins: What you need to know; experts’ predictions; submit your pick"/>
+<meta property="og:description" content="Dak Prescott and the Cowboys look to run their winning streak to double digits." name="description"/>
+<meta property="og:image" content="http://interactives.dallasnews.com/2016/cowboys-gameday/images/_week12_share.jpg"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:type" content="article" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@SportsDayDFW" />
+<meta name="twitter:creator" content="SportsDayDFW" />
+
+<meta name="liveFyreID" content="19933612321" />
+
+<meta name="parsely-page" id='parsely-page' content='{"title": "Cowboys-Redskins: What you need to know; experts’ predictions; submit your pick", "link": "http://interactives.dallasnews.com/2016/cowboys-gameday/week12.html", "image_url": "http://interactives.dallasnews.com/2016/cowboys-gameday/images/_week12_share.jpg", "type": "post", "post_id": "19933612321", "pub_date": "2016-11-22T22-00-00Z", "section": "sportsday", "author": ["sportsdaydfw"], "tags": ["cowboys","dallas cowboys","dak prescott","ezekiel elliott","dez bryant","kirk cousins","jordan reed","washington redskins","redskins","tony romo","interactives","dallas","dallas fort worth","dallas news","dallas sports","dallas fort worth sports","dfw news","dallas newspaper","dallas morning news","dallas morning news newspaper"]}' />
+
+<meta property="og:keywords" content="cowboys,dallas cowboys,dak prescott,ezekiel elliott,dez bryant,kirk cousins,jordan reed,washington redskins,redskins,tony romo,interactives,dallas,dallas fort worth,dallas news,dallas sports,dallas fort worth sports,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper"/>
+
+<meta name="news_keywords" content="cowboys,dallas cowboys,dak prescott,ezekiel elliott,dez bryant,kirk cousins,jordan reed,washington redskins,redskins,tony romo,interactives,dallas,dallas fort worth,dallas news,dallas sports,dallas fort worth sports,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper"/>
+{%endblock%}
+
+
+{%block custom_head%}
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
+
+{%endblock%}
+
+
+{%block ad%}
+<script type="text/javascript" src="http://www.googletagservices.com/tag/js/gpt.js"></script>
+<script type="text/javascript">
+DFP_networkId = "11222444";
+var DFPSlotSizes = [];
+if (jQuery(window).width() < 768)
+{
+var DFP_sitepage = "m.DMN/interactives";
+DFPSlotSizes = [320,50]
+var adSlot0 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionTop");
+adSlot0.setTargeting("position", "x01");
+adSlot0.addService(googletag.pubads());
+
+var adSlot1 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionMiddle");
+adSlot1.setTargeting("position", "x02");
+adSlot1.addService(googletag.pubads());
+
+var adSlot2 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionBottom");
+adSlot2.setTargeting("position", "x03");
+adSlot2.addService(googletag.pubads());
+
+}
+else
+{
+var DFP_sitepage = "DMN/interactives";
+ DFPSlotSizes = [728,90]
+var adSlot0 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionTop");
+adSlot0.setTargeting("position", "Top");
+adSlot0.addService(googletag.pubads());
+
+var adSlot1 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionMiddle");
+adSlot1.setTargeting("position", "Top");
+adSlot1.addService(googletag.pubads());
+
+var adSlot2 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionBottom");
+adSlot2.setTargeting("position", "Top");
+adSlot2.addService(googletag.pubads());
+
+ }
+</script>
+<script type="text/javascript">
+googletag.pubads().enableSingleRequest();
+googletag.pubads().enableSyncRendering();
+googletag.enableServices();
+</script>
+{%endblock%}
+
+
+{%block content%}
+
+<script>
+		window.fbAsyncInit = function () {
+			FB.init({
+				appId: '258290334265148',
+				xfbml: true,
+				version: 'v2.3'
+			});
+		};
+
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {
+				return;
+			}
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+
+<section id="contentHeader">
+
+    <!-- the lede image should be cropped to 3000 x 1750 -->
+    {{img.jpg("cowlede_week12", "Cowboys receiver Dez Bryant throws up the X as he celebrates scoring a touchdown against the Ravens. ", 'ledeImg')}}
+
+
+    <!-- don't forget to update the opponent the opponent team logo image path -->
+    <!-- h1 tag should be "visigint mascot at home mascot" -->
+
+    <div class="gameHead clearFix">
+        <div class="logoBlock">
+            <img class="teamLogo" src="images/_redskinsSig.png" alt="Redskins" />
+            <img class="teamLogo" src="images/_cowSig.png" alt="Cowboys" />
+        </div>
+        <h2 id="label">Cowboys Gameday: <span id="seasonWeek">Week 12</span></h2>
+        <h1>Redskins at Cowboys</h1>
+        <p>3:30 p.m. Thursday <strong>TV: </strong>Ch. 4</p>
+        <p><strong>Radio: </strong> KRLD-FM (105.3), KMVK-FM (107.5, Spanish)</p>
+        <p><strong>Line: </strong>Cowboys by 7</p>
+
+        <!-- end bylineBlock -->
+
+        <div class="shareComments shareCommentsTop">
+            <ul id="share-bar1" class="width-auto-hack"></ul>
+        </div>
+    </div>
+
+</section>
+<!-- end contentHeader -->
+
+<section id="winLoss" class="clearFix cowSection">
+
+    <div id="win">
+        <p class="subhead">A win would mean ...</p>
+        <p>The Cowboys improve to 7-1 against the Redskins in Thanksgiving games. Dallas’ record regular-season winning streak would expand to double digits. The Cowboys would improve to 10-1, joining the 2007 team as the only ones to reach that mark in franchise history.</p>
+    </div>
+    <!-- end win -->
+
+    <div id="loss">
+        <p class="subhead">A loss would mean ... </p>
+        <p>The Washington fans who chanted “We want Dallas” after Sunday night’s stomping of Green Bay had the right mind-set. The Redskins are fighting for a playoff spot and could ding Dallas’ status as the NFL’s hottest team.</p>
+    </div>
+    <!-- end loss -->
+
+</section>
+<!-- end winLoss -->
+
+{%include "adblock1.html" %}
+
+
+    <section class="contentWell clearFix">
+
+    <div class="wideBlock imageBlock">
+
+        <h4 class="sectionLabel">SportsDay’s Picks</h4>
+        {{img.jpg("prescott_week12", "Dak Prescott throws a pass during the Cowboys win against the Ravens.")}}
+        <p class="cutline">Dak Prescott threw for 301 yards and three touchdowns against the Baltimore Ravens, one of the best defenses in the league. (Ashley Landis/Staff Photographer)</p>
+    </div>
+    <!-- end wide image -->
+
+    <section id="fourKeys" class="clearFix cowSection">
+        <div class="row clearFix">
+            <div class="staff clearFix">
+                <img src="images/_george.jpg" alt="Brandon George" />
+                <p><strong>Brandon George: </strong>The key for the Cowboys will be finding a way to make a few stops. As we’ve seen, the offense will take care of the rest. But this Redskins offense has been on a roll, putting up 515 total yards and 42 points in a win over Green Bay on Sunday night. The Cowboys’ defense has shown holes in the back end, with injuries to safety Barry Church and cornerback Morris Claiborne. The Cowboys have allowed 10 plays of 20-plus yards over the last two weeks after having given up only six over their previous four games. The Redskins thrive on big plays. Against the Packers, the Redskins had six plays of 20-plus yards, including four for over 40. The Cowboys have to limit big plays and not allow Washington to rack up yards after catches.  <strong class="score">Cowboys, 34-30</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_hairopoulos.jpg" alt="Kate Hairopoulos" />
+                <p><strong>Kate Hairopoulos: </strong>Washington cornerback <a href="http://sportsday.dallasnews.com/dallas-cowboys/cowboys/2016/11/22/josh-norman-praises-dak-prescott-redskins-rb-know-nobody-likes-dallas-cowgirls?f=r">Josh Norman</a> didn’t shadow Dallas receiver Dez Bryant for all of the first NFC East meeting in Week 2. Bryant burned Washington for his first 100-yard game of the season. Norman will take on a bigger role against Bryant for Turkey Day, especially with <a href="http://sportsday.dallasnews.com/dallas-cowboys/cowboys/2016/11/23/new-look-cowboys-offense-dez-bryant-become-even-nightmare-man-cover">Bryant heating up</a> and recording his first multi-touchdown game since 2014 in Sunday’s win over Baltimore. But quarterback Dak Prescott and the Cowboys’ offense have continued to prove that one of their biggest strengths is the ability to share the ball. Heck, maybe it’s even overlooked tight end Gavin Escobar, who makes a game-changing catch in this one.  <strong class="score">Cowboys, 31-24</strong></p>
+            </div>
+
+            <div class="staff clearFix">
+                <img src="images/_machota.jpg" alt="Jon Machota" />
+                <p><strong>Jon Machota: </strong>The Cowboys have a <a href="http://sportsday.dallasnews.com/dallas-cowboys/cowboys/2016/11/23/michael-irvin-cowboys-offense-pick-poison-understand-must-die?f=r">pick-your-poison offense</a>. As good as Dak Prescott has been, the Redskins will make him try to beat them with his arm. It’s not that they don’t respect the rookie quarterback. It’s because Ezekiel Elliott plus the Cowboys offensive line equals the NFL’s scariest rushing attack. If Zeke goes off, the Redskins don’t stand a chance. So the outcome will depend on how well Prescott handles seeing a defense for the second time. He hasn’t faced that test yet. However, judging by the results of all his previous exams, it seems silly to bet against him. <strong class="score">Cowboys, 27-23</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_moore.jpg" alt="David Moore" />
+                <p><strong>David Moore: </strong>The Cowboys’ wins have been by an average of 11 points. That margin would be even higher if not for those pesky division opponents. The Cowboys’ nine-game winning streak began with a four-point win over Washington on Sept. 18. The Cowboys came back six weeks later to nudge Philadelphia by six points, in overtime. The team’s only loss came to the New York Giants in Week 1. Sense a trend? The Cowboys own the NFL’s best record, but that doesn’t strike fear in the hearts of their <a href="http://sportsday.dallasnews.com/dallas-cowboys/cowboys/2016/11/22/cowboys-keep-winning-games-season-can-win-right-games?f=r">NFC East rivals</a>. Washington felt it should have beaten the Cowboys in their first meeting. Look for them to feel the same when this one is over. <strong class="score">Cowboys, 24-20</strong></p>
+            </div>
+        </div>
+
+        <div class="row clearFix">
+            <div class="staff clearFix">
+                <img src="images/_cowlishaw.jpg" alt="Tim Cowlishaw" />
+                <p><strong>Tim Cowlishaw: </strong>Kirk Cousins makes up for those misfires in the first meeting and reminds folks he did throw for over 360 yards that day. <strong class="score">Redskins, 27-20</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_gosselin.jpg" alt="Rick Gosselin" />
+                <p><strong>Rick Gosselin: </strong>The Redskins have the NFL’s second-best offense. They’re going to gain yards and score points against this defense. But the Cowboys will gain more yards and score more points. <strong class="score">Cowboys, 31-27</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_horn.jpg" alt="Barry Horn" />
+                <p><strong>Barry Horn: </strong>The schedule maker must have gotten a nice Christmas present from Jerry Jones last year. Redskins played Sunday night at home, and Cowboys had a nooner at home. Rest is best. <strong class="score">Cowboys, 35-28</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_sherrington.jpg" alt="Kevin Sherrington" />
+                <p><strong>Kevin Sherrington: </strong>Cousins is better than last time, but so is Dak. The Cowboys’ runaway season rolls on. <strong class="score">Cowboys, 31-24</strong></p>
+            </div>
+
+        </div>
+
+
+        <div id="userPick">
+            <h5>You make the call</h5>
+            <p>We want to know who you who think will win this week’s Cowboys game. Enter your score below, and see which team other readers think will take home the “W.” Scores plotted on the lower-right of the chart indicate a predicted Cowboys victory, upper-left indicate a predicted opponent victory. (Note: Only scores below 60 will be shown.)</p>
+
+            <div id="userSubmission">
+
+                <div id="userForm" class="clearFix">
+
+                    <p class="chatter">Who do you think will win? Enter the scores for each team, then click the "submit" button.</p>
+                    <div class="scoreBlock">
+                        <input id="cowScore" type="text" pattern="[0-9]*" placeholder="0" />
+                        <span>Cowboys</span>
+                    </div>
+
+                    <div class="scoreBlock">
+                        <input id="oppScore"  type="text" pattern="[0-9]*" placeholder="0" />
+                        <span id="opponent"></span>
+                    </div>
+
+                    <button id="submit">Submit</button>
+                </div>
+
+                <div id="response" class="noShow clearFix">
+                    <h6>Thank you for your submission</h6>
+                    <p>You picked the <span class="userTeam"></span> to <span class="userResult">win</span>, <span class="userScore"></span>. Share your prediction on social media:</p>
+                    <button id="faceShare">Facebook</button>
+                    <button id="twitterShare">Twitter</button>
+                </div>
+
+                <p class="readout"><span class="predictPercentage"></span> of readers are picking the <span class="predictTeam"></span> to win this week by an average of <span class="predictPoints"></span> points.</p>
+
+
+            </div>
+
+            <div id="chartBlock">
+
+                <div id="tooltip" class="noShow">
+					<p><strong>Cowboys: </strong> <span class="cowTipScore"></span></p>
+					<p><strong><span class="oppTipName"></span>:</strong> <span class="oppTipScore"></span></p>
+                    <p><strong>Times predicted: </strong> <span class="tipPredict"></span></p>
+				</div>
+
+                <div id="chart"></div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- end picks -->
+
+
+
+    {%include "adblock2.html" %}
+
+    <section id="matchup" class="clearFix cowSection">
+
+    <h4 class="sectionLabel">Bob Sturm’s scouting report</h4>
+
+        <div id="matchupContent" class="clearFix">
+
+            <div class="matchupBlock">
+
+            <p class="key"><span class="question">Situation</span><span class="edge">Edge</span><span class="know">In the know</span></p>
+
+                <div id="cowboysRun" class="matchup clearFix">
+                    <p class="question">When the Cowboys run the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_cowSig.png" alt="Cowboys" />
+                    <p class="know">The Cowboys are starting to see teams attempt to stop the run with more and more aggressiveness in an attempt to slow down Ezekiel Elliott. This is far easier said than done, as the Cowboys have conviction and feed the ball to Elliott over the course of the game. Dallas is just so tough inside, but if anyone can hold their own it is interior force Chris Baker. He has been taking over games lately and will offer resistance. That said, the Redskins are not very good as a team stopping the run, and I would expect another big day for the boys up front and Elliott.</p>
+                </div>
+                <!-- end cowboysRun -->
+
+                <div id="cowboysPass" class="matchup clearFix">
+                    <p class="question">When the Cowboys pass the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_cowSig.png" alt="Cowboys" />
+                    <p class="know">This is one component that will be vital for the Cowboys, who at times have had difficulty in pass protection against Washington. Only once this season has Dallas allowed more than two sacks in a game. That was in Week 2 when Washington got to Prescott four times. Trent Murphy, Ryan Kerrigan and Preston Smith are strong on the edge, while Josh Norman and Bashaud Breeland continue to play well on the outside. Last week, Green Bay found its tight end repeatedly in space, so look for Dallas to attempt to expose the safeties with Jason Witten and Cole Beasley.</p>
+                </div>
+                <!-- end cowboysPass -->
+
+                <div id="oppRun" class="matchup clearFix">
+                    <p class="question">When the Redskins run the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_redskinsSig.png" alt="Redskins" />
+                    <p class="know">One rather surprising development from Washington’s season is the discovery of a running game. It is yet another credit to offensive line coach Bill Callahan that a young, undrafted free-agent rookie Robert Kelley (Tulane) is running well the last several weeks since taking a job many figured was Matt Jones’. Behind big right guard Brandon Scherff and friends, Kelley has carved out 67 carries for 321 yards (4.8 per carry) over the last three games. Dallas had better be ready to take on a heavy dose of running on early downs. Baltimore certainly found some lanes early on that will encourage Washington.</p>
+                </div>
+                <!-- end oppRun -->
+
+                <div id="oppPass" class="matchup clearFix">
+                    <p class="question">When the Redskins pass the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_redskinsSig.png" alt="Redskins" />
+                    <p class="know">Without question, Washington has dazzled the league with its ability to stress secondaries with the deep ball during a run that has them with only one loss since Week 2. They repeatedly hit home run passes and allow Kirk Cousins to use play-action with top-level pass protection and an ability to drop beautiful bombs into the waiting hands of his speedsters. They can cause matchup issues all over the field with an elite tight end in Jordan Reed and a stable of sprinters on the outside. Dallas should be prepared to protect centerfield with numbers. They also are so tough on third downs.</p>
+                </div>
+                <!-- end oppPass -->
+
+                <div id="specialTeams" class="matchup clearFix">
+                    <p class="question">Special teams</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_redskinsSig.png" alt="Redskins" />
+                    <p class="know">Whether it’s part of the offense or returning punts, Duke’s Jamison Crowder is pure speed and electricity. He is so elusive and difficult to break down that he provides Washington yet another game-breaker. Dan Bailey is the better kicker than Dustin Hopkins, but Washington covers kicks and punts well. We will give a small edge for Washington, but also will keep in mind that Lucky Whitehead seems closer and closer to breaking a major return.</p>
+                </div>
+                <!-- end specialTeams -->
+
+                <div id="intangibles" class="matchup clearFix">
+                    <p class="question">Intangibles</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_cowSig.png" alt="Cowboys" />
+                    <p class="know">This is a massive game for both teams for a number of reasons, and both share a self-belief as they enter this game on impressive hot streaks. The advantage will swing to the home team despite the recent memory of the Redskins spoiling Thanksgiving Day in 2012 with a win that many thought was ushering in a new era of Redskins’ dominance with rookie QB Robert Griffin III of Baylor. It was merely a mirage, and one that Dallas would love to erase with a decisive victory to all but eliminate their rival from the division race.</p>
+                </div>
+                <!-- end intagibles -->
+
+            </div>
+        </div>
+
+        </section>
+     </section>
+
+        <section id="spotlight" class="clearFix cowSection">
+
+
+            <!-- this image should be squarely cropped to provide enough depth for the content -->
+            <!-- this subject should be on the left or right side. if right side, remove leftSide class  -->
+
+            <div class="spotContainer">
+                {{img.jpg("cousins", "Washington quarterback Kirk Cousins")}}
+                <div class="spotlightContent leftSide">
+
+                    <h4 class="sectionLabel whiteTheme">Bob Sturm’s spotlight</h4>
+                    <p><strong>Kirk Cousins</strong> is one of the most interesting stories in the NFL based on his odd offseason during which his team offered him a contract in February, which he didn’t care for, then didn’t change the offer all summer. Therefore, Cousins is playing under the franchise-tag deal of a little under $20 million for 2016 and was basically told by his organization to prove his quality again.</p>
+                    <p>So, the 28-year-old has done better than that, continuing his aerial attack that has put his statistics up among some of the more celebrated names in the sport. Few players throw a better deep ball, and now he has added efficiency on third down and can face down and burn blitzes regularly. He spreads the ball around and is able to move the offense with 309 passing yards per game, and he generally doesn’t throw the ball to the opponent.</p>
+                    <p>He is famously competitive and emotional, yet continues to be marginalized after dropping out of the top 100 picks in the 2012 draft. Now he again has the Redskins in reasonable position for postseason play and could stand to justify a massive new contract from Washington, who can’t help but be convinced of his quality. Questions still surface about his ability, but he has provided most of the answers.</p>
+                    <p><strong>Sturm’s prediction: </strong>There is no question that Washington is a better team than many predicted when the season began. That said, Dallas is too tough to deal with on a short week at home when Washington was forced to play Sunday night then travel with a team that sustained several injuries in the process. Dallas continues to roll. <strong> Cowboys, 31-26</strong></p>
+                    <p class="credit">Rob Carr/Getty Images</p>
+                </div>
+
+            </div>
+
+    </section>
+
+
+
+
+    {%include "adblock3.html" %}
+
+    <section class="credits clearfix">
+        <p><strong>Top photo:</strong> <a href="mailto:alandis@dallasnews.com">Ashley Landis</a></p>
+    </section>
+    <!-- end credits -->
+
+	<section class="more clearFix">
+		<h5>Read more from The Dallas Morning News</h5>
+        <a class="clearFix" href="http://interactives.dallasnews.com/2016/ezekiel-elliott-rushing-tracker">
+            <img src="images/_trackerShare.jpg" alt="Ezekiel Elliott" />
+            <h6>Chasing 1,808</h6>
+            <p>Track Ezekiel Elliott’s progress throughout the season as he makes a run at Eric Dickerson’s NFL rookie rushing record.</p>
+        </a>
+		<a class="clearFix" href="http://interactives.dallasnews.com/2016/jerry-jones-office/">
+			<img src="images/_jonesShare.jpg" alt="Jerry Jones" />
+			<h6>Trappings of legend</h6>
+			<p>While Jerry Jones doesn’t live in the past, an exclusive look inside the Cowboys owner’s office is a journey through the franchise’s history.</p>
+		</a>
+		<a class="clearFix" href="http://interactives.dallasnews.com/2015/darren-woodson/">
+			<img src="images/_woodsonShare.jpg" alt="Darren Woodson" />
+			<h6>Ringing endorsement</h6>
+			<p>For 12 seasons with the Dallas Cowboys, Darren Woodson would routinely wreak havoc on Sundays, then onnect with his best friend on Tuesdays.</p>
+		</a>
+	</section>
+	<!-- end more -->
+
+		<div class="shareComments">
+		<ul id="share-bar2" class="width-auto-hack"></ul>
+        <div id="comments"></div>
+	</div>
+	<!-- end shareComments -->
+
+</section>
+<!-- end contentWell -->
+{%endblock%}
+
+
+
+
+{%block custom_foot%}
+	<script type="text/javascript"></script>
+{%endblock%}
+
+
+
+
+
+{%block custom_social_meta%}
+<script type="text/javascript">
+  var storyTitle = "Dak Prescott and the Cowboys look to run their winning streak to double digits.", // headline in tweet card
+	storyURL = "http://interactives.dallasnews.com/2016/cowboys-gameday/week12.html",
+	leadText = "Cowboys-Redskins: What you need to know; experts’ predictions; submit your pick", //description in tweet card
+	storyIMG = "http://interactives.dallasnews.com/2016/cowboys-gameday/images/_week12_share.jpg",
+	storyAuthor = "sportsdaydfw",
+	twitterTag = "@SportsDayDFW",
+	comments = true,
+	share = true;
+	OAS_sitepage = 'www.sportsdaydfw.com/dallas-cowboys/';
+</script>
+{%endblock%}

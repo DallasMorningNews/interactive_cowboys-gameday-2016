@@ -1,0 +1,417 @@
+{%extends 'base.html'%}
+{%import 'partials/img.html' as img%}
+
+
+{%block custom_meta%}
+<meta content="cowboys,dallas cowboys,tony romo,dez bryant,dak prescott,ezekiel elliott,colin kaepernick,navorro bowman,carlos hyde,interactives,dallas,dallas fort worth,dallas news,dallas sports,dallas fort worth sports,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper" name="keywords" />
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<meta content="Are Dak Prescott and Ezekiel Elliott good enough to overcome another injury to the Cowboys offense?" name="description" />
+<title>Cowboys Gameday: Week 4 at San Francisco</title>
+<meta property="og:url" content="http://interactives.dallasnews.com/2016/cowboys-gameday/week4.html" />
+<meta property="og:title" content="Cowboys Gameday: The road gets tougher without Dez Bryant"/>
+<meta property="og:description" content="Are Dak Prescott and Ezekiel Elliott good enough to overcome another injury to the Cowboys offense?" name="description"/>
+<meta property="og:image" content="http://interactives.dallasnews.com/2016/cowboys-gameday/images/_share_week4.jpg"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:type" content="article" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@SportsDayDFW" />
+<meta name="twitter:creator" content="SportsDayDFW" />
+
+<meta name="liveFyreID" content="49181919172" />
+
+<meta name="parsely-page" id='parsely-page' content='{"title": "Cowboys Gameday: The road gets tougher without Dez Bryant", "link": "http://interactives.dallasnews.com/2016/cowboys-gameday/week4.html", "image_url": "http://interactives.dallasnews.com/2016/cowboys-gameday/images/_share_week4.jpg", "type": "post", "post_id": "49181919172", "pub_date": "2016-09-30T10-00-00Z", "section": "sportsday", "author": ["SportsDay"], "tags": ["cowboys","dallas cowboys","tony romo","dez bryant","dak prescott","ezekiel elliott","colin kaepernick","navorro bowman","carlos hyde","interactives","dallas","dallas fort worth","dallas news","dallas sports","dallas fort worth sports","dfw news","dallas newspaper","dallas morning news","dallas morning news newspaper"]}' />
+
+<meta property="og:keywords" content="cowboys,dallas cowboys,tony romo,dez bryant,dak prescott,ezekiel elliott,colin kaepernick,navorro bowman,carlos hyde,interactives,dallas,dallas fort worth,dallas news,dallas sports,dallas fort worth sports,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper"/>
+
+<meta name="news_keywords" content="cowboys,dallas cowboys,tony romo,dez bryant,dak prescott,ezekiel elliott,colin kaepernick,navorro bowman,carlos hyde,interactives,dallas,dallas fort worth,dallas news,dallas sports,dallas fort worth sports,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper"/>
+{%endblock%}
+
+
+{%block custom_head%}
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
+
+{%endblock%}
+
+
+{%block ad%}
+<script type="text/javascript" src="http://www.googletagservices.com/tag/js/gpt.js"></script>
+<script type="text/javascript">
+DFP_networkId = "11222444";
+var DFPSlotSizes = [];
+if (jQuery(window).width() < 768)
+{
+var DFP_sitepage = "m.DMN/interactives";
+DFPSlotSizes = [320,50]
+var adSlot0 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionTop");
+adSlot0.setTargeting("position", "x01");
+adSlot0.addService(googletag.pubads());
+
+var adSlot1 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionMiddle");
+adSlot1.setTargeting("position", "x02");
+adSlot1.addService(googletag.pubads());
+
+var adSlot2 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionBottom");
+adSlot2.setTargeting("position", "x03");
+adSlot2.addService(googletag.pubads());
+
+}
+else
+{
+var DFP_sitepage = "DMN/interactives";
+ DFPSlotSizes = [728,90]
+var adSlot0 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionTop");
+adSlot0.setTargeting("position", "Top");
+adSlot0.addService(googletag.pubads());
+
+var adSlot1 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionMiddle");
+adSlot1.setTargeting("position", "Top");
+adSlot1.addService(googletag.pubads());
+
+var adSlot2 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionBottom");
+adSlot2.setTargeting("position", "Top");
+adSlot2.addService(googletag.pubads());
+
+ }
+</script>
+<script type="text/javascript">
+googletag.pubads().enableSingleRequest();
+googletag.pubads().enableSyncRendering();
+googletag.enableServices();
+</script>
+{%endblock%}
+
+
+{%block content%}
+
+<script>
+		window.fbAsyncInit = function () {
+			FB.init({
+				appId: '258290334265148',
+				xfbml: true,
+				version: 'v2.3'
+			});
+		};
+
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {
+				return;
+			}
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+
+<section id="contentHeader">
+
+    <!-- the lede image should be cropped to 3000 x 1750 -->
+    {{img.jpg("cowlede_week4", "Cowboys quarterback Dak Prescott high fives fans on his way off the field following a win against the Chicago Bears.", 'ledeImg')}}
+
+
+    <!-- don't forget to update the opponent the opponent team logo image path -->
+    <!-- h1 tag should be "visigint mascot at home mascot" -->
+
+    <div class="gameHead clearFix">
+        <div class="logoBlock">
+            <img class="teamLogo" src="images/_cowSig.png" alt="Dallas Cowboys" />
+            <img class="teamLogo" src="images/_49ersSig.png" alt="San Francisco 49ers" />
+        </div>
+        <h2 id="label">Cowboys Gameday: <span id="seasonWeek">Week 4</span></h2>
+        <h1>Cowboys at 49ers</h1>
+        <p>3:25 p.m. Sunday <strong>TV: </strong>Ch. 4</p>
+        <p><strong>Radio: </strong> KRLD-FM (105.3), KMVK-FM (107.5, Spanish)</p>
+        <p><strong>Line: </strong>Cowboys by 2</p>
+
+        <!-- end bylineBlock -->
+
+        <div class="shareComments shareCommentsTop">
+            <ul id="share-bar1" class="width-auto-hack"></ul>
+        </div>
+    </div>
+
+</section>
+<!-- end contentHeader -->
+
+<section id="winLoss" class="clearFix cowSection">
+
+    <div id="win">
+        <p class="subhead">A win would mean ...</p>
+        <p>A week beset by the loss of Dez Bryant and the Mystery of the MRI mercifully fades into the background as the Cowboys improve to 3-1 despite no Tony Romo and no Bryant.</p>
+    </div>
+    <!-- end win -->
+
+    <div id="loss">
+        <p class="subhead">A loss would mean ... </p>
+        <p>The injuries have taken their toll, the momentum of the last two weeks is gone and 49ers coach Chip Kelly, formerly of the NFC East Philadelphia Eagles, bests the Cowboys with his new team.</p>
+    </div>
+    <!-- end loss -->
+
+</section>
+<!-- end winLoss -->
+
+{%include "adblock1.html" %}
+
+
+    <section class="contentWell clearFix">
+
+    <div class="wideBlock imageBlock">
+
+        <h4 class="sectionLabel">SportsDay’s Picks</h4>
+        {{img.jpg("dez_week4", "Dez Bryant gets his foot caught under Bears linebacker Christian Jones while being tackled in the Cowboys week 3 victory.")}}
+        <p class="cutline">Cowboys wide receiver Dez Bryant may miss this week’s game with a hairline fracture in his right tibia after getting his foot caught under Bears linebacker Christian Jones during Dallas’ victory over Chicago. (Vernon Bryant/Staff Photographer)</p>
+    </div>
+    <!-- end wide image -->
+
+    <section id="fourKeys" class="clearFix cowSection">
+        <div class="row clearFix">
+            <div class="staff clearFix">
+                <img src="images/_george.jpg" alt="Brandon George" />
+                <p><strong>Brandon George: </strong><p>The Cowboys believe they’re better equipped to handle injuries this season. We’re about to find out. Quarterback Tony Romo is still weeks away from returning. Now Pro Bowl receiver Dez Bryant isn’t expected to play Sunday at the 49ers. The last time the Cowboys won a game without both Romo and Bryant was Jan. 2, 2011, the regular-season finale at Philadelphia. Running back Ezekiel Elliott was already getting a lot of attention. Expect more now with Bryant not there to demand double-teams. San Francisco will do enough to stymie the Cowboys’ rushing attack to keep this game low-scoring and winnable for the home team. <strong class="score">49ers, 23-17</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_hairopoulos.jpg" alt="Kate Hairopoulos" />
+                <p><strong>Kate Hairopoulos: </strong>Kiddos Dak Prescott and Zeke Elliott are going to be OK, even with the loss of receiver Dez Bryant this week. The offense will retain enough power against a San Francisco defense that has given up 947 total yards and 83 points the last two weeks. Just beware of the turnover; the 49ers have cashed in on all eight of their takeaways this season. <strong class="score">Cowboys, 27-21</strong></p>
+            </div>
+
+            <div class="staff clearFix">
+                <img src="images/_machota.jpg" alt="Jon Machota" />
+                <p><strong>Jon Machota: </strong>The 49ers were interested in drafting a quarterback this year. San Francisco coach Chip Kelly met with several QBs leading up to the draft. Dak Prescott was not one of them. Kelly said he has known Mississippi State coach Dan Mullen for 25 years, so he didn’t think it was necessary. Kelly had a good feel for Prescott, who was picked about where the 49ers had him graded. On Sunday, the rookie QB will show Kelly why San Francisco never should have let him slip to the fourth round. Prescott extends his streak to four games without an interception. <strong class="score">Cowboys 24-21</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_moore.jpg" alt="David Moore" />
+                <p><strong>David Moore: </strong>Two things are certain about this matchup: San Francisco quarterback Colin Kaepernick will kneel during the national anthem; Dallas tight end Jason Witten won’t. Once the anthem is done, the focus will shift to what takes place on the field. The Cowboys have been the more impressive team to this point, but the 49ers have had a more difficult schedule. Carolina and Seattle, the two teams San Francisco has lost to (allowing 83 points in the process), are better than any of the teams the Cowboys have faced. No Tony Romo and no Dez Bryant usually means no way the Cowboys win. But this team has a different vibe about it entering this game. <strong class="score">Cowboys, 34-24</strong></p>
+            </div>
+        </div>
+
+        <div class="row clearFix">
+            <div class="staff clearFix">
+                <img src="images/_cowlishaw.jpg" alt="Tim Cowlishaw" />
+                <p><strong>Tim Cowlishaw: </strong>Cowboys take a knee in this one while missing too many starters on offense and struggling to find their rhythm. <strong class="score">49ers, 15-10</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_gosselin.jpg" alt="Rick Gosselin" />
+                <p><strong>Rick Gosselin: </strong>The team that runs the ball and plays better defense will win. With Carlos Hyde and this defense, my guess is it’s the 49ers. <strong class="score">49ers, 31-27</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_horn.jpg" alt="Barry Horn" />
+                <p><strong>Barry Horn: </strong>49ers are simply not very good. Cowboys could be 3-1 without their starting quarterback. Can you stand it? <strong class="score">Cowboys, 21-20</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_sherrington.jpg" alt="Kevin Sherrington" />
+                <p><strong>Kevin Sherrington: </strong>Once again, Dak is best QB on the field, but after this it gets a little tougher. <strong class="score">Cowboys, 24-17</strong></p>
+            </div>
+
+        </div>
+
+
+        <div id="userPick">
+            <h5>You make the call</h5>
+            <p>We want to know who you who think will win this week’s Cowboys game. Enter your score below, and see which team other readers think will take home the “W.” Scores plotted on the lower-right of the chart indicate a predicted Cowboys victory, upper-left indicate a predicted opponent victory. (Note: Only scores below 60 will be shown.)</p>
+
+            <div id="userSubmission">
+
+                <div id="userForm" class="clearFix">
+
+                    <p class="chatter">Who do you think will win? Enter the scores for each team, then click the "submit" button.</p>
+                    <div class="scoreBlock">
+                        <input id="cowScore" type="text" pattern="[0-9]*" placeholder="0" />
+                        <span>Cowboys</span>
+                    </div>
+
+                    <div class="scoreBlock">
+                        <input id="oppScore"  type="text" pattern="[0-9]*" placeholder="0" />
+                        <span id="opponent"></span>
+                    </div>
+
+                    <button id="submit">Submit</button>
+                </div>
+
+                <div id="response" class="noShow clearFix">
+                    <h6>Thank you for your submission</h6>
+                    <p>You picked the <span class="userTeam"></span> to <span class="userResult">win</span>, <span class="userScore"></span>. Share your prediction on social media:</p>
+                    <button id="faceShare">Facebook</button>
+                    <button id="twitterShare">Twitter</button>
+                </div>
+
+                <p class="readout"><span class="predictPercentage"></span> of readers are picking the <span class="predictTeam"></span> to win this week by an average of <span class="predictPoints"></span> points.</p>
+
+
+            </div>
+
+            <div id="chartBlock">
+
+                <div id="tooltip" class="noShow">
+					<p><strong>Cowboys: </strong> <span class="cowTipScore"></span></p>
+					<p><strong><span class="oppTipName"></span>:</strong> <span class="oppTipScore"></span></p>
+                    <p><strong>Times predicted: </strong> <span class="tipPredict"></span></p>
+				</div>
+
+                <div id="chart"></div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- end picks -->
+
+
+
+    {%include "adblock2.html" %}
+
+    <section id="matchup" class="clearFix cowSection">
+
+    <h4 class="sectionLabel">Bob Sturm’s scouting report</h4>
+
+        <div id="matchupContent" class="clearFix">
+
+            <div class="matchupBlock">
+
+            <p class="key"><span class="question">Situation</span><span class="edge">Edge</span><span class="know">In the know</span></p>
+
+                <div id="cowboysRun" class="matchup clearFix">
+                    <p class="question">When the Cowboys run the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_49ersSplitSig.png" alt="Even" />
+                    <p class="know">The 49ers are not what they once were on defense, but with the two massive Oregon Ducks up front in Arik Armstead and DeForest Buckner, they are well equipped with those linebackers to deal with a stout running game. The Cowboys feel they are rolling on the ground with Ezekiel Elliott, but this is a much stiffer test than dealing with the banged-up Bears. The issues with Tyron Smith’s back make this a far more difficult task.</p>
+                </div>
+                <!-- end cowboysRun -->
+
+                <div id="cowboysPass" class="matchup clearFix">
+                    <p class="question">When the Cowboys pass the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_49ersSig.png" alt="49ers" />
+                    <p class="know">Without Dez Bryant, the Cowboys will have plenty of doubters. They will need to demonstrate they can have some teeth through the air beyond the short and intermediate routes to loosen up a decent defense that’s coming off a shutout victory in its last home game. As far as Dak Prescott using his feet to loosen up the aerial attack, keep in mind that the 49ers just prepared for Cam Newton and Russell Wilson in consecutive weeks.</p>
+                </div>
+                <!-- end cowboysPass -->
+
+                <div id="oppRun" class="matchup clearFix">
+                    <p class="question">When the 49ers run the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_49ersSig.png" alt="49ers" />
+                    <p class="know">San Francisco features that Chip Kelly tempo with zone running and an impressive running back prospect in Carlos Hyde. Hyde is off to only a decent start, but in fairness, the offensive line that Frank Gore enjoyed for years has been torn apart and not properly rebuilt. The Cowboys’ work on the ground has been mixed. Teams haven’t pounded the ball much, but when they have, the Cowboys have allowed a very poor 5 yards per carry.</p>
+                </div>
+                <!-- end oppRun -->
+
+                <div id="oppPass" class="matchup clearFix">
+                    <p class="question">When the 49ers pass the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_cowSig.png" alt="Cowboys" />
+                    <p class="know">Blaine Gabbert is not a very good QB. He is backed up by Colin Kaepernick and Christian Ponder, who are also not very good. The 49ers’ receiving group is among the most toothless in the NFL. Given that San Francisco is by far the NFL’s worst in yards per attempt (5.5), I would assume the Cowboys can stay on guard for play-action shots to Torrey Smith; otherwise, they should be able to focus on stopping the run.</p>
+                </div>
+                <!-- end oppPass -->
+
+                <div id="specialTeams" class="matchup clearFix">
+                    <p class="question">Special teams</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_49ersSplitSig.png" alt="Even" />
+                    <p class="know">Neither team is particularly impressive in the return game, but both have very good kickers. Dan Bailey requires no introduction but is coming off the rare missed FG try. Phil Dawson has been around so long, he kicked for John Mackovic at Texas. Both teams have solid punters, but Bradley Pinion has punted more times than the 21 punts in three weeks for San Francisco.</p>
+                </div>
+                <!-- end specialTeams -->
+
+                <div id="intangibles" class="matchup clearFix">
+                    <p class="question">Intangibles</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_cowSig.png" alt="Cowboys" />
+                    <p class="know">This is a really good test for the Cowboys. There is nothing easy about winning on the road, especially with a rookie QB without his best offensive weapon. San Francisco seems close to trying Kaepernick in relief to see if he can jump-start a rather impotent offense. We must assume the Cowboys have prepared for that possibility.</p>
+                </div>
+                <!-- end intagibles -->
+
+            </div>
+        </div>
+
+        </section>
+     </section>
+
+        <section id="spotlight" class="clearFix cowSection">
+
+
+            <!-- this image should be squarely cropped to provide enough depth for the content -->
+            <!-- this subject should be on the left or right side. if right side, remove leftSide class  -->
+
+            <div class="spotContainer">
+                {{img.jpg("bowman", "49ers linebacker NaVorro Bowman")}}
+                <div class="spotlightContent">
+
+                    <h4 class="sectionLabel whiteTheme">Bob Sturm’s spotlight</h4>
+                    <p>In the 2010 NFL draft, there were two inside linebackers from Penn State who were highly coveted. The Cowboys were the first team to grab one of them when they traded up to get Sean Lee at pick No. 55. The 49ers were then able to take the other, <strong>NaVorro Bowman</strong>, at pick No. 91 in the third round. As great as Lee has been, it would be difficult to argue that Bowman, with four years as a first-team All-Pro hasn’t had the better career.</p>
+                    <p>Bowman flies all over the field. After a gruesome injury in the 2013 NFC Championship Game, when he tore his ACL and MCL knee ligaments in Seattle, Bowman missed all of 2014 and then returned to lead the NFL in tackles in 2015.</p>
+                    <p>Under Jim Harbaugh, Bowman, 28, was part of what was one of the most dominant defenses in recent years. With most of that group gone, he is one of the few proven defensive veterans surrounded by some very talented and young draft picks.</p>
+                    <p>Bowman is a force to be reckoned with who can carry receivers down the field, come on a blitz or just help shut down a run game all afternoon. There is no question that Lee and Bowman help carry on the tradition of “Linebacker U.”</p>
+                    <p><strong>Sturm’s prediction: </strong>The Cowboys have won two straight, and with the Bengals and Packers waiting before the bye week, there is no question they need to get this win in the bag. That said, this is the type of game that causes problems. This game will be decided late. <strong>Cowboys, 24-20</strong></p>
+                    <p class="credit">Ezra Shaw/Getty Images</p>
+                </div>
+
+            </div>
+
+    </section>
+
+
+
+
+    {%include "adblock3.html" %}
+
+    <section class="credits clearfix">
+        <p><strong>Top photo:</strong> <a href="mailto:spool@dallasnews.com">Smiley Pool/Staff Photographer</a></p>
+    </section>
+    <!-- end credits -->
+
+	<section class="more clearFix">
+		<h5>Read more from The Dallas Morning News</h5>
+		<a class="clearFix" href="http://interactives.dallasnews.com/2016/jerry-jones-office/">
+			<img src="images/_jonesShare.jpg" alt="Jerry Jones" />
+			<h6>Trappings of legend</h6>
+			<p>While Jerry Jones doesn’t live in the past, an exclusive look inside the Cowboys owner’s office is a journey through the franchise’s history.</p>
+		</a>
+		<a class="clearFix" href="http://interactives.dallasnews.com/2016/the-moment/No4.html">
+			<img src="images/_kindredShare.jpg" alt="Derrick Kindred" />
+			<h6>Answering the call</h6>
+			<p>There are only so many things Derrick Kindred can do while hoping for a phone call from the NFL that will change his life.</p>
+		</a>
+		<a class="clearFix" href="http://interactives.dallasnews.com/2015/darren-woodson/">
+			<img src="images/_woodsonShare.jpg" alt="Darren Woodson" />
+			<h6>Ringing endorsement</h6>
+			<p>For 12 seasons with the Dallas Cowboys, Darren Woodson would routinely wreak havoc on Sundays, then onnect with his best friend on Tuesdays.</p>
+		</a>
+	</section>
+	<!-- end more -->
+
+		<div class="shareComments">
+		<ul id="share-bar2" class="width-auto-hack"></ul>
+        <div id="comments"></div>
+	</div>
+	<!-- end shareComments -->
+
+</section>
+<!-- end contentWell -->
+{%endblock%}
+
+
+
+
+{%block custom_foot%}
+	<script type="text/javascript"></script>
+{%endblock%}
+
+
+
+
+
+{%block custom_social_meta%}
+<script type="text/javascript">
+  var storyTitle = "See which @SportsDayDFW experts think the Cowboys can win without @DezBryant this week.", // headline in tweet card
+	storyURL = "http://interactives.dallasnews.com/2016/cowboys-gameday/week4.html",
+	leadText = "Are Dak Prescott and Ezekiel Elliott good enough to overcome another injury to the Cowboys offense?", //description in tweet card
+	storyIMG = "http://interactives.dallasnews.com/2016/cowboys-gameday/images/_week4_share.jpg",
+	storyAuthor = "Sportsday",
+	twitterTag = "@SportsDayDFW",
+	comments = true,
+	share = true;
+	OAS_sitepage = 'www.sportsdaydfw.com/dallas-cowboys/';
+</script>
+{%endblock%}

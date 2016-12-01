@@ -1,0 +1,414 @@
+{%extends 'base.html'%}
+{%import 'partials/img.html' as img%}
+
+
+{%block custom_meta%}
+<meta content="cowboys,dallas cowboys,tony romo,dak prescott,dez bryant,ezekiel elliott,new york giants, giants,interactives,dallas,dallas fort worth,dallas news,dallas sports,dallas fort worth sports,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper" name="keywords" />
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<meta content="Can Dak Prescott help bury the memory of a disastrous 2015 Cowboys season? Find out what our experts think." name="description" />
+<title>Cowboys Gameday: Week 1 vs. the New York Giants</title>
+<meta property="og:url" content="http://interactives.dallasnews.com/2016/cowboys-gameday/week1.html" />
+<meta property="og:title" content="The Cowboys season kicks off with a new cast of characters"/>
+<meta property="og:description" content="Can Dak Prescott help bury the memory of a disastrous 2015 Cowboys season? Find out what our experts think." name="description"/>
+<meta property="og:image" content="http://interactives.dallasnews.com/2016/cowboys-gameday/images/_share_week1.jpg"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:type" content="article" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@SportsDayDFW" />
+<meta name="twitter:creator" content="@SportsDayDFW" />
+
+<meta name="liveFyreID" content="90255850728" />
+
+<meta name="parsely-page" id='parsely-page' content='{"title": "The Cowboys season kicks off with a new cast of characters", "link": "http://interactives.dallasnews.com/2016/cowboys-gameday/week1.html", "image_url": "http://interactives.dallasnews.com/2016/cowboys-gameday/images/_share_week1.jpg", "type": "post", "post_id": "90255850728", "pub_date": "2016-09-09T09-30-00Z", "section": "sportsday", "author": ["sportsday"], "tags": ["cowboys","dallas cowboys","tony romo","dak prescott","dez bryant","ezekiel elliott","new york giants","giants","interactives","dallas","dallas fort worth","dallas news","dallas sports","dallas fort worth sports","dfw news","dallas newspaper","dallas morning news","dallas morning news newspaper"]}' />
+
+<meta property="og:keywords" content="cowboys,dallas cowboys,tony romo,dak prescott,dez bryant,ezekiel elliott,new york giants,giants,interactives,dallas,dallas fort worth,dallas news,dallas sports,dallas fort worth sports,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper"/>
+
+<meta name="news_keywords" content="cowboys,dallas cowboys,tony romo,dak prescott,dez bryant,ezekiel elliott,new york giants,giants,interactives,dallas,dallas fort worth,dallas news,dallas sports,dallas fort worth sports,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper"/>
+{%endblock%}
+
+
+{%block custom_head%}
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
+
+{%endblock%}
+
+
+{%block ad%}
+<script type="text/javascript" src="http://www.googletagservices.com/tag/js/gpt.js"></script>
+<script type="text/javascript">
+DFP_networkId = "11222444";
+var DFPSlotSizes = [];
+if (jQuery(window).width() < 768)
+{
+var DFP_sitepage = "m.DMN/interactives";
+DFPSlotSizes = [320,50]
+var adSlot0 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionTop");
+adSlot0.setTargeting("position", "x01");
+adSlot0.addService(googletag.pubads());
+
+var adSlot1 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionMiddle");
+adSlot1.setTargeting("position", "x02");
+adSlot1.addService(googletag.pubads());
+
+var adSlot2 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionBottom");
+adSlot2.setTargeting("position", "x03");
+adSlot2.addService(googletag.pubads());
+
+}
+else
+{
+var DFP_sitepage = "DMN/interactives";
+ DFPSlotSizes = [728,90]
+var adSlot0 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionTop");
+adSlot0.setTargeting("position", "Top");
+adSlot0.addService(googletag.pubads());
+
+var adSlot1 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionMiddle");
+adSlot1.setTargeting("position", "Top");
+adSlot1.addService(googletag.pubads());
+
+var adSlot2 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionBottom");
+adSlot2.setTargeting("position", "Top");
+adSlot2.addService(googletag.pubads());
+
+ }
+</script>
+<script type="text/javascript">
+googletag.pubads().enableSingleRequest();
+googletag.pubads().enableSyncRendering();
+googletag.enableServices();
+</script>
+{%endblock%}
+
+
+{%block content%}
+
+<script>
+		window.fbAsyncInit = function () {
+			FB.init({
+				appId: '258290334265148',
+				xfbml: true,
+				version: 'v2.3'
+			});
+		};
+
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {
+				return;
+			}
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+
+<section id="contentHeader">
+
+    <!-- the lede image should be cropped to 3000 x 1750 -->
+    {{img.jpg("cowlede_week1", "Dak Prescott at the Cowboys Kickoff Luncheon", 'ledeImg')}}
+
+
+    <!-- don't forget to update the opponent the opponent team logo image path -->
+    <!-- h1 tag should be "visigint mascot at home mascot" -->
+
+    <div class="gameHead clearFix">
+        <div class="logoBlock">
+            <img class="teamLogo" src="images/_giantsSig.png" alt="New York Giants logo" />
+            <img class="teamLogo" src="images/_cowSig.png" alt="Dallas Cowboys logo" />
+        </div>
+        <h2 id="label">Cowboys Gameday: <span id="seasonWeek">Week 1</span></h2>
+        <h1>Giants at Cowboys</h1>
+        <p>3:25 p.m. Sunday <strong>TV: </strong>Ch. 4</p>
+        <p><strong>Radio: </strong> KRLD-FM (105.3), KMVK-FM (107.5, Spanish)</p>
+        <p><strong>Line: </strong>Dallas by 1</p>
+
+        <!-- end bylineBlock -->
+
+        <div class="shareComments shareCommentsTop">
+            <ul id="share-bar1" class="width-auto-hack"></ul>
+        </div>
+    </div>
+
+</section>
+<!-- end contentHeader -->
+
+<section id="winLoss" class="clearFix cowSection">
+
+    <div id="win">
+        <p class="subhead">A win would mean ...</p>
+        <p>Dakmania is on a new plane. The rookie quarterback’s preseason play muted the-sky-is-falling devastation when Tony Romo broke a bone in his back. Beating the Giants reaffirms the belief placed in Dak Prescott (above). The first-round selection of running back Ezekiel Elliott is probably going according to plan if the Cowboys improve to 9-0 against the Giants on opening day.</p>
+    </div>
+    <!-- end win -->
+
+    <div id="loss">
+        <p class="subhead">A loss would mean ... </p>
+        <p>Pour torrents of ice cold water on the populations banking on a rookie quarterback picked in the fourth round to save the season, depending on the margin and performance. Or Prescott’s play could be encouraging but show that it continues to be hard to overcome the loss of Romo. Falling to an NFC East rival that threw money at fixing its defense could sting a franchise that did not.</p>
+    </div>
+    <!-- end loss -->
+
+</section>
+<!-- end winLoss -->
+
+{%include "adblock1.html" %}
+
+
+    <section class="contentWell clearFix">
+
+    <div class="wideBlock imageBlock">
+
+        <h4 class="sectionLabel">SportsDay’s Picks</h4>
+        {{img.jpg("bryant_week1", "Dez Bryant scores a touchdown against the Rams in the 2016 preseason")}}
+        <p class="cutline">Dallas Cowboys wide receiver Dez Bryant scores a touchdown against the Los Angeles Rams and defensive back Coty Sensabaugh on Aug. 13, 2016. (Tom Fox/Staff Photographer)</p>
+    </div>
+    <!-- end wide image -->
+
+    <section id="fourKeys" class="clearFix cowSection">
+        <div class="row clearFix">
+            <div class="staff clearFix">
+                <img src="images/_george.jpg" alt="Brandon George" />
+                <p><strong>Brandon George: </strong>Dez Bryant can’t wait to get back on the field Sunday against the Giants. He’s healthy and as confident as ever. The Pro Bowl receiver appears to be primed for a great season. After a slow start in training camp, he’s been catching everything thrown his way over the last few weeks. Bryant will be the difference against the Giants. The Cowboys will try to control the clock with the running game and their talented offensive line, but Bryant will be the player who scores the most in what should be a high-scoring game. Bryant gives the Cowboys the lead early and tacks on another touchdown late, as Dallas does enough to escape with a narrow victory. <strong class="score">Cowboys, 34-31</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_hairopoulos.jpg" alt="Kate Hairopoulos" />
+                <p><strong>Kate Hairopoulos: </strong>The Cowboys’ cornerbacks have all had their problems. Is Brandon Carr worth that big contract? Is Orlando Scandrick fully back from his knee injury that forced him to miss 2015? Will Morris Claiborne ever be worth the sixth overall draft pick? Now they enter 2016 as the apparent strength of a suspect defense. They can solidify that claim against the Giants’ dangerous receiving unit. The secondary’s challenge is slowing the Giants’ Odell Beckham Jr. — who played with Claiborne at LSU — along with Victor Cruz and Sterling Shepard. Making it all the more difficult, they must overcome a lack of pass rush up front against Giants quarterback Eli Manning. <strong class="score">Cowboys, 31-27</strong></p>
+            </div>
+
+            <div class="staff clearFix">
+                <img src="images/_machota.jpg" alt="Jon Machota" />
+                <p><strong>Jon Machota: </strong>On paper, it seems easy to figure out. The Giants have the better defense and the better quarterback. The Cowboys are starting a rookie running back and a rookie quarterback. How could anyone pick against New York? Well, funny things happen in the parity-driven NFL. The Giants will do everything in their power to shut down Ezekiel Elliott. It will work early, forcing Dak Prescott to throw. But he’ll make some plays with both his arm and his feet, giving the Cowboys a small second-half lead. Elliott will finish things off from there, breaking off a couple big runs, grinding the clock and totaling 130 yards in his rookie debut. <strong class="score">Cowboys, 24-21</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_moore.jpg" alt="David Moore" />
+                <p><strong>David Moore: </strong>Dak Prescott won’t arrive at AT&T Stadium in a helicopter. But owner Jerry Jones may give the rookie quarterback a lift home in his if Prescott manages to win this game. No one is breaking out the anointing oil here. It’s unrealistic to expect Prescott to produce the sort of superlative performance he did throughout the preseason. But he’s not your typical fourth-round pick. He won’t have to go out and win the game on his own.  The key is that he doesn’t go out and lose it. Win, and he joins Roger Staubach as the only other rookie quarterback in franchise history to win on opening day. <strong class="score">Cowboys, 28-27</strong></p>
+            </div>
+        </div>
+
+        <div class="row clearFix">
+            <div class="staff clearFix">
+                <img src="images/_cowlishaw.jpg" alt="Tim Cowlishaw" />
+                <p><strong>Tim Cowlishaw: </strong>Cowboys riding rookies on offense but get considerable boost from their most reliable player — Dan Bailey. <strong class="score">Cowboys, 26-24</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_gosselin.jpg" alt="Rick Gosselin" />
+                <p><strong>Rick Gosselin: </strong>The Giants have a pass rush, the Cowboys do not. The Giants also have a quarterback who has won two Super Bowls. <strong class="score">Giants, 31-20</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_horn.jpg" alt="Barry Horn" />
+                <p><strong>Barry Horn: </strong>Welcome to the NFL regular season Mr. Prescott. It’s not a game where rookie quarterbacks making their first starts thrive. <strong class="score">Giants, 30-17</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_sherrington.jpg" alt="Kevin Sherrington" />
+                <p><strong>Kevin Sherrington: </strong>Giants welcome Dak to the real NFL. First step in a long, painful process. <strong class="score">Giants, 21-17</strong></p>
+            </div>
+        </div>
+
+
+        <div id="userPick">
+            <h5>You make the call</h5>
+            <p>We want to know who you who think will win this week’s Cowboys game. Enter your score below, and see which team other readers think will take home the “W.” Scores plotted on the lower-right of the chart indicate a predicted Cowboys victory, upper-left indicate a predicted opponent victory. (Note: Only scores below 60 will be shown.)</p>
+
+            <div id="userSubmission">
+
+                <div id="userForm" class="clearFix">
+
+                    <p class="chatter">Who do you think will win? Enter the scores for each team, then click the "submit" button.</p>
+                    <div class="scoreBlock">
+                        <input id="cowScore" type="text" pattern="[0-9]*" placeholder="0" />
+                        <span>Cowboys</span>
+                    </div>
+
+                    <div class="scoreBlock">
+                        <input id="oppScore"  type="text" pattern="[0-9]*" placeholder="0" />
+                        <span id="opponent"></span>
+                    </div>
+
+                    <button id="submit">Submit</button>
+                </div>
+
+                <div id="response" class="noShow clearFix">
+                    <h6>Thank you for your submission</h6>
+                    <p>You picked the <span class="userTeam"></span> to <span class="userResult">win</span>, <span class="userScore"></span>. Share your prediction on social media:</p>
+                    <button id="faceShare">Facebook</button>
+                    <button id="twitterShare">Twitter</button>
+                </div>
+
+                <p class="readout"><span class="predictPercentage"></span> of readers are picking the <span class="predictTeam"></span> to win this week by an average of <span class="predictPoints"></span> points.</p>
+
+
+            </div>
+
+            <div id="chartBlock">
+
+                <div id="tooltip" class="noShow">
+					<p><strong>Cowboys: </strong> <span class="cowTipScore"></span></p>
+					<p><strong><span class="oppTipName"></span>:</strong> <span class="oppTipScore"></span></p>
+                    <p><strong>Times predicted: </strong> <span class="tipPredict"></span></p>
+				</div>
+
+                <div id="chart"></div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- end picks -->
+
+
+
+    {%include "adblock2.html" %}
+
+    <section id="matchup" class="clearFix cowSection">
+
+    <h4 class="sectionLabel">Bob Sturm’s scouting report</h4>
+
+        <div id="matchupContent" class="clearFix">
+
+            <div class="matchupBlock">
+
+            <p class="key"><span class="question">Situation</span><span class="edge">Edge</span><span class="know">In the know</span></p>
+
+                <div id="cowboysRun" class="matchup clearFix">
+                    <p class="question">When the Cowboys run the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_cowSig.png" alt="Cowboys" />
+                    <p class="know">Finally, the unveiling of the combination of Ezekiel Elliott running behind the Cowboys offensive line that most expect should be dominant. The Giants have enlisted two massive defensive tackles in Johnathan Hankins (320 pounds) and free-agent acquisition Damon “Snacks” Harrison (350 pounds) to try to put up a roadblock.</p>
+                </div>
+                <!-- end cowboysRun -->
+
+                <div id="cowboysPass" class="matchup clearFix">
+                    <p class="question">When the Cowboys pass the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_giantSplitSig.png" alt="Even" />
+                    <p class="know">Dak Prescott will have all eyes in his direction as a No. 135 draft pick starting in Week 1. The Cowboys have aerial weapons, but the Giants have pass rush ends and ball-hawking corners to try to find that game-breaking mistake.</p>
+                </div>
+                <!-- end cowboysPass -->
+
+                <div id="oppRun" class="matchup clearFix">
+                    <p class="question">When the Giants run the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_cowSig.png" alt="Cowboys" />
+                    <p class="know">The Giants have issues up front to match the Dallas weakness up front in pass rush. But, with Terrell McClain (injury) and Cedric Thornton (free agency) added inside, the Cowboys are expected to be solid against RB Rashad Jennings.</p>
+                </div>
+                <!-- end oppRun -->
+
+                <div id="oppPass" class="matchup clearFix">
+                    <p class="question">When the Giants pass the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_giantsSig.png" alt="Giants" />
+                    <p class="know">Eli Manning gets the ball out quick and finally has his weapons available. The Cowboys have had a tough time getting to him in recent years, and with time and Beckham downfield, the Cowboys must demonstrate that they have fixed their secondary.</p>
+                </div>
+                <!-- end oppPass -->
+
+                <div id="specialTeams" class="matchup clearFix">
+                    <p class="question">Special teams</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_cowSig.png" alt="Cowboys" />
+                    <p class="know">The Cowboys return their entire special teams group with Dan Bailey, Chris Jones, and Lucky Whitehead. The Giants add a new kicker in Randy Bullock but also retain former Cowboys return specialist Dwayne Harris, who won the last meeting with a massive kick return for a touchdown.</p>
+                </div>
+                <!-- end specialTeams -->
+
+                <div id="intangibles" class="matchup clearFix">
+                    <p class="question">Intangibles</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_cowSig.png" alt="Cowboys" />
+                    <p class="know">It’s difficult to identify an edge for intangibles for a Week 1 meeting when both teams have so much to unveil. The Giants have a new coach and new signings everywhere on defense. The Cowboys have a rookie QB/RB combo who are full of confidence. Edge to the home team.</p>
+                </div>
+                <!-- end intagibles -->
+
+            </div>
+        </div>
+
+        </section>
+     </section>
+
+        <section id="spotlight" class="clearFix cowSection">
+
+
+            <!-- this image should be squarely cropped to provide enough depth for the content -->
+            <!-- this subject should be on the left or right side. if right side, change leftSide class to rightSide -->
+
+            <div class="spotContainer">
+                {{img.jpg("shepard", "Sterling Shepard makes a catch against the New England Patriots during the 2016 preseason.")}}
+                <div class="spotlightContent leftSide">
+
+                    <h4 class="sectionLabel whiteTheme">Bob Sturm’s Spotlight</h4>
+                    <p>Sunday will be the first NFL game for Oklahoma City native and former Sooners star receiver <strong>Sterling Shepard</strong>, in the first of what should be many meetings with the Cowboys. Shepard, the Giants’ second-round pick in April, gives Eli Manning another weapon in Giants coach Ben McAdoo’s offensive system.</p>
+                    <p>The Giants should be able to flood the underneath zones in a way they seldom have been able to accomplish with Shepard joining Odell Beckham Jr. and Victor Cruz when the Giants play in their standard 11 personnel (1 RB, 1 TE, 3 WR).</p>
+                    <p>No team in the league stays in this grouping more than New York (81 percent of snaps) and adding Shepard to the pairing of Cruz and Beckham (the two have played only one game together because of Cruz’s health) is enough to excite the franchise that has had little luck keeping their players off the injury reports in the last several years.</p>
+                    <p>Shepard is quick out of breaks, dangerous after the catch and able to excel at going vertical, a talent that is rare among slot receivers who live underneath the linebackers in coverage. The only question for the Giants is whether they have gone too small at receiver as Cruz is the tallest of the trio at barely 6-0.</p>
+                    <p><strong>Sturm’s prediction: </strong>Cowboys 27, Giants 21. It is always a one-possession game between these two, but Dallas is able to pull out the opener behind Elliott’s debut.</p>
+                    <p class="credit">Kathy Willens/The Associated Press</p>
+                </div>
+
+            </div>
+
+    </section>
+
+
+
+
+
+    {%include "adblock3.html" %}
+
+    <section class="credits clearfix">
+            <p><strong>Top photo:</strong> <a href="mailto:alandis@dallasnews.com">Ashley Landis/Staff Photographer</a></p>
+    	</section>
+    	<!-- end credits -->
+	<section class="more clearFix">
+		<h5>Read more from The Dallas Morning News</h5>
+		<a class="clearFix" href="http://interactives.dallasnews.com/2016/jerry-jones-office/">
+			<img src="images/_jonesShare.jpg" alt="Jerry Jones" />
+			<h6>Trappings of legend</h6>
+			<p>While Jerry Jones doesn’t live in the past, an exclusive look inside the Cowboys owner’s office is a journey through the franchise’s history.</p>
+		</a>
+		<a class="clearFix" href="http://interactives.dallasnews.com/2016/the-moment/No4.html">
+			<img src="images/_kindredShare.jpg" alt="Derrick Kindred" />
+			<h6>Answering the call</h6>
+			<p>There are only so many things Derrick Kindred can do while hoping for a phone call from the NFL that will change his life.</p>
+		</a>
+		<a class="clearFix" href="http://interactives.dallasnews.com/2015/darren-woodson/">
+			<img src="images/_woodsonShare.jpg" alt="Darren Woodson" />
+			<h6>Ringing endorsement</h6>
+			<p>For 12 seasons with the Dallas Cowboys, Darren Woodson would routinely wreak havoc on Sundays, then onnect with his best friend on Tuesdays.</p>
+		</a>
+	</section>
+	<!-- end more -->
+
+		<div class="shareComments">
+		<ul id="share-bar2" class="width-auto-hack"></ul>
+        <div id="comments"></div>
+	</div>
+	<!-- end shareComments -->
+
+</section>
+<!-- end contentWell -->
+{%endblock%}
+
+
+
+
+{%block custom_foot%}
+	<script type="text/javascript"></script>
+{%endblock%}
+
+
+
+{%block custom_social_meta%}
+<script type="text/javascript">
+  var storyTitle = "Find out if our experts think Dak Prescott can help bury the memory of a disastrous 2015 Cowboys season?", // headline in tweet card
+	storyURL = "http://interactives.dallasnews.com/2016/cowboys-gameday/week1.html",
+	leadText = "Can Dak Prescott help bury the memory of a disastrous 2015 Cowboys season? Find out what our experts think.", //description in tweet card
+	storyIMG = "http://interactives.dallasnews.com/2016/cowboys-gameday/images/_share_week1.jpg",
+	storyAuthor = "sportsdaydfw",
+	twitterTag = "SportsDayDFW",
+	comments = true,
+	share = true;
+	OAS_sitepage = 'www.dallasnews.com/sportsday/dallas-cowboys/';
+</script>
+{%endblock%}

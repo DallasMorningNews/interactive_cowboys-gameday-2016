@@ -1,0 +1,1574 @@
+@charset "UTF-8";
+/*
+TABLE OF CONTENTS
+-----------------
+
+I     CSS RESET
+II    KASON'S TEMPLATE STYLES
+III   GLOBAL ARTICLE STYLES
+IV    CONTENT HEADER
+V     CONTENT WELL
+VI    STORY HEAD, BYLINES AND INTRO
+VII   SIDE BLOCKS AND INLINE BLOCKS
+VIII  IMAGE, WIDE, FULL AND INLINE BLOCKS
+IX    PULLQUOTES
+X     NDN EMBEDS
+XI    YOUTUBE EMBEDS
+XII   RELATED LINKS AND FACT BOXES
+XIII  BREAKOUT BOXES
+XIV   SLIDESHOWS
+XV    CREDIT LINKS
+XVI   MORE LINKS
+XVII  DROP DOWN BULLETS
+XVIII SYNOPSIS BLOCKS
+XIX   ADS
+
+/*
+-------------------------------------------
+I. CSS RESET
+-------------------------------------------
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  z-index: 0;
+  position: relative; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.clearFix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/*
+-------------------------------------------
+II. KASON TEMPLATE STYLES, HEADER AND FOOTER
+-------------------------------------------
+*/
+.width-auto-hack,
+.gig-comments-container {
+  width: auto !important;
+  margin: 0;
+  padding: 0; }
+
+.gig-share-bar-container td {
+  display: inline-block;
+  padding: .5em 0; }
+
+.gig-share-bar-container td td {
+  display: table-cell;
+  padding: 0; }
+
+.bg-black {
+  min-height: 51px;
+  padding: 6px 12px;
+  background-color: #323232;
+  color: #ffffff;
+  position: relative;
+  z-index: 30;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+.logo {
+  background-image: url("http://interactives.templates.statics.s3.amazonaws.com/v1.0/images/_dmn_logo.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: left center;
+  opacity: .85;
+  display: block;
+  height: 40px;
+  width: 154.4px;
+  float: left;
+  cursor: pointer;
+  -webkit-transtion: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out; }
+  .logo:hover {
+    opacity: 1; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
+.interactiveFooter {
+  background-color: #b0bcc4;
+  min-height: 97px;
+  padding: 20px 10px; }
+
+.back-to-top {
+  background-color: white;
+  color: #b0bcc4;
+  margin-right: 6px;
+  font-size: 14px; }
+
+.interactiveFooter a, .interactiveFooter p {
+  color: white; }
+
+.interactiveFooter a {
+  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  margin-left: 20px;
+  font-weight: normal; }
+
+a.top {
+  display: block;
+  float: left;
+  margin: 0 0 12px 0;
+  margin-left: 0; }
+
+.terms-privacy {
+  float: right;
+  padding-top: 4px; }
+
+.terms-privacy:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.interactiveFooter p {
+  clear: both;
+  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: -.5px;
+  line-height: 18px;
+  margin-bottom: 0; }
+
+@media (max-width: 500px) {
+  a.top {
+    float: none;
+    margin: 0 0 6px 0; }
+  .terms-privacy {
+    float: none;
+    margin: 0 0 24px;
+    padding: 0 0; }
+  .terms-privacy a {
+    float: left;
+    margin: 0 0;
+    width: 50%; } }
+
+@media print {
+  .bg-black {
+    position: relative; } }
+
+@media print {
+  .bg-black {
+    position: relative; } }
+
+/*
+-------------------------------------------
+III. GLOBAL ARTICLE STYLES
+-------------------------------------------
+*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px;
+  color: #212121; }
+
+article {
+  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
+  width: 100%; }
+
+a {
+  color: #0185d3;
+  font-weight: bold;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+a:visited {
+  color: #424242;
+  font-weight: bold; }
+
+#content {
+  padding: 0rem 0 5rem;
+  position: relative; }
+
+h1, h2, h3, h4 {
+  margin-bottom: 1.2rem; }
+
+h5, h6 {
+  margin-bottom: .6rem; }
+
+h1 {
+  font-size: 6rem;
+  line-height: 7.2rem; }
+
+h2 {
+  font-size: 4.8rem;
+  line-height: 6rem; }
+
+h3 {
+  font-size: 3.6rem;
+  line-height: 4.2rem; }
+
+h4 {
+  font-size: 2.4rem;
+  line-height: 3rem; }
+
+h5 {
+  font-size: 2rem;
+  line-height: 2.4rem; }
+
+h6 {
+  font-size: 1.6rem;
+  line-height: 1.8rem; }
+
+/*
+-------------------------------------------
+IV. CONTENT HEADER
+-------------------------------------------
+*/
+#contentHeader {
+  position: relative; }
+
+#contentHeader img {
+  width: 100%;
+  margin-bottom: -1px; }
+
+#contentHeader .cutline {
+  padding: 0 2rem;
+  margin: 0 0 .6rem 0; }
+
+/*
+-------------------------------------------
+V. CONTENT WELL
+-------------------------------------------
+*/
+.contentWell {
+  font-family: "PT Serif", Georgia, Times, serif;
+  margin: 0 auto;
+  max-width: 1400px;
+  overflow: hidden;
+  position: relative;
+  width: 90%; }
+
+.contentWell > p {
+  max-width: 650px;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+  font-family: "PT Serif", Georgia, Times, serif;
+  margin: 0 auto 2.4rem auto; }
+  .contentWell > p.twitterTag {
+    font-style: italic;
+    margin-top: 4.8rem; }
+
+.contentWell > p:last-of-type {
+  margin-bottom: 0; }
+
+@media (max-width: 500px) {
+  .contentWell > p {
+    font-size: 1.6rem; } }
+
+/*
+-------------------------------------------
+VI. STORY HEAD, BYLINES AND INTRO
+-------------------------------------------
+*/
+#storyHead {
+  margin: 4.8rem auto 2.4rem auto;
+  text-align: center;
+  color: #212121;
+  max-width: 1000px; }
+
+#storyHead h1 {
+  color: #323232;
+  font-size: 6.4rem;
+  letter-spacing: -.2rem;
+  line-height: 7.2rem;
+  margin-bottom: 1.2rem; }
+
+#storyHead h2 {
+  color: #323232;
+  font-size: 3.2rem;
+  line-height: 3.6rem; }
+
+#storyHead h3 {
+  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  margin-bottom: 2.4rem;
+  text-transform: uppercase; }
+
+.bylineBlock {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto; }
+
+.bylineBlock p {
+  color: #212121;
+  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  margin: 0 0 .3rem 0;
+  text-align: center; }
+  .bylineBlock p a {
+    display: inline-block;
+    color: #424242; }
+    .bylineBlock p a:visited {
+      color: #424242; }
+
+.bylineBlock p:last-of-type {
+  margin-right: 0; }
+
+p.intro {
+  font-size: 2.4rem;
+  line-height: 4rem;
+  position: relative; }
+
+.dropcap {
+  color: #323232;
+  float: left;
+  font-size: 155px;
+  line-height: 100px;
+  margin: 0 .5rem 0 0;
+  padding-top: 0;
+  top: 1px;
+  position: relative; }
+
+p.subhead {
+  color: #323232;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  margin: 4.8rem auto 2.4rem auto; }
+
+@media (max-width: 860px) {
+  #storyHead h1 {
+    font-size: 4.8rem;
+    line-height: 6rem;
+    margin-bottom: 1.2rem; }
+  #storyHead h2 {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    margin-bottom: 1.2rem; }
+  #storyHead h3 {
+    font-size: 1.4rem;
+    line-height: 1.8rem; }
+  p.intro {
+    font-size: 2.2rem;
+    line-height: 3.6rem; }
+  .dropcap {
+    font-size: 120px;
+    line-height: 65px;
+    position: relative;
+    top: 1px;
+    margin: 2rem .5rem 0 0; } }
+
+@media (max-width: 500px) {
+  #storyHead h1 {
+    font-size: 4.2rem;
+    line-height: 4.8rem;
+    letter-spacing: 0; }
+  p.intro {
+    font-size: 1.6rem;
+    line-height: 2.4rem; }
+  .dropcap {
+    font-size: 100px;
+    line-height: 50px;
+    top: -17px; } }
+
+/*
+-------------------------------------------
+VII. SIDE BLOCKS & INLINE BLOCKS
+-------------------------------------------
+*/
+.sideBlock {
+  max-width: 400px;
+  width: 100%;
+  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif; }
+
+.inlineBlock {
+  max-width: 650px;
+  width: 100%;
+  margin: 4.8rem auto;
+  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif; }
+
+.sideBlock p, .inlineBlock p {
+  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.8rem; }
+
+.sideBlock h4, .sideBlock h5, .sideBlock h6, .inlineBlock h4 {
+  font-weight: bold;
+  color: #212121; }
+
+.sideBlock img, .inlineBlock img {
+  margin: 0 0 .3rem 0;
+  width: 100%; }
+
+.rightBlock {
+  float: right;
+  margin: 0 0 4.8rem 4.8rem; }
+
+.leftBlock {
+  float: left;
+  margin: 0 4.8rem 4.8rem 0; }
+
+p.source {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #797470;
+  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif; }
+
+@media (max-width: 740px) {
+  .rightBlock, .leftBlock {
+    float: none;
+    margin: 4.8rem auto 4.8rem;
+    width: 100%;
+    max-width: 650px; }
+  .graphicBlock {
+    max-width: 400px; } }
+
+/*
+-------------------------------------------
+VIII. IMAGE, WIDE, FULL AND INLINE BLOCKS
+-------------------------------------------
+*/
+.cutline {
+  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  color: #797470;
+  font-weight: normal; }
+
+.imageBlock {
+  width: 100%; }
+
+.imageBlock img {
+  margin-bottom: .3rem;
+  width: 100%; }
+
+.wideBlock, .fullBlock {
+  margin: 4.8rem auto; }
+
+.fullBlock p.cutline {
+  padding: 0 2rem; }
+
+.doubleBlock img {
+  float: left;
+  margin-right: 2%;
+  width: 49%; }
+
+.doubleBlock img:last-of-type {
+  margin-right: 0; }
+
+.mugBlock {
+  max-width: 150px;
+  margin-left: calc((100% - 650px) / 2);
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 5px; }
+
+@media (max-width: 740px) {
+  .doubleBlock img {
+    float: none;
+    margin-right: 0;
+    width: 100%; }
+  .mugBlock {
+    margin-left: 0;
+    max-width: 125px; } }
+
+/*
+-------------------------------------------
+IX. PULLQUOTES
+-------------------------------------------
+*/
+.pullquote {
+  border-top: 1px solid #323232;
+  border-bottom: 1px solid #323232;
+  font-size: 2.4rem;
+  line-height: 4.8rem;
+  padding: 2.4rem 0;
+  text-align: left; }
+
+.pullquote blockquote {
+  margin-bottom: 2.4rem;
+  font-family: "PT Serif", Georgia, Times, serif;
+  color: #212121; }
+
+.pullquote p.attribution {
+  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
+  color: #797470;
+  text-align: right; }
+
+.pullquote p.attribution:before {
+  content: '— '; }
+
+@media (max-width: 600px) {
+  .pullquote {
+    font-size: 2rem;
+    line-height: 3rem; } }
+
+/*
+-------------------------------------------
+X. NDN EMBEDS
+-------------------------------------------
+*/
+.ndn_embed {
+  margin: 4.8rem auto;
+  max-width: 650px;
+  min-height: 170px;
+  position: relative;
+  width: 100%;
+  z-index: 0; }
+
+.ndn_embed p {
+  font-family: Arial, sans-serif !important; }
+
+/*
+-------------------------------------------
+XI. VIDEO EMBEDS
+-------------------------------------------
+*/
+.videoBlock {
+  width: 100%;
+  max-width: 650px;
+  margin: 4.8rem auto; }
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0; }
+
+.videoWrapper iframe, .videoWrapper embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+/*
+-------------------------------------------
+XII. RELATED LINKS AND FACT BOXES
+-------------------------------------------
+*/
+.relatedLinks a {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  margin-bottom: 1.8rem; }
+
+.relatedLinks a:last-child {
+  margin-bottom: 0; }
+
+@media (max-width: 740px) {
+  .relatedLinks, .factBox {
+    border-bottom: 1px solid #323232;
+    border-top: 1px solid #323232;
+    padding: 2.4rem 0; } }
+
+/*
+-------------------------------------------
+XIII. BREAKOUT MODULES
+-------------------------------------------
+*/
+.breakoutModule {
+  margin: 4.8rem auto;
+  width: 95%; }
+
+.breakoutModule h5 {
+  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
+  font-weight: bold; }
+
+.breakoutModule img {
+  margin-bottom: .3rem;
+  width: 100%; }
+
+.breakoutModule p {
+  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.8rem; }
+
+.breakoutBox {
+  float: left;
+  margin-right: 2%; }
+
+.breakoutBox:last-child {
+  margin-right: 0; }
+
+.twoAcross .breakoutBox {
+  width: 49%; }
+
+.threeAcross .breakoutBox {
+  width: 32%; }
+
+.fourAcross .breakoutBox {
+  width: 23.5%; }
+
+@media (max-width: 740px) {
+  .breakoutModule {
+    border-bottom: 1px solid #323232;
+    border-top: 1px solid #323232;
+    margin: 4.8rem auto;
+    padding: 2.4rem 0; }
+  .breakoutModule img {
+    float: left;
+    margin-right: 1rem;
+    width: 50%; }
+  .twoAcross .breakoutBox, .threeAcross .breakoutBox, .fourAcross .breakoutBox {
+    margin-bottom: 1.2rem;
+    float: none;
+    width: 100%; }
+  .breakoutBox:last-child {
+    margin-bottom: 0; } }
+
+/*
+-------------------------------------------
+XIV. SLIDESHOWS
+-------------------------------------------
+*/
+.slideshow {
+  margin: 4.8rem auto;
+  max-width: 1000px; }
+
+.slideshow h5 {
+  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
+  color: #797470; }
+
+.slideContainer {
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+
+.slide {
+  float: left;
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  width: 100%; }
+
+.slideButton {
+  background-color: white;
+  cursor: pointer;
+  display: block;
+  height: 5rem;
+  opacity: .8;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: opacity .3s ease-out;
+  -moz-transition: opacity .3s ease-out;
+  -o-transition: opacity .3s ease-out;
+  transition: opacity .3s ease-out;
+  width: 5rem; }
+
+.slideButton:hover {
+  opacity: 1; }
+
+.nextButton {
+  right: 0; }
+
+.slide img {
+  width: 100%; }
+
+.current {
+  margin-left: 0;
+  opacity: 1;
+  position: relative; }
+
+.preSlide {
+  margin-left: 100%;
+  opacity: 1; }
+
+.postSlide {
+  margin-left: -100%;
+  opacity: 0; }
+
+@media (max-width: 600px) {
+  .slideButton {
+    width: 3rem;
+    height: 3rem; } }
+
+/*
+-------------------------------------------
+XV. CREDIT LINKS
+-------------------------------------------
+*/
+.credits {
+  border-bottom: 1px solid #323232;
+  margin: 6rem auto 0;
+  max-width: 650px;
+  padding-bottom: 2.4rem; }
+
+.credits p {
+  display: block;
+  float: left;
+  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  margin: 0 2rem 0rem 0; }
+
+.credits a {
+  color: #212121;
+  font-weight: normal;
+  cursor: pointer; }
+
+/*
+-------------------------------------------
+XVI. MORE LINKS
+-------------------------------------------
+*/
+.more {
+  border-bottom: 1px solid #323232;
+  margin: 4.8rem auto 6rem;
+  max-width: 650px;
+  padding-bottom: 2.4rem; }
+
+.more h5, .more p, .more a {
+  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif; }
+
+.more h5 {
+  font-weight: bold;
+  margin-bottom: 2.4rem; }
+
+.more a {
+  color: #212121;
+  display: block;
+  float: left;
+  margin-right: 5%;
+  width: 30%; }
+
+.more a:hover {
+  text-decoration: none; }
+
+.more a:last-child {
+  margin-right: 0; }
+
+.more a img {
+  margin-bottom: .3rem;
+  width: 100%; }
+
+.more a p {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  font-weight: normal;
+  letter-spacing: -.2px; }
+
+@media (max-width: 600px) {
+  .more a {
+    float: none;
+    margin: 0 0 2.4rem;
+    width: 100%; }
+  .more a img {
+    float: left;
+    width: 33%; }
+  .more a h6, .more a p {
+    float: right;
+    width: 65%; }
+  .more a h6 {
+    margin-top: -.3rem; } }
+
+@media (max-width: 400px) {
+  .more a {
+    margin-bottom: 3.6rem; }
+  .more a img {
+    float: none;
+    width: 100%;
+    margin-bottom: .6rem; }
+  .more a h6, .more a p {
+    width: 100%;
+    float: none; } }
+
+/*
+-------------------------------------------
+XVII. DROP DOWN LIST
+-------------------------------------------
+*/
+.fa-twitter {
+  color: #5CA3E6;
+  cursor: pointer;
+  transition: color .25s ease-out; }
+
+.dropList .dropHed {
+  cursor: pointer; }
+
+.dropList .dropItem {
+  background-color: #f0f0f0;
+  border-radius: 2px;
+  margin-bottom: .6rem;
+  padding: 1rem; }
+
+.dropList .dropHed span.cardinal {
+  background-color: #A8A8A8;
+  border-radius: 50%;
+  color: white;
+  float: left;
+  font-size: 1.8rem;
+  height: 2.4rem;
+  letter-spacing: -1px;
+  line-height: 2.2rem;
+  margin-right: 1rem;
+  text-align: center;
+  text-indent: -1px;
+  width: 2.4rem; }
+
+.dropList .dropHed h5 {
+  float: left;
+  margin-bottom: 0;
+  width: calc(100% - 7rem); }
+
+.dropList .dropHed .fa {
+  color: #5CA3E6;
+  float: right;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  margin: 0 1rem; }
+
+.dropList .dropText {
+  display: none;
+  padding: 1rem 4rem 1rem 3.4rem; }
+
+.dropList .expandedText {
+  display: block; }
+
+.dropList p.dropText {
+  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.8rem; }
+
+/*
+-------------------------------------------
+XVIII. SYNOPSIS BOXES
+-------------------------------------------
+*/
+.synopsis {
+  border-bottom: 1px solid #323232;
+  padding-bottom: 2.4rem; }
+
+.synopsis h6 {
+  margin-bottom: .9rem;
+  font-weight: bold;
+  color: #212121;
+  text-transform: uppercase; }
+
+.synopsis p {
+  font-style: italic;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  margin-bottom: .9rem;
+  color: #797470;
+  cursor: pointer; }
+
+/*
+-------------------------------------------
+XIX. ADS
+-------------------------------------------
+*/
+.ad {
+  border-bottom: 1px solid #323232;
+  border-top: 1px solid #323232;
+  margin: 4.8rem 0;
+  padding: 3.6rem 0;
+  position: relative;
+  text-align: center;
+  z-index: 0; }
+
+.noRule {
+  border-bottom: none !important;
+  border-top: none !important;
+  padding: 2.4rem 0; }
+
+.ad * {
+  margin: 0 auto !important; }
+
+.ad p {
+  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: .5rem !important; }
+
+@media (max-width: 767px) {
+  .ad {
+    margin: 2.4rem 0;
+    padding: 2.4rem 0; } }
+
+.cowboys-color {
+  fill: #00338d; }
+
+.opp-giants {
+  fill: #a71930; }
+
+.opp-redskins {
+  fill: #773141; }
+
+.opp-bears {
+  fill: #c83803; }
+
+.opp-49ers {
+  fill: #aa0000; }
+
+.opp-bengals {
+  fill: #fb4f14; }
+
+.opp-packers {
+  fill: #203731; }
+
+.opp-eagles {
+  fill: #004953; }
+
+.opp-browns {
+  fill: #fb4f14; }
+
+.opp-steelers {
+  fill: #ffb612; }
+
+.opp-ravens {
+  fill: #241773; }
+
+.opp-vikings {
+  fill: #4f2683; }
+
+.opp-buccaneers {
+  fill: #d50a0a; }
+
+.opp-lions {
+  fill: #005a8b; }
+
+.ledeImg {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+  @media (max-width: 650px) {
+    .ledeImg {
+      -webkit-filter: none;
+      filter: none; } }
+
+#playoffWeek {
+  display: none; }
+
+.gameHead {
+  display: block;
+  width: 100%;
+  height: 58vw;
+  background-color: rgba(0, 34, 68, 0.85);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  text-align: center;
+  padding: 5% 5% 0; }
+  .gameHead h2 {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    border-bottom: 1px solid white;
+    display: inline-block;
+    color: white; }
+  .gameHead .logoBlock {
+    margin-bottom: 1.2rem; }
+  .gameHead .teamLogo {
+    width: 50px !important;
+    height: 50px !important;
+    margin-right: 10px; }
+    .gameHead .teamLogo:last-of-type {
+      margin-right: 0; }
+  .gameHead h1 {
+    font-family: "Gotham A", "Gotham B", Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: -.5px;
+    margin-bottom: 1.2rem; }
+  .gameHead p {
+    font: 1.4rem/1.8rem "Gotham A", "Gotham B", Arial, sans-serif;
+    margin-bottom: .6rem;
+    display: inline-block; }
+    .gameHead p:after {
+      content: ' | '; }
+    .gameHead p:last-of-type:after {
+      content: ""; }
+  .gameHead .bylineBlock p {
+    margin-top: 2.4rem;
+    color: white; }
+  @media (max-width: 800px) {
+    .gameHead h1 {
+      font-size: 4.8rem;
+      line-height: 5.4rem; }
+    .gameHead p {
+      font-size: 1.4rem;
+      line-height: 1.4rem; } }
+  @media (max-width: 650px) {
+    .gameHead {
+      position: relative;
+      background-color: #26425f;
+      color: white;
+      height: auto; }
+      .gameHead .teamLogo {
+        width: 40px !important;
+        height: 40px !important; }
+      .gameHead h1 {
+        font-size: 3.6rem;
+        line-height: 4.2rem; }
+      .gameHead h2 {
+        font-size: 1.8rem;
+        border-bottom: 1px solid white; }
+      .gameHead .bylineBlock p {
+        color: #0f0f0f; }
+      .gameHead p:after {
+        content: ''; } }
+
+.subhead {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Gotham A", "Gotham B", Arial, sans-serif;
+  margin-bottom: 1.2rem;
+  color: #323232; }
+  @media (max-width: 600px) {
+    .subhead {
+      font-size: 2.1rem !important;
+      line-height: 2.4rem !important; } }
+
+.noShow {
+  display: none; }
+
+.sectionLabel {
+  text-align: center;
+  background-color: #323232;
+  padding: 5px 5px 5px;
+  display: block;
+  max-width: 320px;
+  width: 100%;
+  font: 1.6rem/2.4rem "Gotham A", "Gotham B", Arial, sans-serif;
+  margin: 0 auto 3.6rem;
+  color: white;
+  text-transform: uppercase;
+  position: relative; }
+  .sectionLabel:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: #323232;
+    left: 50%;
+    margin-left: -8px;
+    bottom: -8px; }
+  .sectionLabel.whiteTheme {
+    background-color: white;
+    color: black; }
+    .sectionLabel.whiteTheme:after {
+      background-color: white; }
+
+#winLoss {
+  background-color: #26425f;
+  padding: 4.8rem 0;
+  margin-bottom: 0;
+  color: white;
+  position: relative;
+  z-index: 10;
+  margin-top: -2px; }
+  #winLoss p {
+    font-family: "Gotham A", "Gotham B", Arial, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.8rem; }
+  #winLoss .subhead {
+    color: white;
+    margin: 0 0 .6rem;
+    font-size: 2.4rem;
+    line-height: 3rem; }
+  #winLoss #win {
+    padding: 0 2% 0 15%;
+    border-right: 1px solid white; }
+    #winLoss #win p {
+      text-align: right; }
+  #winLoss #loss {
+    padding: 0 15% 0 2%;
+    border-left: 1px solid white;
+    margin-left: -1px; }
+    #winLoss #loss p {
+      text-align: left; }
+  #winLoss div {
+    width: 50%;
+    float: left; }
+    #winLoss div p {
+      text-align: center; }
+  @media (max-width: 800px) {
+    #winLoss #win {
+      padding: 0 2% 0 2%; }
+    #winLoss #loss {
+      padding: 0 2% 0 2%; } }
+  @media (max-width: 650px) {
+    #winLoss {
+      padding: 0 0 2.4rem; }
+      #winLoss div {
+        width: 95%;
+        float: none;
+        margin: 0 auto 2.4rem; }
+      #winLoss #win p, #winLoss #loss p {
+        text-align: center; }
+      #winLoss #win {
+        border-right: none;
+        padding: 0 0; }
+      #winLoss #loss {
+        border-left: none;
+        margin: 0 auto;
+        padding: 0 0; } }
+
+#fourKeys {
+  padding-bottom: 0;
+  margin-bottom: 0; }
+  #fourKeys a {
+    color: #0185d3;
+    text-decoration: underline; }
+  #fourKeys .row {
+    overflow: hidden;
+    margin-top: 2.4rem;
+    padding-top: 2.4rem;
+    border-top: 1px solid #d7d7d7; }
+    #fourKeys .row:first-of-type {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none; }
+  #fourKeys .staff {
+    float: left;
+    width: 25%;
+    padding: 0 2% 1000px;
+    margin-bottom: -1000px;
+    font-family: "Gotham A", "Gotham B", Arial, sans-serif;
+    border-right: 1px solid #d7d7d7; }
+    #fourKeys .staff:last-of-type {
+      border-right: none; }
+    #fourKeys .staff p {
+      font-size: 1.3rem;
+      line-height: 1.8rem;
+      margin-bottom: 0; }
+    #fourKeys .staff .subhead {
+      font-size: 2rem;
+      line-height: 2.4rem;
+      margin: 0 0 1.2rem 0;
+      text-align: left; }
+    #fourKeys .staff img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      float: left;
+      margin: 0 10px 0px 0; }
+  @media (max-width: 900px) {
+    #fourKeys .row {
+      margin-top: 2.4rem;
+      padding-top: 2.4rem; }
+    #fourKeys .staff {
+      width: 50%;
+      margin-bottom: 2.4rem;
+      padding: 0 2% 0;
+      border-right: none; }
+      #fourKeys .staff:nth-of-type(3) {
+        clear: left; } }
+  @media (max-width: 800px) {
+    #fourKeys .row {
+      margin-bottom: 0; }
+    #fourKeys li {
+      float: none;
+      width: 100%;
+      padding: 0 0;
+      margin-bottom: 2.4rem; }
+      #fourKeys li:nth-of-type(even) {
+        padding: 0 0; } }
+  @media (max-width: 600px) {
+    #fourKeys .staff {
+      width: 100%;
+      float: none;
+      margin-bottom: 1.2rem;
+      padding: 0 0 1.2rem 0;
+      border-bottom: 1px solid #d7d7d7; }
+      #fourKeys .staff:last-of-type {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0; }
+    #fourKeys .row {
+      border-top: none;
+      margin-top: 0;
+      padding-top: 0; }
+      #fourKeys .row:nth-of-type(2) {
+        margin-top: 1.2rem;
+        padding-top: 1.2rem;
+        border-top: 1px solid #d7d7d7; } }
+
+#matchup {
+  max-width: 1000px;
+  border-bottom: none;
+  font-family: "Gotham A", "Gotham B", Arial, sans-serif;
+  margin: 0 auto; }
+  #matchup a {
+    text-decoration: underline;
+    color: #0185d3; }
+  #matchup .key {
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    border-bottom: 1px solid #d7d7d7;
+    max-width: none; }
+    #matchup .key span {
+      display: inline-block;
+      padding-left: 10px;
+      border-right: 1px solid #d7d7d7;
+      text-transform: uppercase; }
+      #matchup .key span:first-of-type {
+        padding-left: 0; }
+      #matchup .key span:last-of-type {
+        border-right: none; }
+  #matchup .question {
+    width: 15%;
+    padding-right: 10px; }
+  #matchup .edge {
+    width: 70px; }
+  #matchup .know {
+    width: calc(85% - 70px); }
+  #matchup .matchup {
+    width: 100%;
+    border-bottom: 1px solid #d7d7d7;
+    padding: 1.2rem 0 1.2rem; }
+    #matchup .matchup:last-of-type {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding: 1.2rem 0 0; }
+    #matchup .matchup .question {
+      float: left;
+      font-weight: bold;
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+      padding-right: 10px; }
+    #matchup .matchup .edge {
+      margin: 0 10px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      float: left; }
+    #matchup .matchup .know {
+      padding-left: 10px;
+      max-width: none;
+      font-size: 1.3rem;
+      line-height: 1.8rem;
+      float: left;
+      margin-bottom: 0; }
+    #matchup .matchup .edgeLabel {
+      display: none; }
+  @media (max-width: 800px) {
+    #matchup .question {
+      width: 20%; }
+    #matchup .edge {
+      width: 15%; }
+    #matchup .know {
+      width: 65%; } }
+  @media (max-width: 600px) {
+    #matchup .key {
+      display: none; }
+    #matchup .question, #matchup .know {
+      width: 100%;
+      float: none; }
+    #matchup .edge {
+      width: 50px;
+      float: left;
+      clear: left; }
+    #matchup .matchup .question, #matchup .matchup .know, #matchup .matchup .edge {
+      padding: 0 0; }
+    #matchup .matchup .question {
+      font-size: 2.1rem;
+      line-height: 2.4rem;
+      margin-bottom: 1.2rem; }
+    #matchup .matchup .edge {
+      margin: 0 20px 1.2rem 0; }
+    #matchup .matchup .know {
+      float: none; }
+    #matchup .matchup .edgeLabel {
+      display: block;
+      float: left;
+      width: 50px;
+      margin: .2rem 20px 1rem 0;
+      font: bold 1.2rem/1.4rem "Gotham A", "Gotham B", Arial, sans-serif;
+      text-transform: uppercase;
+      text-align: center; } }
+
+#spotlight {
+  border-top: none;
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-top: 4.8rem; }
+  #spotlight img {
+    width: 100%; }
+  #spotlight .spotContainer {
+    position: relative; }
+  #spotlight .spotlightContent {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(15, 15, 15, 0.9);
+    max-width: 450px;
+    padding: 20px; }
+    #spotlight .spotlightContent p {
+      color: white;
+      font: 1.3rem/1.8rem "Gotham A", "Gotham B", Arial, sans-serif;
+      margin-bottom: 1.8rem; }
+    #spotlight .spotlightContent .subhead {
+      font: bold 2.4rem/3rem "Gotham A", "Gotham B", Arial, sans-serif;
+      text-align: left;
+      margin: 0 0 2.4rem; }
+    #spotlight .spotlightContent .credit {
+      font: italic 1.4rem/1.8rem "Gotham A", "Gotham B", Arial, sans-serif; }
+    #spotlight .spotlightContent.leftSide {
+      right: auto;
+      left: 20px; }
+  @media (max-width: 1100px) {
+    #spotlight .spotlightContent {
+      position: relative;
+      top: auto;
+      left: auto;
+      background-color: #0f0f0f;
+      max-width: none;
+      width: 100%;
+      padding: 2.4rem 2.5%;
+      height: auto;
+      margin-top: -1px; }
+      #spotlight .spotlightContent.leftSide {
+        top: auto;
+        left: auto;
+        right: auto; } }
+
+#userPick h5 {
+  font-family: "Gotham A", "Gotham B", Arial, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  margin: 2.4rem 0 1.2rem;
+  padding: 2.4rem 0 0;
+  border-top: 1px solid #797979; }
+
+#userPick p {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  margin-bottom: 2.4rem;
+  font-family: "Gotham A", "Gotham B", Arial, sans-serif; }
+
+#userPick .readout {
+  margin: 2.4rem 0 0;
+  padding: 2.4rem 0 0;
+  border-top: 1px solid #d7d7d7;
+  font-family: "Gotham A", "Gotham B", Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  margin-bottom: 0; }
+  #userPick .readout span {
+    color: #0185d3;
+    font-weight: bold; }
+
+#userSubmission {
+  width: 28%;
+  float: left;
+  padding: 20px;
+  background-color: #f5f5f5;
+  position: relative;
+  top: 8px; }
+
+#userForm p {
+  font-family: "Gotham A", "Gotham B", Arial, sans-serif;
+  font-weight: bold; }
+
+#userForm button {
+  width: 50%;
+  min-width: 100px;
+  margin: 2.4rem auto;
+  clear: left;
+  display: block;
+  border: none;
+  background-color: #0185d3;
+  color: white;
+  padding: 10px;
+  font-family: "Gotham A", "Gotham B", Arial, sans-serif;
+  font-weight: bold;
+  border-radius: 3px;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  margin-bottom: 1.2rem;
+  -webkit-transtion: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  cursor: pointer; }
+  #userForm button:hover {
+    background-color: #0165a0; }
+  #userForm button:focus {
+    outline: none; }
+
+.scoreBlock {
+  width: 47.5%;
+  float: left;
+  margin: 0 5% 1.2rem 0; }
+  .scoreBlock:last-of-type {
+    margin-right: 0; }
+  .scoreBlock input {
+    width: 100%;
+    font-size: 3.6rem;
+    text-align: center;
+    font-family: "Gotham A", "Gotham B", Arial, sans-serif;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: .6rem 0;
+    border: 1px solid #d7d7d7; }
+  .scoreBlock span {
+    text-align: center;
+    font-weight: bold;
+    font-family: "Gotham A", "Gotham B", Arial, sans-serif;
+    display: block;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-bottom: 1.2rem; }
+
+#response h6 {
+  font-family: "Gotham A", "Gotham B", Arial, sans-serif;
+  font-weight: bold; }
+
+#response button {
+  width: 100px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #0185d3;
+  color: white;
+  font-family: "Gotham A", "Gotham B", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  margin-bottom: 1.2rem;
+  border-radius: 3px;
+  margin-right: 5px;
+  cursor: pointer;
+  -webkit-transtion: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out; }
+  #response button:last-of-type {
+    margin-right: 0; }
+  #response button:hover {
+    background-color: #0165a0; }
+  #response button:focus {
+    outline: 0; }
+
+#chartBlock {
+  width: 70%;
+  float: right;
+  position: relative; }
+
+#chart {
+  width: 100%;
+  font-family: "Gotham A", "Gotham B", Arial, sans-serif;
+  padding-bottom: 1.8rem; }
+
+.team-name {
+  font-size: 1.3rem; }
+
+path, line {
+  shape-rendering: crispEdges;
+  stroke: #d7d7d7; }
+  path.diagonal, line.diagonal {
+    stroke: #3d3d3d; }
+
+#tooltip {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #212121;
+  box-shadow: 0px 0px 2px #CECDC6;
+  padding: .5rem 1rem;
+  width: 180px;
+  border-radius: 3px; }
+
+#tooltip p {
+  color: white;
+  font-family: "Gotham A", "Gotham B", Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  margin-bottom: 0; }
+
+@media (max-width: 600px) {
+  #tooltip {
+    max-width: 120px; } }
+
+@media (max-width: 1075px) {
+  .scoreBlock {
+    width: 100%;
+    float: none;
+    display: block;
+    margin: 0 auto;
+    max-width: 100px; }
+    .scoreBlock:last-of-type {
+      margin: 0 auto; }
+    .scoreBlock input {
+      font-size: 2.4rem; } }
+
+@media (max-width: 900px) {
+  #userSubmission {
+    width: 100%;
+    float: none;
+    margin-bottom: 2.4rem; }
+  #chartBlock {
+    width: 100%;
+    float: none; }
+  .scoreBlock {
+    float: left;
+    margin-right: 10px; }
+    .scoreBlock:last-of-type {
+      margin-right: 20px; }
+  #userForm button {
+    float: left;
+    clear: none;
+    margin: 0 0;
+    height: 50px;
+    max-width: 200px; } }
+
+@media (max-width: 900px) and (max-width: 600px) {
+  .scoreBlock {
+    max-width: none;
+    width: 47.5%;
+    margin-right: 5%; }
+    .scoreBlock:last-of-type {
+      margin-right: 0; }
+  #userForm button {
+    float: none;
+    clear: left;
+    width: 100%;
+    max-width: none;
+    height: auto; } }
+
+.score {
+  display: inline-block; }

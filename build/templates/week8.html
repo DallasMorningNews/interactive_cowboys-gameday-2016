@@ -1,0 +1,417 @@
+{%extends 'base.html'%}
+{%import 'partials/img.html' as img%}
+
+
+{%block custom_meta%}
+<meta content="cowboys,dallas cowboys,tony romo,dak prescott,ezekiel elliott,carson wentz,philadelphia eagles,eagles,interactives,dallas,dallas fort worth,dallas news,dallas sports,dallas fort worth sports,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper" name="keywords" />
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<meta content="Cowboys-Eagles: What you need to know; experts’ predictions; submit your pick" name="description" />
+<title>Cowboys-Eagles: What you need to know; experts’ predictions; submit your pick</title>
+<meta property="og:url" content="http://interactives.dallasnews.com/2016/cowboys-gameday/week8.html" />
+<meta property="og:title" content="Cowboys-Eagles: What you need to know; experts’ predictions; submit your pick"/>
+<meta property="og:description" content="Find out how who are experts think comes out on top in a matchup of rookie QBs" name="description"/>
+<meta property="og:image" content="http://interactives.dallasnews.com/2016/cowboys-gameday/images/_week8_shareImage.jpg"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:type" content="article" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@SportsDayDFW" />
+<meta name="twitter:creator" content="SportsDayDFW" />
+
+<meta name="liveFyreID" content="51298088769" />
+
+<meta name="parsely-page" id='parsely-page' content='{"title": "Cowboys-Eagles: What you need to know; experts’ predictions; submit your pick", "link": "http://interactives.dallasnews.com/2016/cowboys-gameday/week8.html", "image_url": "http://interactives.dallasnews.com/2016/cowboys-gameday/images/_week8_shareImage.jpg", "type": "post", "post_id": "51298088769", "pub_date": "2016-10-28T10-00-00Z", "section": "sportsday", "author": ["sportsdaydfw"], "tags": ["cowboys","dallas cowboys","tony romo","dak prescott","ezekiel elliott","carson wentz","philadelphia eagles","eagles","interactives","dallas","dallas fort worth","dallas news","dallas sports","dallas fort worth sports","dfw news","dallas newspaper","dallas morning news","dallas morning news newspaper"]}' />
+
+<meta property="og:keywords" content="cowboys,dallas cowboys,tony romo,dak prescott,ezekiel elliott,carson wentz,philadelphia eagles,eagles,interactives,dallas,dallas fort worth,dallas news,dallas sports,dallas fort worth sports,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper"/>
+
+<meta name="news_keywords" content="cowboys,dallas cowboys,tony romo,dak prescott,ezekiel elliott,carson wentz,philadelphia eagles,eagles,interactives,dallas,dallas fort worth,dallas news,dallas sports,dallas fort worth sports,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper"/>
+{%endblock%}
+
+
+{%block custom_head%}
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
+
+{%endblock%}
+
+
+{%block ad%}
+<script type="text/javascript" src="http://www.googletagservices.com/tag/js/gpt.js"></script>
+<script type="text/javascript">
+DFP_networkId = "11222444";
+var DFPSlotSizes = [];
+if (jQuery(window).width() < 768)
+{
+var DFP_sitepage = "m.DMN/interactives";
+DFPSlotSizes = [320,50]
+var adSlot0 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionTop");
+adSlot0.setTargeting("position", "x01");
+adSlot0.addService(googletag.pubads());
+
+var adSlot1 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionMiddle");
+adSlot1.setTargeting("position", "x02");
+adSlot1.addService(googletag.pubads());
+
+var adSlot2 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionBottom");
+adSlot2.setTargeting("position", "x03");
+adSlot2.addService(googletag.pubads());
+
+}
+else
+{
+var DFP_sitepage = "DMN/interactives";
+ DFPSlotSizes = [728,90]
+var adSlot0 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionTop");
+adSlot0.setTargeting("position", "Top");
+adSlot0.addService(googletag.pubads());
+
+var adSlot1 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionMiddle");
+adSlot1.setTargeting("position", "Top");
+adSlot1.addService(googletag.pubads());
+
+var adSlot2 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionBottom");
+adSlot2.setTargeting("position", "Top");
+adSlot2.addService(googletag.pubads());
+
+ }
+</script>
+<script type="text/javascript">
+googletag.pubads().enableSingleRequest();
+googletag.pubads().enableSyncRendering();
+googletag.enableServices();
+</script>
+{%endblock%}
+
+
+{%block content%}
+
+<script>
+		window.fbAsyncInit = function () {
+			FB.init({
+				appId: '258290334265148',
+				xfbml: true,
+				version: 'v2.3'
+			});
+		};
+
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {
+				return;
+			}
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+
+<section id="contentHeader">
+
+    <!-- the lede image should be cropped to 3000 x 1750 -->
+    {{img.jpg("cowlede_week8", "Dak Prescott fakes a handoff to running back Ezekiel Elliott during the Cowboys win over Green Bay", 'ledeImg')}}
+
+
+    <!-- don't forget to update the opponent the opponent team logo image path -->
+    <!-- h1 tag should be "visigint mascot at home mascot" -->
+
+    <div class="gameHead clearFix">
+        <div class="logoBlock">
+            <img class="teamLogo" src="images/_eaglesSig.png" alt="Eagles" />
+            <img class="teamLogo" src="images/_cowSig.png" alt="Cowboys" />
+        </div>
+        <h2 id="label">Cowboys Gameday: <span id="seasonWeek">Week 8</span></h2>
+        <h1>Eagles at Cowboys</h1>
+        <p>7:30 p.m. Sunday <strong>TV: </strong>Ch. 5</p>
+        <p><strong>Radio: </strong> KRLD-FM (105.3), KMVK-FM (107.5, Spanish)</p>
+        <p><strong>Line: </strong>Cowboys by 4&frac12;</p>
+
+        <!-- end bylineBlock -->
+
+        <div class="shareComments shareCommentsTop">
+            <ul id="share-bar1" class="width-auto-hack"></ul>
+        </div>
+    </div>
+
+</section>
+<!-- end contentHeader -->
+
+<section id="winLoss" class="clearFix cowSection">
+
+    <div id="win">
+        <p class="subhead">A win would mean ...</p>
+        <p>The Cowboys own at least a two-game lead in the NFC East. A sixth straight victory with Dak Prescott leading the way only adds to the intrigue as veteran Tony Romo gets closer to returning.</p>
+    </div>
+    <!-- end win -->
+
+    <div id="loss">
+        <p class="subhead">A loss would mean ... </p>
+        <p>Both teams are 5-2, but the Eagles own the head-to-head win and the Cowboys are stuck with two division defeats. Eagles continue to thrive at AT&T Stadium, which they enter with a 5-2 record.</p>
+    </div>
+    <!-- end loss -->
+
+</section>
+<!-- end winLoss -->
+
+{%include "adblock1.html" %}
+
+
+    <section class="contentWell clearFix">
+
+    <div class="wideBlock imageBlock">
+
+        <h4 class="sectionLabel">SportsDay’s Picks</h4>
+        {{img.jpg("elliott_week8", "Ezekiel Elliott rushes against the Green Bay Packers.")}}
+        <p class="cutline">The Eagles’ strength is their defense, but Cowboys Insiders Brandon George and Kate Hairopoulos think it won’t be enough to stop Cowboys running back Ezekiel Elliott (left) from having another 100-yard rushing game. (Louis DeLuca/Staff Photographer)</p>
+    </div>
+    <!-- end wide image -->
+
+    <section id="fourKeys" class="clearFix cowSection">
+        <div class="row clearFix">
+            <div class="staff clearFix">
+                <img src="images/_george.jpg" alt="Brandon George" />
+                <p><strong>Brandon George: </strong>The Cowboys have a lot of respect for the Eagles’ defensive line. They’ve talked up their front four all week. On Sunday, however, look for the Cowboys to run over and around the Eagles’ defensive front. No team has figured out how to slow down <a href="http://interactives.dallasnews.com/2016/ezekiel-elliott-rushing-tracker">rookie running back Ezekiel Elliott</a> since Week 1. That should continue against the Eagles’ defense, which should be overmatched by the Cowboys’ vaunted offensive line. Elliott will top 100 rushing yards for a fifth straight game to give the Cowboys a sixth consecutive victory as they take full control of the NFC East. <strong class="score">Cowboys, 27-20</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_hairopoulos.jpg" alt="Kate Hairopoulos" />
+                <p><strong>Kate Hairopoulos: </strong>Philadelphia is strutting into AT&T Stadium after beating previously undefeated Minnesota. But the victory overshadowed the Eagles' two-game losing streak that preceded it, including a 27-20 loss at Washington in which Matt Jones rushed for 135 yards and the Redskins totaled 230 yards on the ground. The Eagles’ strength is their defense, but they clearly have weaknesses, and they are not going to stop Cowboys running back Ezekiel Elliott from another 100-yard game. Philadelphia will force a couple of turnovers that will keep it close. But the Cowboys will do enough, thanks to Zeke and kicker Dan Bailey, to win their sixth in a row. <strong class="score">Cowboys 24-21</strong></p>
+            </div>
+
+            <div class="staff clearFix">
+                <img src="images/_machota.jpg" alt="Jon Machota" />
+                <p><strong>Jon Machota: </strong>Jim Schwartz and Scott Linehan are <a href="http://sportsday.dallasnews.com/dallas-cowboys/cowboys/2016/10/27/schwartz-linehan-used-pick-others-brains-now-try-pick-one-another-apart">very familiar</a> with each other. Linehan was offensive coordinator in Detroit when Schwartz was the head coach from 2009 until 2013. Although the Lions went 29-51 during those five seasons, there’s no doubting that those two can coach. Schwartz is now leading a top 5 defense in Philadelphia. Linehan is calling the shots for one of the NFL’s top offenses. Schwartz has a talented group led by linemen Fletcher Cox and Brandon Graham. But Ezekiel Elliott continues getting better by the week, and Dez Bryant is returning to the lineup. Give me Linehan and his offensive weapons Sunday night. <strong class="score">Cowboys 28-21</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_moore.jpg" alt="David Moore" />
+                <p><strong>David Moore: </strong>Some will cast Sunday night’s game as a referendum on Dak Prescott vs. Carson Wentz. But let’s not reduce this game to a mere quarterback duel. And let’s not overlook the fact that a package deal is in place for Dallas. Yes, Wentz was the top-rated quarterback on the Cowboys’ board. He’s the only QB they would have considered taking at No. 4. But let’s say the Eagles passed on Wentz and the Cowboys sat at No. 4 with the chance to take either Wentz or Ezekiel Elliott. Whatever the choice, the Cowboys would have come away with only one player. Instead, the Cowboys came away with Elliott and Prescott. That’s a combination Philadelphia can’t beat. <strong class="score">Cowboys 27-17</strong></p>
+            </div>
+        </div>
+
+        <div class="row clearFix">
+            <div class="staff clearFix">
+                <img src="images/_cowlishaw.jpg" alt="Tim Cowlishaw" />
+                <p><strong>Tim Cowlishaw: </strong>Cowboys prove that starting rookie quarterbacks and having proximity in the standings do not mean these teams are that close to being equal.  <strong class="score">Cowboys, 31-10</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_gosselin.jpg" alt="Rick Gosselin" />
+                <p><strong>Rick Gosselin: </strong>Suddenly the Cowboys have a home field advantage again. It took a  rookie quarterback to give it to them. <strong class="score">Cowboys 26-23</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_horn.jpg" alt="Barry Horn" />
+                <p><strong>Barry Horn: </strong>The Dak run can't go on forever. Can it? Then again, these Eagles are ripe to be plucked. Cleveland, yes Cleveland, ends the Dak run next week. <strong class="score">Cowboys, 31-20</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_sherrington.jpg" alt="Kevin Sherrington" />
+                <p><strong>Kevin Sherrington: </strong>Dak wins the duel of the rookie QBs, and Romo loses.<strong class="score">Cowboys, 27-21</strong></p>
+            </div>
+
+        </div>
+
+
+        <div id="userPick">
+            <h5>You make the call</h5>
+            <p>We want to know who you who think will win this week’s Cowboys game. Enter your score below, and see which team other readers think will take home the “W.” Scores plotted on the lower-right of the chart indicate a predicted Cowboys victory, upper-left indicate a predicted opponent victory. (Note: Only scores below 60 will be shown.)</p>
+
+            <div id="userSubmission">
+
+                <div id="userForm" class="clearFix">
+
+                    <p class="chatter">Who do you think will win? Enter the scores for each team, then click the "submit" button.</p>
+                    <div class="scoreBlock">
+                        <input id="cowScore" type="text" pattern="[0-9]*" placeholder="0" />
+                        <span>Cowboys</span>
+                    </div>
+
+                    <div class="scoreBlock">
+                        <input id="oppScore"  type="text" pattern="[0-9]*" placeholder="0" />
+                        <span id="opponent"></span>
+                    </div>
+
+                    <button id="submit">Submit</button>
+                </div>
+
+                <div id="response" class="noShow clearFix">
+                    <h6>Thank you for your submission</h6>
+                    <p>You picked the <span class="userTeam"></span> to <span class="userResult">win</span>, <span class="userScore"></span>. Share your prediction on social media:</p>
+                    <button id="faceShare">Facebook</button>
+                    <button id="twitterShare">Twitter</button>
+                </div>
+
+                <p class="readout"><span class="predictPercentage"></span> of readers are picking the <span class="predictTeam"></span> to win this week by an average of <span class="predictPoints"></span> points.</p>
+
+
+            </div>
+
+            <div id="chartBlock">
+
+                <div id="tooltip" class="noShow">
+					<p><strong>Cowboys: </strong> <span class="cowTipScore"></span></p>
+					<p><strong><span class="oppTipName"></span>:</strong> <span class="oppTipScore"></span></p>
+                    <p><strong>Times predicted: </strong> <span class="tipPredict"></span></p>
+				</div>
+
+                <div id="chart"></div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- end picks -->
+
+
+
+    {%include "adblock2.html" %}
+
+    <section id="matchup" class="clearFix cowSection">
+
+    <h4 class="sectionLabel">Bob Sturm’s scouting report</h4>
+
+        <div id="matchupContent" class="clearFix">
+
+            <div class="matchupBlock">
+
+            <p class="key"><span class="question">Situation</span><span class="edge">Edge</span><span class="know">In the know</span></p>
+
+                <div id="cowboysRun" class="matchup clearFix">
+                    <p class="question">When the Cowboys run the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_cowSig.png" alt="Cowboys" />
+                    <p class="know">The Eagles have gone through many massive changes since the last time these teams met, including a sudden change in direction of their defensive scheme to the 4-3 of coordinator Jim Schwartz. The Cowboys just destroyed the No. 1 rushing defense at Green Bay, and the Eagles are 24th in yards per carry allowed. At this point, the Cowboys will be given the edge every week until someone slows them down.</p>
+                </div>
+                <!-- end cowboysRun -->
+
+                <div id="cowboysPass" class="matchup clearFix">
+                    <p class="question">When the Cowboys pass the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_eaglesSplitSig.png" alt="Even" />
+                    <p class="know">The tradeoff for allowing a few more yards inside against the run is that the Eagles are focused on slowing down passing games by getting consistent pressure from many different places. They will bring blitzes that complement strong rushers like Fletcher Cox, Brandon Graham and Connor Barwin. Dez Bryant returning should make the Cowboys more dynamic down field, but this is where a stout Eagles defense excels.</p>
+                </div>
+                <!-- end cowboysPass -->
+
+                <div id="oppRun" class="matchup clearFix">
+                    <p class="question">When the Eagles run the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_cowSig.png" alt="Cowboys" />
+                    <p class="know">The Eagles are a feeble running team with below league-average numbers across the board and no back that threatens with a workload. Dallas has held four of its last five opponents below 100 yards, although the Cowboys have been ahead, which has chased teams from running the ball. Teams should be able to run on Dallas, but it is difficult to say that Philadelphia will be that team.</p>
+                </div>
+                <!-- end oppRun -->
+
+                <div id="oppPass" class="matchup clearFix">
+                    <p class="question">When the Eagles pass the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_eaglesSplitSig.png" alt="Even" />
+                    <p class="know">The Eagles have plenty of work to do to rebuild an offense that lacks dynamic skill position threats and an offensive line that can look mediocre. WR Dorial Green-Beckham was a chance worth taking, and their tight ends always seem to get free against the Cowboys. Dallas has been playing dime, conceding pass rush to beef up coverage. It will be interesting to see what Rod Marinelli does against rookie Carson Wentz after frustrating Aaron Rodgers.</p>
+                </div>
+                <!-- end oppPass -->
+
+                <div id="specialTeams" class="matchup clearFix">
+                    <p class="question">Special teams</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_eaglesSig.png" alt="Eagles" />
+                    <p class="know">If one thing stays the same every year, it is the Eagles’ ability to generate points from special teams. They have two kickoff returns for touchdowns in the last two weeks.</p>
+                </div>
+                <!-- end specialTeams -->
+
+                <div id="intangibles" class="matchup clearFix">
+                    <p class="question">Intangibles</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_cowSig.png" alt="Cowboys" />
+                    <p class="know">The Cowboys continue to dominate with their offensive line. At this point, it is tough to see the Eagles producing enough points to win unless the Cowboys fall into a bad giveaway night.</p>
+                </div>
+                <!-- end intagibles -->
+
+            </div>
+        </div>
+
+        </section>
+     </section>
+
+        <section id="spotlight" class="clearFix cowSection">
+
+
+            <!-- this image should be squarely cropped to provide enough depth for the content -->
+            <!-- this subject should be on the left or right side. if right side, remove leftSide class  -->
+
+            <div class="spotContainer">
+                {{img.jpg("cox", "Alt text for image")}}
+                <div class="spotlightContent leftSide">
+
+                    <h4 class="sectionLabel whiteTheme">Bob Sturm’s spotlight</h4>
+                    <p>Mississippi State has given the NFL plenty of talent over the years, and this generation certainly will boast defensive studs like Seattle’s KJ Wright, Detroit’s Darius Slay, Washington’s Preston Smith and Chicago’s Pernell McPhee. But there is little question that the two stories that make that fan-base proud will be squaring off Sunday when <strong>Fletcher Cox</strong> tries to chase down Cowboys quarterback Dak Prescott.</p>
+                    <p>They crossed paths as Cox was finishing up his decorated career in Starkville and Prescott was a redshirt freshman. Cox would land in Philadelphia as the Eagles traded up to grab him at No. 12 in the 2012 draft (the same year the Cowboys traded up to get cornerback Morris Claiborne).</p>
+                    <p>Since then, Cox has used his amazing combination of power and quickness to become one of the most disruptive forces in the NFL. He can live in the offensive backfield with sacks and tackles for loss accumulating at a rapid pace. His work against this Dallas front rates up there with anyone in the league. He causes the massive interior of the Cowboys’ line a decent-sized headache with his tenacious motor and talent.</p>
+                    <p>He recently signed a six-year deal for more than $102 million, a contract that only trails Von Miller and Ndamukong Suh on the defensive side of the ball. He has been guilty of a few poor penalties this season, but overall, he is the Eagles’ best player.</p>
+                    <p><strong>Sturm’s prediction: </strong>I expect Carson Wentz will be an exceptional player for years to come, but the Eagles have many holes on their roster around him. It will take time for GM Howie Roseman and coach Doug Pederson to clean up that mess. In the meantime, Dallas looks too tough on both sides of the ball. The offense should continue to roll against a strong defense. <strong>Cowboys, 27-17</strong></p>
+                    <p class="credit">Mitchell Leff/Getty Images</p>
+                </div>
+
+            </div>
+
+    </section>
+
+
+
+
+    {%include "adblock3.html" %}
+
+    <section class="credits clearfix">
+        <p><strong>Top photo:</strong> <a href="mailto:email@dallasnews.com">G.J. McCarthy/Staff Photographer</a></p>
+    </section>
+    <!-- end credits -->
+
+	<section class="more clearFix">
+		<h5>Read more from The Dallas Morning News</h5>
+        <a class="clearFix" href="http://interactives.dallasnews.com/2016/ezekiel-elliott-rushing-tracker">
+            <img src="images/_trackerShare.jpg" alt="Ezekiel Elliott" />
+            <h6>Chasing 1,808</h6>
+            <p>Track Ezekiel Elliott’s progress throughout the season as he makes a run at Eric Dickerson’s NFL rookie rushing record.</p>
+        </a>
+        <a class="clearFix" href="http://interactives.dallasnews.com/2016/jerry-jones-office/">
+			<img src="images/_jonesShare.jpg" alt="Jerry Jones" />
+			<h6>Trappings of legend</h6>
+			<p>While Jerry Jones doesn’t live in the past, an exclusive look inside the Cowboys owner’s office is a journey through the franchise’s history.</p>
+		</a>
+		<a class="clearFix" href="http://interactives.dallasnews.com/2015/darren-woodson/">
+			<img src="images/_woodsonShare.jpg" alt="Darren Woodson" />
+			<h6>Ringing endorsement</h6>
+			<p>For 12 seasons with the Dallas Cowboys, Darren Woodson would routinely wreak havoc on Sundays, then onnect with his best friend on Tuesdays.</p>
+		</a>
+	</section>
+	<!-- end more -->
+
+		<div class="shareComments">
+		<ul id="share-bar2" class="width-auto-hack"></ul>
+        <div id="comments"></div>
+	</div>
+	<!-- end shareComments -->
+
+</section>
+<!-- end contentWell -->
+{%endblock%}
+
+
+
+
+{%block custom_foot%}
+	<script type="text/javascript"></script>
+{%endblock%}
+
+
+
+
+
+{%block custom_social_meta%}
+<script type="text/javascript">
+  var storyTitle = "Dak Prescott and Carson Wentz square off in a matchup of rookie quarterbacks. Cowboys Gameday", // headline in tweet card
+	storyURL = "http://interactives.dallasnews.com/2016/cowboys-gameday/week8.html",
+	leadText = "Find out how who are experts think comes out on top when two of the NFL's best rookie QBs face off.", //description in tweet card
+	storyIMG = "http://interactives.dallasnews.com/2016/cowboys-gameday/images/_week8_shareImage.jpg",
+	storyAuthor = "sportsdaydfw",
+	twitterTag = "@SportsDayDFW",
+	comments = true,
+	share = true;
+	OAS_sitepage = 'www.sportsdaydfw.com/dallas-cowboys/';
+</script>
+{%endblock%}
