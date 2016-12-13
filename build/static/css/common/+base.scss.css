@@ -43,7 +43,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   line-height: 1;
   z-index: 0;
-  position: relative; }
+  position: relative;
+  min-height: 100%;
+  display: block;
+  padding-bottom: 200px; }
+  @media (max-width: 650px) {
+    body {
+      padding-bottom: 225px; } }
+  @media (max-width: 450px) {
+    body {
+      padding-bottom: 250px; } }
 
 ol, ul {
   list-style: none; }
@@ -122,66 +131,131 @@ II. KASON TEMPLATE STYLES, HEADER AND FOOTER
   clip: rect(0, 0, 0, 0);
   border: 0; }
 
-.interactiveFooter {
-  background-color: #b0bcc4;
+.interactive-footer {
   min-height: 97px;
-  padding: 20px 10px; }
+  padding-bottom: 24px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: block; }
 
-.back-to-top {
-  background-color: white;
-  color: #b0bcc4;
-  margin-right: 6px;
-  font-size: 14px; }
+.footer-content {
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto; }
+  .footer-content img {
+    max-width: 225px; }
 
-.interactiveFooter a, .interactiveFooter p {
-  color: white; }
-
-.interactiveFooter a {
-  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  margin-left: 20px;
-  font-weight: normal; }
-
-a.top {
-  display: block;
-  float: left;
-  margin: 0 0 12px 0;
-  margin-left: 0; }
-
-.terms-privacy {
+.footer-social {
   float: right;
-  padding-top: 4px; }
+  position: relative;
+  top: 5px; }
+  .footer-social li {
+    margin-right: 5px;
+    float: left; }
+    .footer-social li:last-of-type {
+      margin-right: 0; }
+  .footer-social a {
+    width: 30px;
+    height: 30px;
+    cursor: pointer; }
+  .footer-social #footer-facebook, .footer-social #footer-twitter {
+    background: url("http://interactives.templates.statics.s3.amazonaws.com/v1.0/images/socialSprites.svg");
+    background-size: 120px 60px; }
+  .footer-social #footer-twitter {
+    background-position: 90px 0px; }
+  .footer-social #footer-instagram, .footer-social #footer-youtube {
+    background: url("http://interactives.templates.statics.s3.amazonaws.com/v1.0/images/socialSprites2.svg");
+    background-size: 60px 60px; }
+  .footer-social #footer-youtube {
+    background-position: 30px 0px; }
+  .footer-social #footer-facebook:hover {
+    background-position: 120px 30px; }
+  .footer-social #footer-twitter:hover {
+    background-position: 90px 30px; }
+  .footer-social #footer-instagram:hover {
+    background-position: 60px 30px; }
+  .footer-social #footer-youtube:hover {
+    background-position: 30px 30px; }
 
-.terms-privacy:after {
-  content: '';
-  display: table;
-  clear: both; }
+.footer-links {
+  width: calc(100% - 65px);
+  margin-left: 65px;
+  border-top: 1px solid #ebebeb;
+  position: relative;
+  top: -15px;
+  padding-top: 10px; }
 
-.interactiveFooter p {
-  clear: both;
+.interactive-footer a {
   font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
-  font-size: 14px;
-  letter-spacing: -.5px;
-  line-height: 18px;
-  margin-bottom: 0; }
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: normal;
+  font-weight: bold;
+  color: #323232;
+  cursor: pointer; }
 
-@media (max-width: 500px) {
-  a.top {
-    float: none;
-    margin: 0 0 6px 0; }
-  .terms-privacy {
-    float: none;
-    margin: 0 0 24px;
-    padding: 0 0; }
-  .terms-privacy a {
-    float: left;
-    margin: 0 0;
-    width: 50%; } }
+.interactive-footer p {
+  font-family: "PT Serif", Georgia, serif;
+  font-style: italic;
+  font-size: 12px;
+  line-height: 20px;
+  color: #797979;
+  float: right; }
 
-@media print {
-  .bg-black {
-    position: relative; } }
+.footer-links a {
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out; }
+
+.footer-links a:hover {
+  text-decoration: none;
+  color: #0185d3; }
+
+.footer-links li {
+  float: left;
+  margin-right: 22px; }
+  .footer-links li:last-of-type {
+    margin-right: 0; }
+
+@media (max-width: 1150px) {
+  .footer-content img {
+    width: 150px; }
+  .footer-social {
+    top: 5px; }
+  .footer-links {
+    width: 100%;
+    margin-left: 0;
+    top: 5px; }
+    .footer-links li {
+      margin-right: 11px; } }
+
+@media (max-width: 1000px) {
+  .footer-links ul {
+    width: 100%;
+    display: block; }
+  .interactive-footer p {
+    clear: both;
+    float: none;
+    padding-top: 1.2rem; } }
+
+@media (max-width: 650px) {
+  .footer-links li {
+    width: 33%;
+    margin-right: 0; } }
+
+@media (max-width: 450px) {
+  .footer-content img {
+    width: 125px;
+    position: relative;
+    top: 5px; }
+  .footer-links {
+    top: 10px; }
+  .footer-links li {
+    width: 50%; }
+  .interactive-footer p {
+    letter-spacing: -.2px; } }
 
 @media print {
   .bg-black {
@@ -752,10 +826,8 @@ XVI. MORE LINKS
 -------------------------------------------
 */
 .more {
-  border-bottom: 1px solid #323232;
-  margin: 4.8rem auto 6rem;
-  max-width: 650px;
-  padding-bottom: 2.4rem; }
+  margin: 4.8rem auto 0;
+  max-width: 650px; }
 
 .more h5, .more p, .more a {
   font-family: 'Gotham A', 'Gotham B', Arial, sans-serif; }
@@ -790,27 +862,30 @@ XVI. MORE LINKS
 @media (max-width: 600px) {
   .more a {
     float: none;
-    margin: 0 0 2.4rem;
-    width: 100%; }
+    margin: 0 0 1.2rem;
+    width: 100%;
+    border-bottom: 1px solid #d7d7d7;
+    padding-bottom: 1.2rem; }
+    .more a:last-of-type {
+      border-bottom: 0;
+      padding-bottom: 0;
+      margin-bottom: 0; }
   .more a img {
     float: left;
-    width: 33%; }
+    width: 33%;
+    margin-bottom: 0; }
   .more a h6, .more a p {
     float: right;
-    width: 65%; }
+    width: 63%; }
   .more a h6 {
-    margin-top: -.3rem; } }
-
-@media (max-width: 400px) {
-  .more a {
-    margin-bottom: 3.6rem; }
-  .more a img {
-    float: none;
-    width: 100%;
-    margin-bottom: .6rem; }
-  .more a h6, .more a p {
-    width: 100%;
-    float: none; } }
+    margin-top: -.3rem;
+    margin-bottom: .6rem;
+    font-size: 1.3rem;
+    line-height: 1.5rem; }
+  .more a p {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    letter-spacing: 0; } }
 
 /*
 -------------------------------------------
