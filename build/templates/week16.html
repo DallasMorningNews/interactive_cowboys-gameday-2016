@@ -1,0 +1,416 @@
+{%extends 'base.html'%}
+{%import 'partials/img.html' as img%}
+
+
+{%block custom_meta%}
+<meta content="cowboys,dallas cowboys,dak,prescott,dez bryant,ezekiel elliott,jason garrett,jerry jones,tony romo,matthew stafford,golden tate,detroit lions,lions,interactives,dallas,dallas fort worth,dallas news,dallas sports,dallas fort worth sports,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper" name="keywords" />
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<meta content="Cowboys-Lions: What you need to know; experts’ predictions; submit your pick" name="description" />
+<title>Cowboys-Lions: What you need to know; experts’ predictions; submit your pick</title>
+<meta property="og:url" content="http://interactives.dallasnews.com/2016/cowboys-gameday/week16.html" />
+<meta property="og:title" content="Cowboys-Lions: What you need to know; experts’ predictions; submit your pick"/>
+<meta property="og:description" content="Will the Cowboys put it on cruise control with the NFC East title locked up?" name="description"/>
+<meta property="og:image" content="http://interactives.dallasnews.com/2016/cowboys-gameday/images/_week16_share.jpg"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:type" content="article" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@SportsDayDFW" />
+<meta name="twitter:creator" content="SportsDayDFW" />
+
+<meta name="liveFyreID" content="11069095379" />
+
+<meta name="parsely-page" id='parsely-page' content='{"title": "Cowboys-Lions: What you need to know; experts’ predictions; submit your pick", "link": "http://interactives.dallasnews.com/2016/cowboys-gameday/week16.html", "image_url": "http://interactives.dallasnews.com/2016/cowboys-gameday/images/week16_share.jpg", "type": "post", "post_id": "11069095379", "pub_date": "2016-12-23T11-00-00Z", "section": "sportsday", "author": ["sportsdaydfw"], "tags": ["cowboys","dallas cowboys","dak,prescott","dez bryant","ezekiel elliott","jason garrett","jerry jones","tony romo","interactives","matthew stafford","golden tate","detroit lions","lions","dallas","dallas fort worth","dallas news","dallas sports","dallas fort worth sports","dfw news","dallas newspaper","dallas morning news","dallas morning news newspaper"]}' />
+
+<meta property="og:keywords" content="cowboys,dallas cowboys,dak,prescott,dez bryant,ezekiel elliott,jason garrett,jerry jones,tony romo,matthew stafford,golden tate,detroit lions,lionsinteractives,dallas,dallas fort worth,dallas news,dallas sports,dallas fort worth sports,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper"/>
+
+<meta name="news_keywords" content="cowboys,dallas cowboys,dak,prescott,dez bryant,ezekiel elliott,jason garrett,jerry jones,tony romo,matthew stafford,golden tate,detroit lions,lionsinteractives,dallas,dallas fort worth,dallas news,dallas sports,dallas fort worth sports,dfw news,dallas newspaper,dallas morning news,dallas morning news newspaper"/>
+{%endblock%}
+
+
+{%block custom_head%}
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
+
+{%endblock%}
+
+
+{%block ad%}
+<script type="text/javascript" src="http://www.googletagservices.com/tag/js/gpt.js"></script>
+<script type="text/javascript">
+DFP_networkId = "11222444";
+var DFPSlotSizes = [];
+if (jQuery(window).width() < 768)
+{
+var DFP_sitepage = "m.DMN/interactives";
+DFPSlotSizes = [320,50]
+var adSlot0 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionTop");
+adSlot0.setTargeting("position", "x01");
+adSlot0.addService(googletag.pubads());
+
+var adSlot1 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionMiddle");
+adSlot1.setTargeting("position", "x02");
+adSlot1.addService(googletag.pubads());
+
+var adSlot2 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionBottom");
+adSlot2.setTargeting("position", "x03");
+adSlot2.addService(googletag.pubads());
+
+}
+else
+{
+var DFP_sitepage = "DMN/interactives";
+ DFPSlotSizes = [728,90]
+var adSlot0 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionTop");
+adSlot0.setTargeting("position", "Top");
+adSlot0.addService(googletag.pubads());
+
+var adSlot1 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionMiddle");
+adSlot1.setTargeting("position", "Top");
+adSlot1.addService(googletag.pubads());
+
+var adSlot2 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionBottom");
+adSlot2.setTargeting("position", "Top");
+adSlot2.addService(googletag.pubads());
+
+ }
+</script>
+<script type="text/javascript">
+googletag.pubads().enableSingleRequest();
+googletag.pubads().enableSyncRendering();
+googletag.enableServices();
+</script>
+{%endblock%}
+
+
+{%block content%}
+
+<script>
+		window.fbAsyncInit = function () {
+			FB.init({
+				appId: '258290334265148',
+				xfbml: true,
+				version: 'v2.3'
+			});
+		};
+
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {
+				return;
+			}
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+
+<section id="contentHeader">
+
+    <!-- the lede image should be cropped to 3000 x 1750 -->
+    {{img.jpg("week16_lede", "Ezekiel Elliott celebrates with Cowboys mascot Rowdy", 'ledeImg')}}
+
+
+    <!-- don't forget to update the opponent the opponent team logo image path -->
+    <!-- h1 tag should be "visigint mascot at home mascot" -->
+
+    <div class="gameHead clearFix">
+        <div class="logoBlock">
+            <img class="teamLogo" src="images/_lionsSig.png" alt="Detroit Lions" />
+            <img class="teamLogo" src="images/_cowSig.png" alt="Dallas Cowboys" />
+        </div>
+        <h2 id="label">Cowboys Gameday: <span id="seasonWeek">Week 16</span></h2>
+        <h1>Lions at Cowboys</h1>
+        <p>7:30 p.m. Monday <strong>TV: </strong>ESPN</p>
+        <p><strong>Radio: </strong> KRLD-FM (105.3), KMVK-FM (107.5, Spanish)</p>
+        <p><strong>Line: </strong>Cowboys by 7&frac12;</p>
+
+        <!-- end bylineBlock -->
+
+        <div class="shareComments shareCommentsTop">
+            <ul id="share-bar1" class="width-auto-hack"></ul>
+        </div>
+    </div>
+
+</section>
+<!-- end contentHeader -->
+
+<section id="winLoss" class="clearFix cowSection">
+
+    <div id="win">
+        <p class="subhead">A win would mean ...</p>
+        <p>Absolutely nothing. And the Cowboys can relish that. Dallas has already clinched the NFC’s No. 1 seed, so it can start thinking about the playoffs with two regular-season games remaining. Dallas can win its 13th game, which matches the franchise record for most regular-season wins.</p>
+    </div>
+    <!-- end win -->
+
+    <div id="loss">
+        <p class="subhead">A loss would mean ... </p>
+        <p>The Lions improve their postseason standing. They enter the game with the NFC North title and a playoff berth in the mix.</p>
+    </div>
+    <!-- end loss -->
+
+</section>
+<!-- end winLoss -->
+
+{%include "adblock1.html" %}
+
+
+    <section class="contentWell clearFix">
+
+    <div class="wideBlock imageBlock">
+
+        <h4 class="sectionLabel">SportsDay’s Picks</h4>
+        {{img.jpg("week16_elliott", "Cowboys running back Ezekiel Elliott rushes against the Tampa Bay Buccaneers in Week 15 of the 2016 NFL season.")}}
+        <p class="cutline">Cowboys running back Ezekiel Elliott needs 258 yards to break Eric Dickerson’s NFL rookie rushing record of 1,808 yards. (Smiley N. Pool/Staff Photographer)</p>
+    </div>
+    <!-- end wide image -->
+
+    <section id="fourKeys" class="clearFix cowSection">
+        <div class="row clearFix">
+            <div class="staff clearFix">
+                <img src="images/_george.jpg" alt="Brandon George" />
+                <p><strong>Brandon George: </strong>The Cowboys <a href="http://sportsday.dallasnews.com/dallas-cowboys/cowboys/2016/12/22/cowboys-tune-eagles-win-giants-tune-idea-makes-game-vs-detroit-less-meaningful?f=r">clinched the NFC East title</a> and No. 1 seed throughout the playoffs with the Giants’ loss Thursday at Philadelphia. So the Cowboys will put it on cruise control on <em>Monday Night Football</em>, right? Not yet. Cowboys coach Jason Garrett wants his team to maintain its edge down the stretch and heading into the playoffs. Garrett won’t pull back in the team’s regular-season home finale. The Cowboys won’t have any pressure to win. But a loose Cowboys team will jump out to a first-half lead and hold off the Lions late as Detroit comes up just short this time trying to rally from behind in the fourth quarter. <strong class="score">Cowboys, 31-27</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_hairopoulos.jpg" alt="Kate Hairopoulos" />
+                <p><strong>Kate Hairopoulos: </strong>Dallas running back Ezekiel Elliott needs 258 yards <a href="http://interactives.dallasnews.com/2016/ezekiel-elliott-rushing-tracker">to set an NFL rookie rushing record</a>. He’ll get 100 or so against Detroit on Boxing Day, setting up a quandary for the Cowboys’ coaching staff next week. He won’t say so, but he wants to take down Eric Dickerson’s record even if the game at Philadelphia is meaningless. For now, he settles for lifting Dallas to 13 wins. Lions QB and Highland Park hero Matthew Stafford doesn’t have enough help to keep up with a resurgent Cowboys offense. <strong class="score">Cowboys, 28-17</strong></p>
+            </div>
+
+            <div class="staff clearFix">
+                <img src="images/_machota.jpg" alt="Jon Machota" />
+                <p><strong>Jon Machota: </strong>It’s certainly not the same Detroit team that played at AT&T Stadium in the 2014 playoffs. Calvin Johnson and Ndamukong Suh have been replaced by Marvin Jones and Haloti Ngata. Somehow, Matthew Stafford has found a way to lead the Lions to an NFL-record eight fourth-quarter comebacks. Even though it will be a one-possession game going into the fourth quarter Monday night, a much-improved Cowboys defense will come up with the key stops late. Ezekiel Elliott will rush for 120 yards, leaving him 138 away from Eric Dickerson’s rookie rushing record with one game remaining. <strong class="score">Cowboys, 24-20</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_moore.jpg" alt="David Moore" />
+                <p><strong>David Moore: </strong>If you argue the merits of which team has more at stake in this game, you’re missing the point. This young, bold Cowboys team doesn’t seem to take such things into consideration. Rookies Dak Prescott and Ezekiel Elliott are focused on being among the NFL’s elite every time they take the field. They want to introduce themselves to the league and serve opponents a warning that they will be around for a long time. This attitude is contagious. A Cowboys team that was criticized in the past for playing down to it’s competition hasn’t fallen short this season. It has been in every game, losing only two all season. Detroit won’t make it three. <strong class="score">Cowboys, 34-20</strong></p>
+            </div>
+        </div>
+
+        <div class="row clearFix">
+            <div class="staff clearFix">
+                <img src="images/_cowlishaw.jpg" alt="Tim Cowlishaw" />
+                <p><strong>Tim Cowlishaw: </strong>Dan Bailey puts on a field goal display while Dak Prescott shows us that a QB with 10 good fingers is superior to one with nine. <strong class="score">Cowboys, 25-16</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_gosselin.jpg" alt="Rick Gosselin" />
+                <p><strong>Rick Gosselin: </strong>Two MVP candidates square off — Ezekiel Elliott and Highland Park's Matthew Stafford. The Cowboys’ home field and Detroit's inability to run the ball will be the difference. <strong class="score">Cowboys, 27-23</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_horn.jpg" alt="Barry Horn" />
+                <p><strong>Barry Horn: </strong>Team with more at stake beats NFC champs. Second straight week a Highland Park QB wins at JerryWorld. Lions say later they’re hoping John Stephen Jones succeeds Matt Stanford. <strong class="score">Lions, 24-21</strong></p>
+            </div>
+            <div class="staff clearFix">
+                <img src="images/_sherrington.jpg" alt="Kevin Sherrington" />
+                <p><strong>Kevin Sherrington: </strong>Afterward, in an effort to “create the debate,” Jerry benches Dak, fires Garrett and nominates Stephen for a post in Trump’s cabinet. <strong class="score">Cowboys, 27-21</strong></p>
+            </div>
+
+        </div>
+
+
+        <div id="userPick">
+            <h5>You make the call</h5>
+            <p>We want to know who you who think will win this week’s Cowboys game. Enter your score below, and see which team other readers think will take home the “W.” Scores plotted on the lower-right of the chart indicate a predicted Cowboys victory, upper-left indicate a predicted opponent victory. (Note: Only scores below 60 will be shown.)</p>
+
+            <div id="userSubmission">
+
+                <div id="userForm" class="clearFix">
+
+                    <p class="chatter">Who do you think will win? Enter the scores for each team, then click the "submit" button.</p>
+                    <div class="scoreBlock">
+                        <input id="cowScore" type="text" pattern="[0-9]*" placeholder="0" />
+                        <span>Cowboys</span>
+                    </div>
+
+                    <div class="scoreBlock">
+                        <input id="oppScore"  type="text" pattern="[0-9]*" placeholder="0" />
+                        <span id="opponent"></span>
+                    </div>
+
+                    <button id="submit">Submit</button>
+                </div>
+
+                <div id="response" class="noShow clearFix">
+                    <h6>Thank you for your submission</h6>
+                    <p>You picked the <span class="userTeam"></span> to <span class="userResult">win</span>, <span class="userScore"></span>. Share your prediction on social media:</p>
+                    <button id="faceShare">Facebook</button>
+                    <button id="twitterShare">Twitter</button>
+                </div>
+
+                <p class="readout"><span class="predictPercentage"></span> of readers are picking the <span class="predictTeam"></span> to win this week by an average of <span class="predictPoints"></span> points.</p>
+
+
+            </div>
+
+            <div id="chartBlock">
+
+                <div id="tooltip" class="noShow">
+					<p><strong>Cowboys: </strong> <span class="cowTipScore"></span></p>
+					<p><strong><span class="oppTipName"></span>:</strong> <span class="oppTipScore"></span></p>
+                    <p><strong>Times predicted: </strong> <span class="tipPredict"></span></p>
+				</div>
+
+                <div id="chart"></div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- end picks -->
+
+
+
+    {%include "adblock2.html" %}
+
+    <section id="matchup" class="clearFix cowSection">
+
+    <h4 class="sectionLabel">Bob Sturm’s scouting report</h4>
+
+        <div id="matchupContent" class="clearFix">
+
+            <div class="matchupBlock">
+
+            <p class="key"><span class="question">Situation</span><span class="edge">Edge</span><span class="know">In the know</span></p>
+
+                <div id="cowboysRun" class="matchup clearFix">
+                    <p class="question">When the Cowboys run the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_cowSig.png" alt="Cowboys" />
+                    <p class="know">Last week, the Cowboys returned to ground-game dominance by grinding down Tampa Bay with 32 carries at 5.8 yards per carry. They have two types of performances on the ground, solid and dominant, as shown by having zero days under 100 yards in 2016. Detroit is no push-over on the ground, though, having conceded just one 100-yard day since Nov. 1 in six games.</p>
+                </div>
+                <!-- end cowboysRun -->
+
+                <div id="cowboysPass" class="matchup clearFix">
+                    <p class="question">When the Cowboys pass the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_cowSig.png" alt="Cowboys" />
+                    <p class="know">The Lions have gotten strong play from Mississippi State’s Darius Slay again this season, but he is expected to miss this game with a hamstring injury. If that is the case, a close matchup might swing in the Cowboys’ favor. Detroit struggles in getting to the quarterback (29th) and getting off the field on third down (28th), two categories where the Cowboys excel (ranking 13th and 12th).</p>
+                </div>
+                <!-- end cowboysPass -->
+
+                <div id="oppRun" class="matchup clearFix">
+                    <p class="question">When the Lions run the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_cowSig.png" alt="Cowboys" />
+                    <p class="know">Dallas has seemingly gone weeks at a time without playing teams that have any desire to run the football. This week is no different as Detroit has a long history — since the retirement of Barry Sanders — of not having a ground game. They have been lost since Ameer Abdullah was lost for the year in September. Dallas, meanwhile, has surrendered just 3.1 yards per carry over 91 attempts over the last four games.</p>
+                </div>
+                <!-- end oppRun -->
+
+                <div id="oppPass" class="matchup clearFix">
+                    <p class="question">When the Lions pass the ball</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_lionsSig.png" alt="Lions" />
+                    <p class="know">Here is where Matthew Stafford demonstrates his value to Detroit with a group of targets downfield, including Golden Tate, new free agent-signing Marvin Jones, veteran Anquan Boldin and big TE Eric Ebron. The pass protection is improved with big first-rounder Taylor Decker at left tackle really providing some excellent play over the year. The interior is where they struggle, so look for the Cowboys to attack that space.</p>
+                </div>
+                <!-- end oppPass -->
+
+                <div id="specialTeams" class="matchup clearFix">
+                    <p class="question">Special teams</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_lionsSig.png" alt="Lions" />
+                    <p class="know">The Cowboys have not had what you would call an excellent season from their special teams, but Detroit has come on strong. In all of the major categories, the Lions are, at worst, at league average. Their punt return team is fifth, with former Redskins WR Andre Roberts providing some real punch, and Matt Prater has been a rock solid kicker. Dan Bailey hasn’t been poor this year, but his field goal percentage is the lowest of his career.</p>
+                </div>
+                <!-- end specialTeams -->
+
+                <div id="intangibles" class="matchup clearFix">
+                    <p class="question">Intangibles</p>
+                    <span class="edgeLabel">Edge</span><img class="edge" src="images/_lionsSplitSig.png" alt="Even" />
+                    <p class="know">The Lions’ season comes down to their showdown with Green Bay next weekend. Their incentive to win this game is measured in their wild-card possibilities, but they plan on winning the NFC North for the first time since 1993. The Cowboys have everything wrapped up, but they seem intent on completing each step with attention to detail.</p>
+                </div>
+                <!-- end intagibles -->
+
+            </div>
+        </div>
+
+        </section>
+     </section>
+
+        <section id="spotlight" class="clearFix cowSection">
+
+
+            <!-- this image should be squarely cropped to provide enough depth for the content -->
+            <!-- this subject should be on the left or right side. if right side, remove leftSide class  -->
+
+            <div class="spotContainer">
+                {{img.jpg("goldenTate", "Detroit wide receiver Golden Tate")}}
+                <div class="spotlightContent">
+
+                    <h4 class="sectionLabel whiteTheme">Bob Sturm’s spotlight</h4>
+                    <p><strong>Golden Tate</strong> is the best of the offensive threats that Matthew Stafford has to choose from in this first year after the retirement of Calvin Johnson. While the franchise has made its share of personnel missteps over recent years, the signing of Tate from Seattle before the 2014 season has been a tremendous value.</p>
+                    <p>The Lions got Tate for five years at $31 million ($6.2 million average) with $16 million guaranteed, and he has given them massive production. He has ranked seventh in catches and 11th in yards among NFL receivers since coming to Detroit. Even more impressive, he has the most yards after catch of anyone in the league.</p>
+                    <p>Tate is competitive, talkative and certainly not a favorite among Cowboys fans who still remember his open-field, blind-side blasting of Sean Lee in September 2012. With his size and attitude, many compare Tate to Steve Smith.</p>
+                    <p>Tate works the middle of the field, can take the top off the defense and get behind guys, and he has hands that help him in traffic. Keeping Tate corralled is one of the keys to slowing down the Detroit offense, as he leads the NFL in yardage this month with 325 yards in three games.</p>
+                    <p><strong>Sturm’s prediction: </strong>The Cowboys are confident and are starting to see their defense pick up speed and complement a balanced and solid offense. <strong>Cowboys, 27-17</strong></p>
+                    <p class="credit">Jose Juarez/The Associated Press</p>
+                </div>
+
+            </div>
+
+    </section>
+
+
+
+
+    {%include "adblock3.html" %}
+
+    <section class="credits clearfix">
+        <p><strong>Top photo:</strong> <a href="mailto:tfox@dallasnews.com">Tom Fox</a></p>
+    </section>
+    <!-- end credits -->
+
+	<section class="more clearFix">
+		<h5>Read more from The Dallas Morning News</h5>
+        <a class="clearFix" href="http://interactives.dallasnews.com/2016/ezekiel-elliott-rushing-tracker">
+            <img src="images/_trackerShare.jpg" alt="Ezekiel Elliott" />
+            <h6>Chasing 1,808</h6>
+            <p>Track Ezekiel Elliott’s progress throughout the season as he makes a run at Eric Dickerson’s NFL rookie rushing record.</p>
+        </a>
+		<a class="clearFix" href="http://interactives.dallasnews.com/2016/jerry-jones-office/">
+			<img src="images/_jonesShare.jpg" alt="Jerry Jones" />
+			<h6>Trappings of legend</h6>
+			<p>While Jerry Jones doesn’t live in the past, an exclusive look inside the Cowboys owner’s office is a journey through the franchise’s history.</p>
+		</a>
+		<a class="clearFix" href="http://interactives.dallasnews.com/2015/darren-woodson/">
+			<img src="images/_woodsonShare.jpg" alt="Darren Woodson" />
+			<h6>Ringing endorsement</h6>
+			<p>For 12 seasons with the Dallas Cowboys, Darren Woodson would routinely wreak havoc on Sundays, then onnect with his best friend on Tuesdays.</p>
+		</a>
+	</section>
+	<!-- end more -->
+
+	<div class="shareComments">
+        <div id="comments"></div>
+	</div>
+	<!-- end shareComments -->
+
+</section>
+<!-- end contentWell -->
+{%endblock%}
+
+
+
+
+{%block custom_foot%}
+	<script type="text/javascript"></script>
+{%endblock%}
+
+
+
+
+
+{%block custom_social_meta%}
+<script type="text/javascript">
+  var storyTitle = "Will the Cowboys put it on cruise control with the NFC East title locked up?", // headline in tweet card
+	storyURL = "http://interactives.dallasnews.com/2016/cowboys-gameday/week16.html",
+	leadText = "Cowboys-Lions: What you need to know; experts’ predictions; submit your pick", //description in tweet card
+	storyIMG = "http://interactives.dallasnews.com/2016/cowboys-gameday/images/_week16_share.jpg",
+	storyAuthor = "sportsdaydfw",
+	twitterTag = "@SportsDayDFW",
+	comments = true,
+	share = true;
+	OAS_sitepage = 'www.sportsdaydfw.com/dallas-cowboys/';
+</script>
+{%endblock%}
