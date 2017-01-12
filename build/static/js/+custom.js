@@ -34,8 +34,8 @@ $(document).ready(function() {
 	  "Buccaneers",
 	  "Lions",
 	  "Eagles",
-	  "Wilcard opponent", // insert bye if no wildcard round
-	  "Divisional opponent",
+	  "bye", // insert bye if no wildcard round
+	  "Packers",
 	  "Conference opponent",
 	  "Super Bowl opponent"
   	];
